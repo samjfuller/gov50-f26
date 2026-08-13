@@ -109,6 +109,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Staff</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./office_hours.qmd"> 
+<span class="menu-text">Office Hours &amp; Study Halls</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
@@ -170,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 <li><i class="fa-solid fa-user" aria-label="user"></i> <a href="https://samjfuller.com">Dr.&nbsp;Sam Fuller</a></li>
 <li><i class="fa-solid fa-university" aria-label="university"></i> CGIS Knafel 428</li>
 <li><i class="fa-solid fa-envelope" aria-label="envelope"></i> <a href="mailto:sfuller@fas.harvard.edu">sfuller@fas.harvard.edu</a></li>
-<li><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> <a href="PLACEHOLDER">Schedule an appointment</a></li>
+<li><i class="fa-solid fa-calendar-check" aria-label="calendar-check"></i> <a href="https://calendly.com/sfuller-fas">Schedule an appointment</a></li>
 </ul>
 </section>
 <section id="course-details" class="level3 g-col-12 g-col-sm-6 g-col-md-4">
@@ -180,15 +184,14 @@ ul.task-list li input[type="checkbox"] {
 <li><i class="fa-solid fa-calendar-alt" aria-label="calendar-alt"></i> September 2nd-December 18th, 2026</li>
 <li><i class="fa-solid fa-clock" aria-label="clock"></i> 3:00–4:15 PM</li>
 <li><i class="fa-solid fa-location-dot" aria-label="location-dot"></i> Emerson 105</li>
-<li><i class="fa-brands fa-slack" aria-label="slack"></i> <a href="PLACEHOLDER">Slack</a></li>
 <li><i class="fa-solid fa-wrench" aria-label="wrench"></i> <a href="./resources/study-halls.html">Study Hall Schedule</a></li>
-<li><i class="fa-solid fa-person-circle-question" aria-label="person-circle-question"></i> <a href="./resources/office-hours.html">Office Hours Schedule</a></li>
+<li><i class="fa-solid fa-person-circle-question" aria-label="person-circle-question"></i> <a href="resources/office-hours.qmd">Office Hours Schedule</a></li>
 <li><i class="fa-solid fa-calendar" aria-label="calendar"></i> <a href="https://tinyurl.com/gov50calendar">Gov 50 Google Calendar</a></li>
 </ul>
 </section>
 <section id="contacting-the-teaching-staff" class="level3 g-col-12 g-col-md-4 contact-policy">
 <h3 class="anchored" data-anchor-id="contacting-the-teaching-staff">Contacting the teaching staff</h3>
-<p>General questions should be posted to either the course or your section Slack channel. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don’t respond right away don’t worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email or Slack.</p>
+<p>General questions should be posted to either the course or your section Ed Discussion Board. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don’t respond right away don’t worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email.</p>
 </section>
 </div>
 
@@ -268,7 +271,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/samjfuller\.github\.io\/gov50-f26\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/samjfuller\.github\.io\/gov50-f26\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

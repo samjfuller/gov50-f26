@@ -168,13 +168,6 @@
     "text": "Below is the schedule for the semester. You should:\n\ncomplete readings before class;\nsubmit answers to warmup questions on Canvas by 1 hour before class; and\nturn in homework assignments, printed and in-person to your TF/CA, by the beginning of class.\n\nThe readings refer to following texts:\n\nROS: Regression and Other Stories by Andrew Gelman, Jennifer Hill, & Aki Vehtari\nTE: The Effect: An Introduction to Research Design and Causality by Nick Huntington-Klein\n\n\n\n\n\n\n\nImportantThis schedule is subject to change\n\n\n\nIdeally, we will be able to cover all of this content in the semester, but given that there may be unforeseen issues (e.g., university closures or sickness) this schedule is subject to change. However, if there are changes this page will be updated and there will be an announcement made on Canvas.\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nReading\n\n\n\n\n\n\nModule 1: An introduction to ‘quantitative social science’\n\n\n\n\n9/2/2026\n\n\nFirst Class\n\n\nNone\n\n\n\n\n9/9/2026\n\n\nSecond Class\n\n\nROS Ch 1; TE Chs 0 & 1\n\n\n\n\nModule 2: Critical thinking: the role of prediction and defining research questions\n\n\n\n\n9/14/2026\n\n\nFirst Class\n\n\nROS Apps A.1-A.3\n\n\n\n\n9/16/2026\n\n\nSecond Class\n\n\nTE Ch 2\n\n\n\n\nModule 3: Back to the basics: data collection, description, and visualization\n\n\n\n\n9/21/2026\n\n\nFirst Class\n\n\nROS Ch 2\n\n\n\n\n9/23/2026\n\n\nSecond Class\n\n\nTE Chs 3 & 4\n\n\n\n\nModule 4: Nuts and bolts: a review of some math and probability\n\n\n\n\n9/28/2026\n\n\nFirst Class\n\n\nROS Ch 3\n\n\n\n\n9/30/2026\n\n\nSecond Class\n\n\nROS Apps A.4-A.5\n\n\n\n\nModule 5: Bread and butter: statistical inference and identification\n\n\n\n\n10/5/2026\n\n\nFirst Class\n\n\nROS Ch 4\n\n\n\n\n10/7/2026\n\n\nSecond Class\n\n\nTE Ch 5\n\n\n\n\nModule 6: The city on the hill: simulation(s) and causal diagrams\n\n\n\n\n10/14/2026\n\n\nFirst Class\n\n\nROS Ch 5 & Apps A.6-A.7\n\n\n\n\n10/19/2026\n\n\nSecond Class\n\n\nTE Chs 6 & 7\n\n\n\n\nModule 7: Laying the foundation: background on regression and ‘doors’ in causal inference\n\n\n\n\n10/21/2026\n\n\nFirst Class\n\n\nROS Ch 6\n\n\n\n\n10/26/2026\n\n\nSecond Class\n\n\nTE Chs 8 & 9\n\n\n\n\nModule 8: y = mx + b: regression with a single predictor and causal treatment effects\n\n\n\n\n10/28/2026\n\n\nFirst Class\n\n\nROS Ch 7\n\n\n\n\n11/2/2026\n\n\nSecond Class\n\n\nTE Ch 10\n\n\n\n\nModule 9: y = b1x1 + b2x2 + b3x3…: linear regression with multiple predictors\n\n\n\n\n11/4/2026\n\n\nFirst Class\n\n\nROS Ch 10\n\n\n\n\n11/9/2026\n\n\nSecond Class\n\n\nTE Chs 11 & 12\n\n\n\n\nModule 10: But what about causality?: experiments and selection on observables\n\n\n\n\n11/11/2026\n\n\nFirst Class\n\n\nROS Ch 18\n\n\n\n\n11/16/2026\n\n\nSecond Class\n\n\nROS Secs 20.1-20.3; TE Secs 13.1, 13.2.0-13.2.1, 13.4.1-13.4.3\n\n\n\n\nModule 11: Rubber meets the road: using regression for experiments and matching\n\n\n\n\n11/18/2026\n\n\nFirst Class\n\n\nROS Ch 19\n\n\n\n\n11/23/2026\n\n\nSecond Class\n\n\nROS Secs 20.4, 20.5, & 20.7; TE Secs 14.1-14.3, 14.5, & 14.6\n\n\n\n\nModule 12: All by design: design-based causal inference\n\n\n\n\n11/30/2026\n\n\nFirst Class\n\n\nTE 18.1; Card & Krueger (1994)\n\n\n\n\n12/2/2026\n\n\nSecond Class\n\n\nTE 20.1; Hoekstra (2009)\n\n\n\n\nReading and Finals Weeks\n\n\n\n\n12/2/2026\n\n\nPractice exam distributed\n\n\n\n\n\n\nExam Week (TBD)\n\n\nFinal exam"
   },
   {
-    "objectID": "resources/speaker-series.html",
-    "href": "resources/speaker-series.html",
-    "title": "Gov 50 Speaker Series",
-    "section": "",
-    "text": "More details to come…"
-  },
-  {
     "objectID": "resources/cheatsheet.html",
     "href": "resources/cheatsheet.html",
     "title": "Gov 50 Cheat Sheet",
@@ -252,186 +245,193 @@
     "text": "Hypothesis testing (Week 11)\n\nGenerating the null distribution of a sample mean\n\nnull_dist &lt;- gss |&gt;\n  specify(response = hours) |&gt;\n  hypothesize(null = \"point\", mu = 40) |&gt;\n  generate(reps = 1000, type = \"bootstrap\") |&gt;\n  calculate(stat = \"mean\")\nnull_dist\n\nResponse: hours (numeric)\nNull Hypothesis: point\n# A tibble: 1,000 × 2\n   replicate  stat\n       &lt;int&gt; &lt;dbl&gt;\n 1         1  40.4\n 2         2  39.0\n 3         3  39.1\n 4         4  41.2\n 5         5  40.8\n 6         6  40.1\n 7         7  39.9\n 8         8  40.7\n 9         9  40.2\n10        10  40.5\n# ℹ 990 more rows\n\n\n\n\nCalculating the p-value of a hypothesis test\nIf we want to calculate the p-value of the test, we need to first calculate the observed value of the sample mean and then pass that to the get_p_value function:\n\nobs_mean &lt;- gss |&gt;\n  specify(response = hours) |&gt;\n  calculate(stat = \"mean\")\n\nget_p_value(null_dist, obs_mean, direction = \"both\")\n\n# A tibble: 1 × 1\n  p_value\n    &lt;dbl&gt;\n1   0.038\n\n\nWe can also visualize the p-value:\n\nvisualize(null_dist) +\n  shade_p_value(obs_mean, direction = \"both\")\n\n\n\n\n\n\n\n\n\n\nNull distribution for a difference in means\nFor a diffrence in means, we can use a similar approach, but need to turn our treatment/grouping variable into a charactor/factor variable. Then we need to make sure we sepcify the order the difference in mean should be taken across groups. First we calculate the effect and then get the null distribution using the permute approach.\n\ntrains &lt;- trains |&gt;\n  mutate(treated = if_else(treatment == 1, \"Treated\", \"Untreated\"))\n\nate &lt;- trains |&gt;\n  specify(numberim.post ~ treated) |&gt;\n  calculate(stat = \"diff in means\",\n            order = c(\"Treated\", \"Untreated\"))\nate\n\nResponse: numberim.post (numeric)\nExplanatory: treated (factor)\n# A tibble: 1 × 1\n   stat\n  &lt;dbl&gt;\n1 0.383\n\nnull_dist &lt;- trains |&gt;\n  specify(numberim.post ~ treated) |&gt;\n  hypothesize(null = \"independence\") |&gt;\n  generate(reps = 1000,\n           type = \"permute\") |&gt;\n  calculate(stat = \"diff in means\", order = c(\"Treated\", \"Untreated\"))\nnull_dist\n\nResponse: numberim.post (numeric)\nExplanatory: treated (factor)\nNull Hypothesis: independence\n# A tibble: 1,000 × 2\n   replicate    stat\n       &lt;int&gt;   &lt;dbl&gt;\n 1         1 -0.180 \n 2         2  0.207 \n 3         3  0.242 \n 4         4  0.313 \n 5         5 -0.0395\n 6         6 -0.145 \n 7         7 -0.110 \n 8         8 -0.0395\n 9         9  0.101 \n10        10 -0.110 \n# ℹ 990 more rows\n\n\nGetting the p-value is the same:\n\nget_p_value(null_dist, obs_stat = ate, direction = \"both\")\n\n# A tibble: 1 × 1\n  p_value\n    &lt;dbl&gt;\n1   0.026"
   },
   {
-    "objectID": "materials/index.html",
-    "href": "materials/index.html",
-    "title": "Readings, lectures, and videos",
+    "objectID": "office-hours_study-halls.html",
+    "href": "office-hours_study-halls.html",
+    "title": "Office Hours and Study Hall Schedule",
     "section": "",
-    "text": "Each class session has a set of required readings that you should complete before attempting the tutorials.\n\nCourse Introduction\nIntroduction to R and RStudio\nData Visualization\nData Wrangling\nData Wrangling and Barplots\nCausality\nRandomized Experiments\nObservational Studies\nSummarizing Data\nSurvey Sampling\nBivariate Relationships and Functions\nJoining and Tidying Data\nMidterm Review and Prediction\nRegression\nModel Fit\nMultiple Regression and Categorical Predictors\nSampling\nSampling Distributions\nThe Bootstrap\nMore Confidence Intervals\nHypothesis Testing\nTwo-sample Hypothesis Testing\nMathematical Models of Inference\nMathematical Models for Hypothesis Testing\nInference for Linear Regression"
+    "text": "ImportantThese schedules are subject to change\n\n\n\nFor the latest schedule, including changes, please check Ed or the Gov 50 Google calendar.\n\n\n\nOffice Hours\n\n\n\n\nName\n\n\nDay\n\n\nStart Time\n\n\nEnd Time\n\n\nLocation\n\n\n\n\n\n\nAhmet Akbiyik\n\n\nThursday\n\n\n7:00 PM\n\n\n8:00 PM\n\n\nDunster House Dining Hall\n\n\n\n\nAda Cruz\n\n\nFriday\n\n\n10:00 AM\n\n\n12:00 PM\n\n\nEliot Dhall\n\n\n\n\nEthan Miles\n\n\nFriday\n\n\n2:00 PM\n\n\n3:00 PM\n\n\nCGIS K Café\n\n\n\n\nJerry Min\n\n\nFriday\n\n\n5:00:00 PM\n\n\n6:00 PM\n\n\nCGIS K Café\n\n\n\n\nShriya Yarlagadda\n\n\nSunday\n\n\n8:00 PM\n\n\n9:00 PM\n\n\nLowell DHall\n\n\n\n\nAndy Wang\n\n\nMonday\n\n\n3:00 PM\n\n\n4:00 PM\n\n\nFairfax Common Room\n\n\n\n\nKatherine Jackson\n\n\nMonday\n\n\n5:00 PM\n\n\n7:00 PM\n\n\nPfoho Dhall - 2nd Floor\n\n\n\n\nJulio Solis\n\n\nTuesday\n\n\n1:15 PM\n\n\n2:15 PM\n\n\nEmerson Hall\n\n\n\n\nJames Jolin\n\n\nTuesday\n\n\n4:00 PM\n\n\n5:00 PM\n\n\nCGIS K Café\n\n\n\n\nPranav Moudgalya\n\n\nTuesday\n\n\n8:00 PM\n\n\n9:00 PM\n\n\nLeverett Dining Hall\n\n\n\n\nChris Shen\n\n\nWednesday\n\n\n9:00 PM\n\n\n10:00 PM\n\n\nQuincy Dining Hall\n\n\n\n\n\n\nStudy Halls\n\n\n\n\nName\n\n\nDay\n\n\nStart Time\n\n\nEnd Time\n\n\nLocation\n\n\n\n\n\n\nKate De Groote\n\n\nFriday\n\n\n1:00 PM\n\n\n3:00 PM\n\n\nLowell Dining Hall\n\n\n\n\nIsa Peña\n\n\nFriday\n\n\n2:00 PM\n\n\n4:00 PM\n\n\nCabot Dining Hall\n\n\n\n\nJulia Poulson\n\n\nFriday\n\n\n4:00 PM\n\n\n6:00 PM\n\n\nPfoho Dining Hall\n\n\n\n\nEric Forteza\n\n\nSunday\n\n\n5:00 PM\n\n\n7:00 PM\n\n\nCabot Dining Hall\n\n\n\n\nGowri Rangu\n\n\nSunday\n\n\n7:30 PM\n\n\n9:30 PM\n\n\nLowell Dining Hall\n\n\n\n\nMitja Bof\n\n\nSunday\n\n\n8:00 PM\n\n\n10:00 PM\n\n\nWinthrop Dining Hall\n\n\n\n\nJason Wang\n\n\nSunday\n\n\n8:00 PM\n\n\n10:00 PM\n\n\nLeverett Dining Hall\n\n\n\n\nIsa Peña\n\n\nMonday\n\n\n8:00 AM\n\n\n10:00 AM\n\n\nCabot Dining Hall\n\n\n\n\nRyan McCarthy\n\n\nMonday\n\n\n9:00 AM\n\n\n11:00 AM\n\n\nEliot Dining Hall\n\n\n\n\nAlex Heuss\n\n\nMonday\n\n\n4:30 PM\n\n\n6:30 PM\n\n\nCGIS Cafe\n\n\n\n\nFrank T Berrios\n\n\nMonday\n\n\n5:00 PM\n\n\n7:00 PM\n\n\nCabot Dining Hall\n\n\n\n\nChris Mesfin\n\n\nMonday\n\n\n7:00 PM\n\n\n9:00 PM\n\n\nPfoho Dining Hall\n\n\n\n\nAzeez Richardson\n\n\nMonday\n\n\n7:00 PM\n\n\n9:00 PM\n\n\nDunster Dining Hall\n\n\n\n\nVivian Nguyen\n\n\nMonday\n\n\n8:00 PM\n\n\n10:00 PM\n\n\nMather Dining Hall\n\n\n\n\nAlina Esanu\n\n\nTuesday\n\n\n9:00 AM\n\n\n11:00 AM\n\n\nQuincy Dining Hall\n\n\n\n\nZachary Mecca\n\n\nTuesday\n\n\n9:30 AM\n\n\n11:30 AM\n\n\nEliot Dining Hall\n\n\n\n\nTracy Jiang\n\n\nTuesday\n\n\n3:00 PM\n\n\n5:00 PM\n\n\nAdam Dining Hall\n\n\n\n\nCameron Snowden\n\n\nTuesday\n\n\n4:00 PM\n\n\n6:00 PM\n\n\nPfoho Dining Hall\n\n\n\n\nGroup Study Hall\n\n\nTuesday\n\n\n6:00 PM\n\n\n11:00 PM\n\n\nCGIS Cafe (First Floor)\n\n\n\n\nGowri Rangu\n\n\nWednesday\n\n\n2:00 PM\n\n\n4:00 PM\n\n\nLowell Dining Hall\n\n\n\n\nGroup Study Hall\n\n\nWednesday\n\n\n6:00 PM\n\n\n11:00 PM\n\n\nCGIS Cafe (First Floor)"
   },
   {
-    "objectID": "materials/13_models.html",
-    "href": "materials/13_models.html",
-    "title": "More Mathematical Models",
+    "objectID": "materials/14_ols_inference.html",
+    "href": "materials/14_ols_inference.html",
+    "title": "Inference with Linear Regression",
     "section": "",
-    "text": "IMS Ch 15, 16."
+    "text": "QSS 7.3 and/or IMS Ch 24."
   },
   {
-    "objectID": "materials/13_models.html#readings",
-    "href": "materials/13_models.html#readings",
-    "title": "More Mathematical Models",
+    "objectID": "materials/14_ols_inference.html#readings",
+    "href": "materials/14_ols_inference.html#readings",
+    "title": "Inference with Linear Regression",
     "section": "",
-    "text": "IMS Ch 15, 16."
+    "text": "QSS 7.3 and/or IMS Ch 24."
   },
   {
-    "objectID": "materials/13_models.html#slides-and-code",
-    "href": "materials/13_models.html#slides-and-code",
-    "title": "More Mathematical Models",
+    "objectID": "materials/14_ols_inference.html#slides-and-code",
+    "href": "materials/14_ols_inference.html#slides-and-code",
+    "title": "Inference with Linear Regression",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (11/22) lecture: Math models for hypothesis testing and difference in means\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (12/5) lecture: Inference with Linear Regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/11_hyp_tests.html",
-    "href": "materials/11_hyp_tests.html",
-    "title": "Hypothesis Tests",
+    "objectID": "materials/12_tests_models.html",
+    "href": "materials/12_tests_models.html",
+    "title": "Mathematical Models of Inference",
     "section": "",
-    "text": "MD Ch 9, IMS Ch 11 for another take."
+    "text": "IMS Ch 13 for Thursday."
   },
   {
-    "objectID": "materials/11_hyp_tests.html#readings",
-    "href": "materials/11_hyp_tests.html#readings",
-    "title": "Hypothesis Tests",
+    "objectID": "materials/12_tests_models.html#readings",
+    "href": "materials/12_tests_models.html#readings",
+    "title": "Mathematical Models of Inference",
     "section": "",
-    "text": "MD Ch 9, IMS Ch 11 for another take."
+    "text": "IMS Ch 13 for Thursday."
   },
   {
-    "objectID": "materials/11_hyp_tests.html#slides-and-code",
-    "href": "materials/11_hyp_tests.html#slides-and-code",
-    "title": "Hypothesis Tests",
+    "objectID": "materials/12_tests_models.html#slides-and-code",
+    "href": "materials/12_tests_models.html#slides-and-code",
+    "title": "Mathematical Models of Inference",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (11/14) lecture: Hypothesis tests\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/16) lecture: More hypothesis tests\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (11/28) lecture: Mathematical models for inference\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nTuesday (11/30) lecture: Math models for hypothesis testing and difference in means\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/09_sampling.html",
-    "href": "materials/09_sampling.html",
-    "title": "Sampling",
+    "objectID": "materials/10_bootstrap.html",
+    "href": "materials/10_bootstrap.html",
+    "title": "The Bootstrap and Confidence Intervals",
     "section": "",
-    "text": "MD Ch 7"
+    "text": "MD Ch 8, IMS Ch 12 for another take."
   },
   {
-    "objectID": "materials/09_sampling.html#readings",
-    "href": "materials/09_sampling.html#readings",
-    "title": "Sampling",
+    "objectID": "materials/10_bootstrap.html#readings",
+    "href": "materials/10_bootstrap.html#readings",
+    "title": "The Bootstrap and Confidence Intervals",
     "section": "",
-    "text": "MD Ch 7"
+    "text": "MD Ch 8, IMS Ch 12 for another take."
   },
   {
-    "objectID": "materials/09_sampling.html#data",
-    "href": "materials/09_sampling.html#data",
-    "title": "Sampling",
+    "objectID": "materials/10_bootstrap.html#slides-and-code",
+    "href": "materials/10_bootstrap.html#slides-and-code",
+    "title": "The Bootstrap and Confidence Intervals",
+    "section": "Slides and Code",
+    "text": "Slides and Code\n\nTuesday (11/7) lecture: The Bootstrap\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/9) lecture: More Confidence Intervals\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+  },
+  {
+    "objectID": "materials/08_regression.html",
+    "href": "materials/08_regression.html",
+    "title": "Prediction: More Regression",
+    "section": "",
+    "text": "For model fit, see QSS 4.2.6 or IMS 7.2.5\nFor multiple regression, IMS 8.1-8.3, MD 6.1-6.2, or QSS 4.3.1-4.3.2"
+  },
+  {
+    "objectID": "materials/08_regression.html#readings",
+    "href": "materials/08_regression.html#readings",
+    "title": "Prediction: More Regression",
+    "section": "",
+    "text": "For model fit, see QSS 4.2.6 or IMS 7.2.5\nFor multiple regression, IMS 8.1-8.3, MD 6.1-6.2, or QSS 4.3.1-4.3.2"
+  },
+  {
+    "objectID": "materials/08_regression.html#packages",
+    "href": "materials/08_regression.html#packages",
+    "title": "Prediction: More Regression",
+    "section": "Packages",
+    "text": "Packages\n\nIn Thursday’s lecture, we’ll use the modelr package which you can install with the following command:\n\n\ninstall.pacakges(\"modelr\")"
+  },
+  {
+    "objectID": "materials/08_regression.html#slides-and-code",
+    "href": "materials/08_regression.html#slides-and-code",
+    "title": "Prediction: More Regression",
+    "section": "Slides and Code",
+    "text": "Slides and Code\n\nTuesday (10/24) lecture: Model fit and multiple regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (10/26) lecture: Multiple regression and categorical independent variables\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+  },
+  {
+    "objectID": "materials/06_bivariate_tidying.html",
+    "href": "materials/06_bivariate_tidying.html",
+    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "section": "",
+    "text": "For summarizing relationships, see QSS 3.6 and MD 5.1.1.\nFor pivoting and tidy data, see MD Ch 4.\nFor more on joins, see the chapter 20 in R for Data Science."
+  },
+  {
+    "objectID": "materials/06_bivariate_tidying.html#readings",
+    "href": "materials/06_bivariate_tidying.html#readings",
+    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "section": "",
+    "text": "For summarizing relationships, see QSS 3.6 and MD 5.1.1.\nFor pivoting and tidy data, see MD Ch 4.\nFor more on joins, see the chapter 20 in R for Data Science."
+  },
+  {
+    "objectID": "materials/06_bivariate_tidying.html#data",
+    "href": "materials/06_bivariate_tidying.html#data",
+    "title": "Summarizing Relationships, Tidying and Joining Data",
     "section": "Data",
-    "text": "Data\n\nInstall the infer package to follow along:\n\n\ninstall.packages(\"infer\")\n\n\nReinstall the Gov 50 data package that has new data for this week:\n\n\nremotes::install_github(\"mattblackwell/gov50data\")\n\n\nCSV files for the data from this week if you cannot install the package:\n\ngov50_class_years.csv"
+    "text": "Data\n\nOn Thursday, We will also use data from the nycflights13 package that you can install with:\n\n\ninstall.packages(\"nycflights13\")"
   },
   {
-    "objectID": "materials/09_sampling.html#slides-and-code",
-    "href": "materials/09_sampling.html#slides-and-code",
-    "title": "Sampling",
+    "objectID": "materials/06_bivariate_tidying.html#slides-and-code",
+    "href": "materials/06_bivariate_tidying.html#slides-and-code",
+    "title": "Summarizing Relationships, Tidying and Joining Data",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (10/31) lecture: Sampling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/2) lecture: Sampling distributions\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (10/10) lecture: Summarizing relationships and writing our own functions\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture_11.Rmd\n\nThursday (10/12) lecture: Pivoting longer, joining data.\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture12.Rmd"
   },
   {
-    "objectID": "materials/07_prediction.html",
-    "href": "materials/07_prediction.html",
-    "title": "Prediction: Elections and Regression",
+    "objectID": "materials/04_causality.html",
+    "href": "materials/04_causality.html",
+    "title": "Causality and Pivoting",
     "section": "",
-    "text": "For prediction, see QSS 4.1 (you can skip 4.1.1)\nFor regression, see either MD Ch 5 or QSS 4.2 (you can skip 4.2.5)."
+    "text": "Chapter 2 of QSS"
   },
   {
-    "objectID": "materials/07_prediction.html#readings",
-    "href": "materials/07_prediction.html#readings",
-    "title": "Prediction: Elections and Regression",
+    "objectID": "materials/04_causality.html#readings",
+    "href": "materials/04_causality.html#readings",
+    "title": "Causality and Pivoting",
     "section": "",
-    "text": "For prediction, see QSS 4.1 (you can skip 4.1.1)\nFor regression, see either MD Ch 5 or QSS 4.2 (you can skip 4.2.5)."
+    "text": "Chapter 2 of QSS"
   },
   {
-    "objectID": "materials/07_prediction.html#data",
-    "href": "materials/07_prediction.html#data",
-    "title": "Prediction: Elections and Regression",
-    "section": "Data",
-    "text": "Data\n\nFor Thursday, you may want to install the broom package:\n\n\ninstall.packages(\"broom\")"
-  },
-  {
-    "objectID": "materials/07_prediction.html#slides-and-code",
-    "href": "materials/07_prediction.html#slides-and-code",
-    "title": "Prediction: Elections and Regression",
+    "objectID": "materials/04_causality.html#slides-and-code",
+    "href": "materials/04_causality.html#slides-and-code",
+    "title": "Causality and Pivoting",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (10/17) lecture: Midterm review and prediction\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nTuesday (10/19) lecture: Regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (9/26) lecture: Randomized Experiments\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture7.Rmd\n\nTuesday (9/28) lecture: Observational Studies\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture8.Rmd"
   },
   {
-    "objectID": "materials/05_measurement.html",
-    "href": "materials/05_measurement.html",
-    "title": "Measuring and Summarizing Data",
+    "objectID": "materials/02_r_data_viz.html",
+    "href": "materials/02_r_data_viz.html",
+    "title": "Data Visualization and Data Wrangling",
     "section": "",
-    "text": "Chapter 3 of QSS (though 3.6)"
+    "text": "Tuesday: Chapter 2 of Modern Dive\nThursday: Chapter 3 of Modern Dive\nFinish Problem Set 0"
   },
   {
-    "objectID": "materials/05_measurement.html#readings",
-    "href": "materials/05_measurement.html#readings",
-    "title": "Measuring and Summarizing Data",
+    "objectID": "materials/02_r_data_viz.html#readings",
+    "href": "materials/02_r_data_viz.html#readings",
+    "title": "Data Visualization and Data Wrangling",
     "section": "",
-    "text": "Chapter 3 of QSS (though 3.6)"
+    "text": "Tuesday: Chapter 2 of Modern Dive\nThursday: Chapter 3 of Modern Dive\nFinish Problem Set 0"
   },
   {
-    "objectID": "materials/05_measurement.html#slides-and-code",
-    "href": "materials/05_measurement.html#slides-and-code",
-    "title": "Measuring and Summarizing Data",
-    "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (10/3) lecture: Summarizing data\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture9.Rmd\n\nThursday (10/5) lecture: Survey Sampling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
-  },
-  {
-    "objectID": "materials/03_data_wrangling.html",
-    "href": "materials/03_data_wrangling.html",
-    "title": "Data Transformation and Causality",
-    "section": "",
-    "text": "Chapter 3 of Modern Dive\nChapter 2.1-2.2 of QSS"
-  },
-  {
-    "objectID": "materials/03_data_wrangling.html#readings",
-    "href": "materials/03_data_wrangling.html#readings",
-    "title": "Data Transformation and Causality",
-    "section": "",
-    "text": "Chapter 3 of Modern Dive\nChapter 2.1-2.2 of QSS"
-  },
-  {
-    "objectID": "materials/03_data_wrangling.html#data",
-    "href": "materials/03_data_wrangling.html#data",
-    "title": "Data Transformation and Causality",
+    "objectID": "materials/02_r_data_viz.html#data",
+    "href": "materials/02_r_data_viz.html#data",
+    "title": "Data Visualization and Data Wrangling",
     "section": "Data",
     "text": "Data\n\nInstall the Gov 50 data package that has new data for this week:\n\n\nremotes::install_github(\"mattblackwell/gov50data\")"
   },
   {
-    "objectID": "materials/03_data_wrangling.html#slides-and-code",
-    "href": "materials/03_data_wrangling.html#slides-and-code",
-    "title": "Data Transformation and Causality",
+    "objectID": "materials/02_r_data_viz.html#slides-and-code",
+    "href": "materials/02_r_data_viz.html#slides-and-code",
+    "title": "Data Visualization and Data Wrangling",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (9/19) lecture: Data Wrangling and Barplots\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture5.Rmd\n\nThursday (9/21) lecture: Causality\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture6.Rmd"
+    "text": "Slides and Code\n\nTuesday (9/12) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture3.Rmd\n\nThursday (9/14) lecture: Data Wrangling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture4.Rmd"
   },
   {
-    "objectID": "materials/01_intro.html",
-    "href": "materials/01_intro.html",
-    "title": "Introduction to Gov 50",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\n            Data Science for the Social Sciences\n        ",
     "section": "",
-    "text": "The syllabus and schedule pages.\nReview and try to start Problem Set 0"
+    "text": "Learning to use data to explore the social, political, and economic world\n        \n        \n            Gov 50 • Fall 2026Harvard University\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n Dr. Sam Fuller\n CGIS Knafel 428\n sfuller@fas.harvard.edu\n Schedule an appointment\n\n\n\nCourse details\n\n Mon/Wed\n September 2nd-December 18th, 2026\n 3:00–4:15 PM\n Emerson 105\n Study Hall Schedule\n Office Hours Schedule\n Gov 50 Google Calendar\n\n\n\nContacting the teaching staff\nGeneral questions should be posted to either the course or your section Ed Discussion Board. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don’t respond right away don’t worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email."
   },
   {
-    "objectID": "materials/01_intro.html#readings",
-    "href": "materials/01_intro.html#readings",
-    "title": "Introduction to Gov 50",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "The syllabus and schedule pages.\nReview and try to start Problem Set 0"
-  },
-  {
-    "objectID": "materials/01_intro.html#code",
-    "href": "materials/01_intro.html#code",
-    "title": "Introduction to Gov 50",
-    "section": "Code",
-    "text": "Code\nTo follow along with the visualization material on Thursday, run the following code at the R Console in RStudio:\n\ninstall.packages(\"gapminder\", repos = \"http://cran.rstudio.com\")"
-  },
-  {
-    "objectID": "materials/01_intro.html#slides",
-    "href": "materials/01_intro.html#slides",
-    "title": "Introduction to Gov 50",
-    "section": "Slides",
-    "text": "Slides\n\nTuesday (9/5) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (9/7) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture2.Rmd"
+    "text": "About this site"
   },
   {
     "objectID": "assignments.html",
@@ -609,186 +609,186 @@
     "text": "Class 2 (11/02/2026)\n\nReadings:\n\nSection 20.1 from Chapter 20: Regression Discontinuity from The Effect\nHoekstra (2009)\n\n\n\nWarmup Questions:\n\n\nHomework Questions:"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "materials/01_intro.html",
+    "href": "materials/01_intro.html",
+    "title": "Introduction to Gov 50",
     "section": "",
-    "text": "About this site"
+    "text": "The syllabus and schedule pages.\nReview and try to start Problem Set 0"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\n            Data Science for the Social Sciences\n        ",
+    "objectID": "materials/01_intro.html#readings",
+    "href": "materials/01_intro.html#readings",
+    "title": "Introduction to Gov 50",
     "section": "",
-    "text": "Learning to use data to explore the social, political, and economic world\n        \n        \n            Gov 50 • Fall 2026Harvard University\n        \n    \n    \n      \n        \n        \n        \n      \n    \n\n\n\n\n\nInstructor\n\n Dr. Sam Fuller\n CGIS Knafel 428\n sfuller@fas.harvard.edu\n Schedule an appointment\n\n\n\nCourse details\n\n Mon/Wed\n September 2nd-December 18th, 2026\n 3:00–4:15 PM\n Emerson 105\n Slack\n Study Hall Schedule\n Office Hours Schedule\n Gov 50 Google Calendar\n\n\n\nContacting the teaching staff\nGeneral questions should be posted to either the course or your section Slack channel. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don’t respond right away don’t worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email or Slack."
+    "text": "The syllabus and schedule pages.\nReview and try to start Problem Set 0"
   },
   {
-    "objectID": "materials/02_r_data_viz.html",
-    "href": "materials/02_r_data_viz.html",
-    "title": "Data Visualization and Data Wrangling",
-    "section": "",
-    "text": "Tuesday: Chapter 2 of Modern Dive\nThursday: Chapter 3 of Modern Dive\nFinish Problem Set 0"
+    "objectID": "materials/01_intro.html#code",
+    "href": "materials/01_intro.html#code",
+    "title": "Introduction to Gov 50",
+    "section": "Code",
+    "text": "Code\nTo follow along with the visualization material on Thursday, run the following code at the R Console in RStudio:\n\ninstall.packages(\"gapminder\", repos = \"http://cran.rstudio.com\")"
   },
   {
-    "objectID": "materials/02_r_data_viz.html#readings",
-    "href": "materials/02_r_data_viz.html#readings",
-    "title": "Data Visualization and Data Wrangling",
-    "section": "",
-    "text": "Tuesday: Chapter 2 of Modern Dive\nThursday: Chapter 3 of Modern Dive\nFinish Problem Set 0"
+    "objectID": "materials/01_intro.html#slides",
+    "href": "materials/01_intro.html#slides",
+    "title": "Introduction to Gov 50",
+    "section": "Slides",
+    "text": "Slides\n\nTuesday (9/5) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (9/7) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture2.Rmd"
   },
   {
-    "objectID": "materials/02_r_data_viz.html#data",
-    "href": "materials/02_r_data_viz.html#data",
-    "title": "Data Visualization and Data Wrangling",
+    "objectID": "materials/03_data_wrangling.html",
+    "href": "materials/03_data_wrangling.html",
+    "title": "Data Transformation and Causality",
+    "section": "",
+    "text": "Chapter 3 of Modern Dive\nChapter 2.1-2.2 of QSS"
+  },
+  {
+    "objectID": "materials/03_data_wrangling.html#readings",
+    "href": "materials/03_data_wrangling.html#readings",
+    "title": "Data Transformation and Causality",
+    "section": "",
+    "text": "Chapter 3 of Modern Dive\nChapter 2.1-2.2 of QSS"
+  },
+  {
+    "objectID": "materials/03_data_wrangling.html#data",
+    "href": "materials/03_data_wrangling.html#data",
+    "title": "Data Transformation and Causality",
     "section": "Data",
     "text": "Data\n\nInstall the Gov 50 data package that has new data for this week:\n\n\nremotes::install_github(\"mattblackwell/gov50data\")"
   },
   {
-    "objectID": "materials/02_r_data_viz.html#slides-and-code",
-    "href": "materials/02_r_data_viz.html#slides-and-code",
-    "title": "Data Visualization and Data Wrangling",
+    "objectID": "materials/03_data_wrangling.html#slides-and-code",
+    "href": "materials/03_data_wrangling.html#slides-and-code",
+    "title": "Data Transformation and Causality",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (9/12) lecture:\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture3.Rmd\n\nThursday (9/14) lecture: Data Wrangling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture4.Rmd"
+    "text": "Slides and Code\n\nTuesday (9/19) lecture: Data Wrangling and Barplots\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture5.Rmd\n\nThursday (9/21) lecture: Causality\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture6.Rmd"
   },
   {
-    "objectID": "materials/04_causality.html",
-    "href": "materials/04_causality.html",
-    "title": "Causality and Pivoting",
+    "objectID": "materials/05_measurement.html",
+    "href": "materials/05_measurement.html",
+    "title": "Measuring and Summarizing Data",
     "section": "",
-    "text": "Chapter 2 of QSS"
+    "text": "Chapter 3 of QSS (though 3.6)"
   },
   {
-    "objectID": "materials/04_causality.html#readings",
-    "href": "materials/04_causality.html#readings",
-    "title": "Causality and Pivoting",
+    "objectID": "materials/05_measurement.html#readings",
+    "href": "materials/05_measurement.html#readings",
+    "title": "Measuring and Summarizing Data",
     "section": "",
-    "text": "Chapter 2 of QSS"
+    "text": "Chapter 3 of QSS (though 3.6)"
   },
   {
-    "objectID": "materials/04_causality.html#slides-and-code",
-    "href": "materials/04_causality.html#slides-and-code",
-    "title": "Causality and Pivoting",
+    "objectID": "materials/05_measurement.html#slides-and-code",
+    "href": "materials/05_measurement.html#slides-and-code",
+    "title": "Measuring and Summarizing Data",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (9/26) lecture: Randomized Experiments\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture7.Rmd\n\nTuesday (9/28) lecture: Observational Studies\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture8.Rmd"
+    "text": "Slides and Code\n\nTuesday (10/3) lecture: Summarizing data\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture9.Rmd\n\nThursday (10/5) lecture: Survey Sampling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/06_bivariate_tidying.html",
-    "href": "materials/06_bivariate_tidying.html",
-    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "objectID": "materials/07_prediction.html",
+    "href": "materials/07_prediction.html",
+    "title": "Prediction: Elections and Regression",
     "section": "",
-    "text": "For summarizing relationships, see QSS 3.6 and MD 5.1.1.\nFor pivoting and tidy data, see MD Ch 4.\nFor more on joins, see the chapter 20 in R for Data Science."
+    "text": "For prediction, see QSS 4.1 (you can skip 4.1.1)\nFor regression, see either MD Ch 5 or QSS 4.2 (you can skip 4.2.5)."
   },
   {
-    "objectID": "materials/06_bivariate_tidying.html#readings",
-    "href": "materials/06_bivariate_tidying.html#readings",
-    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "objectID": "materials/07_prediction.html#readings",
+    "href": "materials/07_prediction.html#readings",
+    "title": "Prediction: Elections and Regression",
     "section": "",
-    "text": "For summarizing relationships, see QSS 3.6 and MD 5.1.1.\nFor pivoting and tidy data, see MD Ch 4.\nFor more on joins, see the chapter 20 in R for Data Science."
+    "text": "For prediction, see QSS 4.1 (you can skip 4.1.1)\nFor regression, see either MD Ch 5 or QSS 4.2 (you can skip 4.2.5)."
   },
   {
-    "objectID": "materials/06_bivariate_tidying.html#data",
-    "href": "materials/06_bivariate_tidying.html#data",
-    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "objectID": "materials/07_prediction.html#data",
+    "href": "materials/07_prediction.html#data",
+    "title": "Prediction: Elections and Regression",
     "section": "Data",
-    "text": "Data\n\nOn Thursday, We will also use data from the nycflights13 package that you can install with:\n\n\ninstall.packages(\"nycflights13\")"
+    "text": "Data\n\nFor Thursday, you may want to install the broom package:\n\n\ninstall.packages(\"broom\")"
   },
   {
-    "objectID": "materials/06_bivariate_tidying.html#slides-and-code",
-    "href": "materials/06_bivariate_tidying.html#slides-and-code",
-    "title": "Summarizing Relationships, Tidying and Joining Data",
+    "objectID": "materials/07_prediction.html#slides-and-code",
+    "href": "materials/07_prediction.html#slides-and-code",
+    "title": "Prediction: Elections and Regression",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (10/10) lecture: Summarizing relationships and writing our own functions\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture_11.Rmd\n\nThursday (10/12) lecture: Pivoting longer, joining data.\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\nCode: lecture12.Rmd"
+    "text": "Slides and Code\n\nTuesday (10/17) lecture: Midterm review and prediction\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nTuesday (10/19) lecture: Regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/08_regression.html",
-    "href": "materials/08_regression.html",
-    "title": "Prediction: More Regression",
+    "objectID": "materials/09_sampling.html",
+    "href": "materials/09_sampling.html",
+    "title": "Sampling",
     "section": "",
-    "text": "For model fit, see QSS 4.2.6 or IMS 7.2.5\nFor multiple regression, IMS 8.1-8.3, MD 6.1-6.2, or QSS 4.3.1-4.3.2"
+    "text": "MD Ch 7"
   },
   {
-    "objectID": "materials/08_regression.html#readings",
-    "href": "materials/08_regression.html#readings",
-    "title": "Prediction: More Regression",
+    "objectID": "materials/09_sampling.html#readings",
+    "href": "materials/09_sampling.html#readings",
+    "title": "Sampling",
     "section": "",
-    "text": "For model fit, see QSS 4.2.6 or IMS 7.2.5\nFor multiple regression, IMS 8.1-8.3, MD 6.1-6.2, or QSS 4.3.1-4.3.2"
+    "text": "MD Ch 7"
   },
   {
-    "objectID": "materials/08_regression.html#packages",
-    "href": "materials/08_regression.html#packages",
-    "title": "Prediction: More Regression",
-    "section": "Packages",
-    "text": "Packages\n\nIn Thursday’s lecture, we’ll use the modelr package which you can install with the following command:\n\n\ninstall.pacakges(\"modelr\")"
+    "objectID": "materials/09_sampling.html#data",
+    "href": "materials/09_sampling.html#data",
+    "title": "Sampling",
+    "section": "Data",
+    "text": "Data\n\nInstall the infer package to follow along:\n\n\ninstall.packages(\"infer\")\n\n\nReinstall the Gov 50 data package that has new data for this week:\n\n\nremotes::install_github(\"mattblackwell/gov50data\")\n\n\nCSV files for the data from this week if you cannot install the package:\n\ngov50_class_years.csv"
   },
   {
-    "objectID": "materials/08_regression.html#slides-and-code",
-    "href": "materials/08_regression.html#slides-and-code",
-    "title": "Prediction: More Regression",
+    "objectID": "materials/09_sampling.html#slides-and-code",
+    "href": "materials/09_sampling.html#slides-and-code",
+    "title": "Sampling",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (10/24) lecture: Model fit and multiple regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (10/26) lecture: Multiple regression and categorical independent variables\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (10/31) lecture: Sampling\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/2) lecture: Sampling distributions\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/10_bootstrap.html",
-    "href": "materials/10_bootstrap.html",
-    "title": "The Bootstrap and Confidence Intervals",
+    "objectID": "materials/11_hyp_tests.html",
+    "href": "materials/11_hyp_tests.html",
+    "title": "Hypothesis Tests",
     "section": "",
-    "text": "MD Ch 8, IMS Ch 12 for another take."
+    "text": "MD Ch 9, IMS Ch 11 for another take."
   },
   {
-    "objectID": "materials/10_bootstrap.html#readings",
-    "href": "materials/10_bootstrap.html#readings",
-    "title": "The Bootstrap and Confidence Intervals",
+    "objectID": "materials/11_hyp_tests.html#readings",
+    "href": "materials/11_hyp_tests.html#readings",
+    "title": "Hypothesis Tests",
     "section": "",
-    "text": "MD Ch 8, IMS Ch 12 for another take."
+    "text": "MD Ch 9, IMS Ch 11 for another take."
   },
   {
-    "objectID": "materials/10_bootstrap.html#slides-and-code",
-    "href": "materials/10_bootstrap.html#slides-and-code",
-    "title": "The Bootstrap and Confidence Intervals",
+    "objectID": "materials/11_hyp_tests.html#slides-and-code",
+    "href": "materials/11_hyp_tests.html#slides-and-code",
+    "title": "Hypothesis Tests",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (11/7) lecture: The Bootstrap\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/9) lecture: More Confidence Intervals\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (11/14) lecture: Hypothesis tests\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nThursday (11/16) lecture: More hypothesis tests\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/12_tests_models.html",
-    "href": "materials/12_tests_models.html",
-    "title": "Mathematical Models of Inference",
+    "objectID": "materials/13_models.html",
+    "href": "materials/13_models.html",
+    "title": "More Mathematical Models",
     "section": "",
-    "text": "IMS Ch 13 for Thursday."
+    "text": "IMS Ch 15, 16."
   },
   {
-    "objectID": "materials/12_tests_models.html#readings",
-    "href": "materials/12_tests_models.html#readings",
-    "title": "Mathematical Models of Inference",
+    "objectID": "materials/13_models.html#readings",
+    "href": "materials/13_models.html#readings",
+    "title": "More Mathematical Models",
     "section": "",
-    "text": "IMS Ch 13 for Thursday."
+    "text": "IMS Ch 15, 16."
   },
   {
-    "objectID": "materials/12_tests_models.html#slides-and-code",
-    "href": "materials/12_tests_models.html#slides-and-code",
-    "title": "Mathematical Models of Inference",
+    "objectID": "materials/13_models.html#slides-and-code",
+    "href": "materials/13_models.html#slides-and-code",
+    "title": "More Mathematical Models",
     "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (11/28) lecture: Mathematical models for inference\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)\n\nTuesday (11/30) lecture: Math models for hypothesis testing and difference in means\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Slides and Code\n\nTuesday (11/22) lecture: Math models for hypothesis testing and difference in means\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
   },
   {
-    "objectID": "materials/14_ols_inference.html",
-    "href": "materials/14_ols_inference.html",
-    "title": "Inference with Linear Regression",
+    "objectID": "materials/index.html",
+    "href": "materials/index.html",
+    "title": "Readings, lectures, and videos",
     "section": "",
-    "text": "QSS 7.3 and/or IMS Ch 24."
-  },
-  {
-    "objectID": "materials/14_ols_inference.html#readings",
-    "href": "materials/14_ols_inference.html#readings",
-    "title": "Inference with Linear Regression",
-    "section": "",
-    "text": "QSS 7.3 and/or IMS Ch 24."
-  },
-  {
-    "objectID": "materials/14_ols_inference.html#slides-and-code",
-    "href": "materials/14_ols_inference.html#slides-and-code",
-    "title": "Inference with Linear Regression",
-    "section": "Slides and Code",
-    "text": "Slides and Code\n\nTuesday (12/5) lecture: Inference with Linear Regression\n\nPDF of slides as I present them\nPDF of handout version of slides (no incremental slides)"
+    "text": "Each class session has a set of required readings that you should complete before attempting the tutorials.\n\nCourse Introduction\nIntroduction to R and RStudio\nData Visualization\nData Wrangling\nData Wrangling and Barplots\nCausality\nRandomized Experiments\nObservational Studies\nSummarizing Data\nSurvey Sampling\nBivariate Relationships and Functions\nJoining and Tidying Data\nMidterm Review and Prediction\nRegression\nModel Fit\nMultiple Regression and Categorical Predictors\nSampling\nSampling Distributions\nThe Bootstrap\nMore Confidence Intervals\nHypothesis Testing\nTwo-sample Hypothesis Testing\nMathematical Models of Inference\nMathematical Models for Hypothesis Testing\nInference for Linear Regression"
   },
   {
     "objectID": "resources.html",
@@ -824,13 +824,6 @@
     "title": "Resources",
     "section": "Git and GitHub Resources",
     "text": "Git and GitHub Resources\n\nHappy Git with R"
-  },
-  {
-    "objectID": "resources/office-hours.html",
-    "href": "resources/office-hours.html",
-    "title": "Office House Schedule",
-    "section": "",
-    "text": "For the latest schedule, including changes to the schedule, please check Ed or the Gov 50 Google calendar.\n\n\n\n\nName\n\n\nDay\n\n\nStart Time\n\n\nEnd Time\n\n\nLocation\n\n\n\n\n\n\nAhmet Akbiyik\n\n\nThursday\n\n\n7:00 PM\n\n\n8:00 PM\n\n\nDunster House Dining Hall\n\n\n\n\nAda Cruz\n\n\nFriday\n\n\n10:00 AM\n\n\n12:00 PM\n\n\nEliot Dhall\n\n\n\n\nEthan Miles\n\n\nFriday\n\n\n2:00 PM\n\n\n3:00 PM\n\n\nCGIS K Café\n\n\n\n\nJerry Min\n\n\nFriday\n\n\n5:00:00 PM\n\n\n6:00 PM\n\n\nCGIS K Café\n\n\n\n\nShriya Yarlagadda\n\n\nSunday\n\n\n8:00 PM\n\n\n9:00 PM\n\n\nLowell DHall\n\n\n\n\nAndy Wang\n\n\nMonday\n\n\n3:00 PM\n\n\n4:00 PM\n\n\nFairfax Common Room\n\n\n\n\nKatherine Jackson\n\n\nMonday\n\n\n5:00 PM\n\n\n7:00 PM\n\n\nPfoho Dhall - 2nd Floor\n\n\n\n\nJulio Solis\n\n\nTuesday\n\n\n1:15 PM\n\n\n2:15 PM\n\n\nEmerson Hall\n\n\n\n\nJames Jolin\n\n\nTuesday\n\n\n4:00 PM\n\n\n5:00 PM\n\n\nCGIS K Café\n\n\n\n\nPranav Moudgalya\n\n\nTuesday\n\n\n8:00 PM\n\n\n9:00 PM\n\n\nLeverett Dining Hall\n\n\n\n\nChris Shen\n\n\nWednesday\n\n\n9:00 PM\n\n\n10:00 PM\n\n\nQuincy Dining Hall"
   },
   {
     "objectID": "resources/study-halls.html",

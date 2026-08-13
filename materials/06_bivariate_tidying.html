@@ -143,6 +143,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Staff</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../office_hours.qmd"> 
+<span class="menu-text">Office Hours &amp; Study Halls</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
@@ -322,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/samjfuller\.github\.io\/gov50-f26\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/samjfuller\.github\.io\/gov50-f26\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
