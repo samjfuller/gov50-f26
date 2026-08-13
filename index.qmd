@@ -34,9 +34,8 @@ course-logo: /files/img/gov50-icon-512.png
 - {{< fa calendar-alt >}}  {{< var course.dates >}}
 - {{< fa clock >}}  {{< var course.time >}}
 - {{< fa location-dot >}}  {{< var course.location >}}
-- {{< fa wrench >}}  [Study Hall Schedule](resources/study-halls.qmd)
-- {{< fa person-circle-question >}}  [Office Hours Schedule](resources/office-hours.qmd)
-- {{< fa calendar >}}  [Gov 50 Google Calendar](https://tinyurl.com/gov50calendar)
+- {{< fa calendar >}}  [Office Hours and Study Hall Schedule](resources/office-hours_study-halls.qmd)
+- {{< fa calendar-alt >}}  [Gov 50 Google Calendar](https://tinyurl.com/gov50calendar)
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}

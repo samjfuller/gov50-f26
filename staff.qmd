@@ -1,4 +1,11 @@
-# Course Staff
+---
+title: "Course Staff"
+slug: staff
+summary: "Staff teaching Gov 50 in Fall 2026."
+toc: false
+sidebar: false
+page-layout: full
+---
 
 
 
