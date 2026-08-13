@@ -11,7 +11,7 @@ website:
   favicon: "files/img/gov50-icon-512.png"
   navbar:
     pinned: true
-    background: "#3498db"
+    background: "#0F3040"
     right:
       - syllabus.qmd
       - schedule.qmd
@@ -23,14 +23,14 @@ website:
         file: assignments/index.qmd
       - text: "Resources"
         file: resources/index.qmd
+      - text: "Canvas"
+        href: https://canvas.harvard.edu/courses/172106
       - text: "Ed"
-        href: https://edstem.org/us/courses/43339/discussion/
-      - text: "Gradescope"
-        href: https://www.gradescope.com/courses/544769
+        href: https://edstem.org/us/courses/101357/discussion
 
   sidebar:
     - title: "Materials"
-      style: "docked"
+      style: "floating"
       search: false
       background: dark
       contents:
@@ -67,9 +67,9 @@ website:
             #   file: materials/13_models.qmd
             - text: "14: Inference for Regression"
               file: materials/14_ols_inference.qmd
-              
+
     - title: "Assignments"
-      style: "docked"
+      style: "floating"
       search: false
       background: dark
       contents:
@@ -93,18 +93,22 @@ website:
             - text: "Problem Set 5"
               file: assignments/05_hw_regression.qmd
             - text: "Problem Set 6"
-              file: assignments/06_hw_sampling.qmd              
+              file: assignments/06_hw_sampling.qmd
             - text: "Problem Set 7"
-              file: assignments/07_hw_bootstrap.qmd              
+              file: assignments/07_hw_bootstrap.qmd
             - text: "Problem Set 8"
-              file: assignments/08_hw_hyp_tests.qmd              
+              file: assignments/08_hw_hyp_tests.qmd
 
 format:
   html:
     theme:
       - litera
       - html/custom.scss
+    highlight-style: github-dark
+    page-layout: full
     toc: true
+    toc-location: left
+    reference-location: margin
 
 execute:
   freeze: auto

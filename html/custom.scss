@@ -1,42 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
 
 /*-- scss:defaults --*/
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #ddd !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+// Deep blue, slate, terracotta, and peach course palette.
+$deep-blue:  #0f3040;
+$slate:      #464858;
+$terracotta: #a56f63;
+$peach:      #d99b7f;
 
-// Inferno colors
-// viridisLite::viridis(8, option = "inferno", begin = 0.1, end = 0.9)
-$blue:    #42159D !default;
-$indigo:  #771C6D !default;
-$purple:  #480B6A !default;
-$pink:    #A52C60 !default;
-$red:     #CF4446 !default;
-$orange:  #EE6A24 !default;
-$yellow:  #FB9E07 !default;
-$green:   #02b875 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$white:    #f8f3f1 !default;
+$gray-100: #f0e6e2 !default;
+$gray-200: #e2d2cd !default;
+$gray-300: #cdbab6 !default;
+$gray-400: #b2a7a8 !default;
+$gray-500: #8c8790 !default;
+$gray-600: #696978 !default;
+$gray-700: $slate !default;
+$gray-800: #223d4a !default;
+$gray-900: $deep-blue !default;
+$black:    #081b24 !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-500 !default;
+$blue:    $deep-blue !default;
+$indigo:  $slate !default;
+$purple:  #725b64 !default;
+$pink:    $terracotta !default;
+$red:     $terracotta !default;
+$orange:  $peach !default;
+$yellow:  #e8b69f !default;
+$green:   #86a394 !default;
+$teal:    $peach !default;
+$cyan:    #9ab7bf !default;
+
+$primary:       $teal !default;
+$secondary:     $gray-300 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $gray-900 !default;
 
-$font-family-sans-serif:      Fira Sans Condensed, sans-serif !default;
-$font-family-serif:           Barlow, serif !default;  /* Not actually a serif font but whatever */
+$body-bg:       $deep-blue !default;
+$body-color:    #f4ece9 !default;
+$border-color:  #536775 !default;
+$code-color:    #efb89f !default;
+
+$font-family-sans-serif:      "Atkinson Hyperlegible Next", sans-serif !default;
+$font-family-serif:           "Atkinson Hyperlegible Next", sans-serif !default;
+$font-family-monospace:       "Atkinson Hyperlegible Mono", monospace !default;
+$headings-font-family:        "Atkinson Hyperlegible Next", sans-serif !default;
 
 $font-size-base:              1.25rem !default;
 $headings-font-weight:        700 !default;
@@ -52,15 +63,59 @@ $toc-font-size: 1.1rem;
 $sidebar-font-size: 1.1rem;
 $sidebar-font-size-section: 0.9rem;
 
-$link-color: $red;
+$link-color: $teal;
 $link-hover-color: $yellow;
 
-$monokai-bg: #2e3440;
+$monokai-bg: #092530;
+$surface: #193946;
+$surface-raised: $slate;
+$surface-soft: #2b4550;
+$muted-text: #cbbdb9;
+$accent: $teal;
+$accent-warm: $yellow;
+$accent-coral: $red;
 
 
 /*-- scss:rules --*/
+:root {
+  color-scheme: dark;
+  --gov50-bg: #0f3040;
+  --gov50-surface: #193946;
+  --gov50-surface-raised: #464858;
+  --gov50-surface-soft: #2b4550;
+  --gov50-text: #f4ece9;
+  --gov50-muted: #cbbdb9;
+  --gov50-border: rgba(217, 155, 127, 0.22);
+  --gov50-accent: #d99b7f;
+  --gov50-accent-warm: #e8b69f;
+  --gov50-accent-coral: #a56f63;
+  --gov50-shadow: rgba(0, 0, 0, 0.28);
+}
+
+body {
+  background: $body-bg;
+  line-height: 1.65;
+}
+
+::selection {
+  background: rgba(165, 111, 99, 0.52);
+  color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $white;
+  letter-spacing: -0.012em;
+}
+
 h2 {
-  border-bottom: none;
+  margin-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(217, 155, 127, 0.38);
 }
 
 ul,
@@ -68,17 +123,139 @@ ol {
   font-family: $font-family-serif;
 }
 
+a {
+  text-decoration-thickness: 0.075em;
+  text-underline-offset: 0.2em;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease;
+}
+
+a:hover {
+  text-decoration-color: rgba(165, 111, 99, 0.85);
+}
+
+hr {
+  border-color: var(--gov50-border);
+  opacity: 1;
+}
+
+// Navbar
+.navbar {
+  background: rgba(15, 48, 64, 0.97) !important;
+  border-bottom: 1px solid var(--gov50-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(14px);
+}
+
+.navbar-brand,
+.navbar-title,
+.navbar-nav .nav-link {
+  color: $gray-100 !important;
+}
+
+.navbar-brand,
+.navbar-title {
+  font-weight: 700;
+  letter-spacing: 0.015em;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: $accent !important;
+}
+
+.navbar-toggler,
+.navbar .quarto-navbar-tools .quarto-navigation-tool {
+  color: $gray-100;
+  border-color: var(--gov50-border);
+}
+
+// Side navigation and page TOC
+#quarto-sidebar,
+.sidebar {
+  background: $surface;
+  border-color: var(--gov50-border);
+}
+
+// Fill the space around the centered article with the sidebar color.
+#quarto-content {
+  background: $surface;
+}
+
+#quarto-content > main.content {
+  background: $surface;
+}
+
+.sidebar-title,
+.sidebar-navigation .sidebar-section .sidebar-section-item,
+.sidebar-navigation .sidebar-item .sidebar-item-text {
+  color: $gray-200;
+}
+
+.sidebar-navigation .sidebar-item a:hover .sidebar-item-text,
+.sidebar-navigation .sidebar-item a:focus .sidebar-item-text,
+.sidebar-navigation .sidebar-item a.active .sidebar-item-text {
+  color: $accent;
+}
+
+.sidebar-navigation .sidebar-item a.active {
+  border-left-color: $accent;
+}
+
+.sidebar nav[role="doc-toc"] > ul li a {
+  color: $muted-text;
+  border-left-color: var(--gov50-border);
+}
+
+.sidebar nav[role="doc-toc"] > ul li a:hover,
+.sidebar nav[role="doc-toc"] > ul li a.active {
+  color: $accent;
+  border-left-color: $accent;
+}
+
+#toc-title {
+  color: $gray-200;
+}
+
 // Home page stuff
 .title-block {
-  margin: 1em 0;
-  border-bottom: 3px solid $gray-200;
-  padding-bottom: 1em;
+  position: relative;
+  overflow: hidden;
+  margin: 1.5rem 0 2rem;
+  padding: clamp(1.3rem, 3vw, 2.5rem);
+  border: 1px solid var(--gov50-border);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(120deg, rgba(217, 155, 127, 0.14), transparent 48%),
+    $surface;
+  box-shadow: 0 18px 55px var(--gov50-shadow);
+}
+
+.title-block::after {
+  position: absolute;
+  right: -5rem;
+  bottom: -7rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: rgba(165, 111, 99, 0.14);
+  content: "";
+  pointer-events: none;
 }
 
 .course-details {
-  margin: 0 0 1em;
-  border-bottom: 3px solid $gray-200;
-  padding-bottom: 1em;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.course-details > [class*="g-col-"] {
+  padding: 1.15rem;
+  border: 1px solid var(--gov50-border);
+  border-radius: 0.6rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent), $surface;
 }
 
 .course-details h3 {
@@ -86,17 +263,26 @@ ol {
 }
 
 .course-title {
-  font-size: 3.6rem;
+  max-width: 13ch;
+  font-size: clamp(2.6rem, 6vw, 4.35rem);
+  line-height: 0.98;
   margin-top: 0;
 }
 
 .course-subtitle {
-  font-size: 1.7rem;
+  max-width: 38ch;
+  color: $gray-200;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.35;
 }
 
 .course-meta {
   font-size: 1.2rem;
-  color: $gray-600;
+  color: $accent-warm;
+}
+
+.title-block img {
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.32));
 }
 
 .course-details ul {
@@ -120,6 +306,12 @@ ol {
 
 
 // Footer stuff
+.page-footer {
+  color: $muted-text;
+  border-top: 1px solid var(--gov50-border);
+  background: $gray-900;
+}
+
 .nav-footer-left {
   text-align: left;
 }
@@ -142,7 +334,7 @@ ol {
 .schedule-page h3 {
   text-align: center;
   margin-top: 3rem;
-  border-bottom: 3px solid $orange;
+  border-bottom: 3px solid $accent-warm;
   padding-bottom: 0.5rem;
 }
 
@@ -160,10 +352,10 @@ ol {
 
 .news .quarto-title-meta {
   font-size: 1.1rem;
-  border-left: 5px solid $orange;
+  border-left: 5px solid $accent-warm;
   padding: 0 0.5rem 1rem;
   margin: 1rem 0 2.5rem;
-  background-color: lighten($orange, 40%);
+  background-color: rgba(165, 111, 99, 0.14);
 }
 
 .news .quarto-categories {
@@ -178,16 +370,157 @@ ol {
 }
 
 .bg-content {
-  background-color: $pink;
+  background-color: $accent;
+  color: $black;
 }
 
 .bg-assignment {
-  background-color: $red;
+  background-color: $accent-coral;
+  color: #000;
 }
 
 // Slightly larger buttons
 p a.btn, .buttons span.btn {
   font-size: 1.2rem;
+}
+
+.btn-primary {
+  color: $black;
+  font-weight: 700;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: $black;
+  background-color: $accent-warm;
+  border-color: $accent-warm;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: $black;
+}
+
+// Reusable surfaces
+.card,
+.list-group-item,
+.dropdown-menu,
+.popover,
+.modal-content,
+.accordion-item,
+.accordion-button,
+.tab-content {
+  color: $body-color;
+  border-color: var(--gov50-border);
+  background-color: $surface;
+}
+
+.dropdown-item {
+  color: $gray-200;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item.active {
+  color: $white;
+  background-color: $surface-soft;
+}
+
+.nav-tabs {
+  border-bottom-color: var(--gov50-border);
+}
+
+.nav-tabs .nav-link {
+  color: $muted-text;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active {
+  color: $accent;
+  border-color: var(--gov50-border);
+  background-color: $surface;
+}
+
+blockquote,
+.blockquote {
+  padding: 0.25rem 0 0.25rem 1rem;
+  color: $gray-200;
+  border-left: 3px solid $accent-warm;
+}
+
+// Tables, including the generated semester schedule
+.table,
+table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #{$body-color};
+  --bs-table-border-color: #{$border-color};
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.025);
+  --bs-table-striped-color: #{$body-color};
+  color: $body-color;
+  border-color: $border-color;
+}
+
+.table > thead,
+table > thead {
+  color: $white;
+  background-color: $surface-raised;
+}
+
+.table > :not(caption) > * > *,
+table > :not(caption) > * > * {
+  border-bottom-color: $border-color;
+  background-color: transparent;
+}
+
+.schedule-table tbody tr:hover > td {
+  background-color: rgba(217, 155, 127, 0.08);
+}
+
+.schedule-table tr[grouplength] > td {
+  color: $accent-warm !important;
+  border-bottom: 2px solid rgba(217, 155, 127, 0.65) !important;
+  background-color: $surface-raised !important;
+}
+
+.schedule-table font[color="#e9ecef"] {
+  color: $gray-600 !important;
+}
+
+// Quarto callouts
+.callout.callout-style-default {
+  border-color: var(--gov50-border);
+  background-color: $surface;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.callout.callout-style-default > .callout-header {
+  background-color: rgba(255, 255, 255, 0.025);
+}
+
+.callout.callout-style-default .callout-body,
+.callout.callout-style-default .callout-title-container {
+  color: $body-color;
+}
+
+.quarto-title-meta,
+.quarto-title-meta-contents,
+.quarto-title-meta-heading,
+.description,
+.subtitle,
+.abstract {
+  color: $muted-text;
+}
+
+.quarto-title-banner {
+  color: $body-color;
+  border-bottom: 1px solid var(--gov50-border);
+  background: $surface;
+}
+
+.quarto-category {
+  color: $accent !important;
+  border-color: rgba(217, 155, 127, 0.55) !important;
 }
 
 main {
@@ -252,6 +585,30 @@ main {
 
 
 // Code stuff
+code:not(.sourceCode) {
+  padding: 0.12em 0.32em;
+  border: 1px solid var(--gov50-border);
+  border-radius: 0.25rem;
+  background-color: $surface-raised;
+}
+
+div.sourceCode,
+pre.sourceCode {
+  border-color: var(--gov50-border);
+  border-radius: 0.4rem;
+  background-color: $monokai-bg;
+}
+
+.code-copy-button {
+  color: $muted-text;
+}
+
+.code-copy-button:hover,
+.code-copy-button:focus {
+  color: $accent;
+  background-color: $surface-soft;
+}
+
 // Shrink blocks of code
 pre.text, pre.sourceCode, .cell-output pre {
   font-size: 0.775em;
@@ -270,11 +627,10 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 // Format output and plain text blocks like code
 .cell-output, pre.text {
-  border: none;
   padding: .4em;
+  border: 1px solid var(--gov50-border);
+  border-radius: .4rem;
   background-color: $monokai-bg;
-  border: 1px solid $monokai-bg;
-  border-radius: .25rem;
 }
 
 pre.text {
@@ -282,7 +638,23 @@ pre.text {
 }
 
 .staff img {
+  border: 2px solid rgba(217, 155, 127, 0.45);
   border-radius: 50%;
   width: 200px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width: 767.98px) {
+  .title-block {
+    margin-top: 0.75rem;
+  }
+
+  .course-title {
+    max-width: none;
+  }
+
+  .course-details {
+    gap: 0.75rem;
+  }
 }
 

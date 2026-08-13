@@ -8,259 +8,393 @@ output:
       toc: TRUE
 ---
 
-
-
-
-::: {.grid .course-details .course-details-smaller}
-
-::: {.g-col-6}
+::::: {.grid .course-details .course-details-smaller}
+::: g-col-6
 ### Instructor
 
-- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
-- {{< fa university >}} &nbsp; {{< var instructor.office >}}
-- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
-- {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
-- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var instructor.appointment_url >}})
+- {{< fa user >}} [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa university >}} {{< var instructor.office >}}
+- {{< fa envelope >}} [{{< var instructor.email >}}](mailto:{{< var instructor.email >}})
+- {{< fa calendar-check >}} [Schedule an appointment]({{< var instructor.appointment_url >}})
 
 ### Teaching fellows
 
-- Ahmet Akbiyik
-- James Jolin
-- Jerry Min
-- Laura Royden
-- Julio Solis Arce
-- Andy Wang
-
+- [(Head TF) Nicholas Conroy](mailto:nconroy@fas.harvard.edu)
+- [Antonio Camara](mailto:acamara@g.harvard.edu)
+- [Zhiyu Li](mailto:zhiyuli@fas.harvard.edu)
+- [Zheng Ma](mailto:zma@g.harvard.edu)
+- [Tianyu Qiao](mailto:tianyu_qiao@g.harvard.edu)
+- [George Yean](mailto:gyean@fas.harvard.edu)
 
 :::
 
-::: {.g-col-6}
+::: g-col-6
 ### Course details
 
-- {{< fa calendar >}} &nbsp; {{< var course.days >}}
-- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
-- {{< fa clock >}} &nbsp; {{< var course.time >}}
-- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
-- {{< fa brands slack >}} &nbsp; [Slack]({{< var course.slack >}})
+- {{< fa calendar >}} {{< var course.days >}}
+- {{< fa calendar-alt >}} {{< var course.dates >}}
+- {{< fa clock >}} {{< var course.time >}}
+- {{< fa location-dot >}} {{< var course.location >}}
+- {{< fa globe >}} [Ed Discussion](https://edstem.org/us/courses/101357/discussion)
 
 ### Course assistants
 
 - TBD
-
 :::
-
-:::
-
+:::::
 
 ## Course objectives
 
+In this course you will learn the basics of quantitative analysis (data science) in the social sciences. These basics can be broken down into two broad categories: 1) understanding the theoretical basis of data analysis and how that influences our analytical decisions; and 2) learning how to actually collect, manage, and analyze data (as well as report the results of said analyses).
 
-In this course, you will learn the basics of data science as applied to the social sciences. This involves two broad skill sets: (1) learning the computing and programming tools to both manage and analyze data; and (2) understanding the conceptual foundations of why we might manage or analyze data in one way versus another. This course will address both of these topics.
+At the end of the course you should be able to read and digest most social science articles by learning to:
 
-Specifically, at the end of the course you should be able to:
+- Interpret common analyses in the social sciences (e.g., regression tables)
+- Evaluate claims about causality (correlation ≠ causation)
+- Identify and understand common causal designs and interrogate their validity
+- Understand what uncertainty means in data analysis
 
-- Summarize and visualize data
-- Wrangle messy data into tidy forms
-- Evaluate claims about causality
-- Be able to use linear regression to analyze data
-- Understand uncertainty in data analysis and how to quantify it
-- Use professional tools for data analysis such as R, RStudio, git, and GitHub
+Additionally, by taking this knowledge and applying it you will be able to:
 
-We will also attempt to inspire a passion for data analysis and create a community among the students to deepen their learning. 
+- Use common tools for data analysis, mainly R and RStudio
+- Wrangle messy data into tidy, usable forms
+- Summarize and visualize data in a compelling way
+- Take a research question from inception to analysis
+- Use correlations and linear regressions to analyze data
+- (we may also get to implementing causal designs...)
 
-### Expectations
+All of this together will hopefully generate an interest (and maybe passion!) for data analysis through creating a welcoming community among students and instructors.
 
-In this course, you will be expected to
+### A note on the structure and difficulty of this course
 
-- complete eight problem sets,
-- complete eight weekly tutorials,
-- take two take-home, open-book exams, and
-- write one final data analysis project.
+Learning statistical/social-science/political methodology *is* difficult, there's no two ways about it. You will be tasked with essentially learning two foreign languages: statistics/data-analysis and R. Continuing with this analogy of language, the goal here is to learn how to have and understand conversations, not to simply learn basic turns of phrase rote grammatical rules.
 
+That being said, each and every one of you is capable of grasping this material, both conceptually and computationally. If you do really engage with this course then you will come away with a great deal of knowledge that will prepare you to interpret, critique, and build upon social science research.
+
+To that end, this course will look quite different from most other lecture-based courses (though I obviously can't speak for other disciplines, I'm sure they're doing cool stuff too, at least some of them...). This design can be described as "active learning" or a "flipped classroom" or "collaborative learning" (pick your poison, I personally like "active").
+
+The goal of active learning is to, first and foremost, improve your learning, but it does require buy-in from you, the student. To truly learn the content here---and trust me, you will if you put in the effort---you must show up to class, section, and study-hall prepared and actively (ha) choose to engage (details about this are available below). Put simply, class-time (and sections and study-halls) will be focused on much more than simply covering material.
+
+I'm very excited to be teaching you all (along with my wonderful TFs and CAs) and I think you all will learn a lot and enjoy it too!
+
+### Expectations and time commitment
+
+In this course, you will be expected to:
+
+- complete readings and answer warmup questions for each class,
+- participate in in-class discussions,
+- attend and participate in weekly sections,
+- complete six in-section coding problem sets (every other week),
+- complete 23 homework assignments,
+- take one in-person, closed-book exam, and
+- contribute to a section-wide final research project.
+
+The course is designed to require 10 hours of work per week, roughly divided as:
+
+- 2 hours reading
+- 0.5 hours on pre-class warmup questions
+- 2.5 hours in the classroom
+- 1 hour in section
+- 4 hours on homework.
+
+For reading week before your exam you are expected to study for another 10 hours.
 
 ### Prerequisites
 
-No prerequisites will be assumed.  If you are unfamiliar with downloading and installing software programs on your Mac or PC, you may want to allocate additional time to make sure those aspects of the course go smoothly. In particular, we have developed a [Problem Set 0][ps0] to guide you through installing R, RStudio, and git to give you a sense of the tools we will be using.
+We will assume you are coming in (relatively) blind given that the course has no prerequisites. If you don't have much experience with downloading, installing, and interacting with software on your computer, you should probably spend additional time on those aspects (particularly early on in the course) to make sure everything proceeds smoothly. We will be providing an Intro to R handout and will dedicate the first meeting of sections to getting you up to speed with R.
 
 ### Credit
 
-This course satisfies the Methods requirement for the Government department and the [Quantitative Reasoning with Data](https://qrd.college.harvard.edu) requirement in the Harvard College Curriculum. It also counts toward completion of the Government department [Data Science track](https://www.gov.harvard.edu/undergraduate/programs-of-study/data-science/). 
-
-### Speaker Series
-
-On various Fridays throughout the semester, we will host the [Gov 50 Speaker Series](/resources/speaker-series.html), where guest speakers working in data science in various industries will discuss their career paths and answer student questions. 
-
+This course satisfies the Methods requirement for the Government Department, the [Quantitative Reasoning with Data](https://qrd.college.harvard.edu) requirement in the Harvard College Curriculum, and also counts toward the Government Department's [Data Science track](https://www.gov.harvard.edu/undergraduate/programs-of-study/data-science/).
 
 ## Course structure
 
-### Flow of the Course
+### Textbooks & readings
 
-The course will follow a basic flow each week, with small differences if a tutorial or problem set is due or not. 
+Back when I was in undergrad I was (mostly) able to get my textbooks through Inter-Library Loan, mooching, or other means. The few times that I was forced to spend \$100 (or more) on textbooks I was quite annoyed...
 
-- **Monday**: Complete reading/watching course material, complete tutorial (if due). 
-- **Tuesday**: Lecture meets. 
-- **Wednesday**: Submit problem set by 11:55 PM (if due). 
-- **Thursday**: Lecture meets; problem sets and exams posted; sections meet.
-- **Friday**: Sections meet. 
-- **Sunday**: Submit exams by 11:55 PM (if due)
+Consequently, I have assigned two *completely free* textbooks for this course: [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman (take a look at his [blog](https://statmodeling.stat.columbia.edu/) for really great thinking on statistics and science, we'll be reading some of his posts for class, in fact), Jennifer Hill, & Aki Vehtari as well as [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/) by Nick Huntington-Klein.[^1] You are more than welcome to purchase hard copies of either book but you are by no means required (and technically the online copies are the most up-to-date).
 
-### Tutorials
+You will be expected to have completed the assigned readings by the time you attend class. Relatedly, warmup assignments will be due 1 hour before each class and will correspond directly to the readings assigned for each class.
 
-We will assign short weekly tutorials to assess your knowledge of the material covered in the reading/video materials that week. While you are expected to complete them on time, they will be graded based on completion not on how correct the answers are. With some exceptions, they will usually be due Mondays at 11:59pm ET. 
+[^1]: Special thanks to [Jack Rametta](https://jackrametta.com/) and [Chris Hare](https://christopherdanielhare.github.io/about.html) for their book recommendations here.
 
-### Lectures
+### Warmup questions
 
-We will meet twice a week for lectures where I will combine presenting material and doing live coding demonstrations. Ideally, you should bring your laptop to class and be ready to code along with me! We will have a Slack channel dedicated to answer computing questions by TFs during lecture. Lectures will be recorded and usually posted to Canvas within 24 hours of the lecture time. Keeping up with these lectures is vital to your success in the class. 
+You will be required to answer a small set of questions for every class meeting (due 1 hour before class). These will be graded on completion not on accuracy. That being said, if you provide answers that fail to signal that you're engaging with the material (e.g., a response unrelated to the material) you will not be given credit. 
 
+### In-Person participation
 
-### Sections
+Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs.
 
-Sections will be small-group settings to practice the tools and techniques that we cover in class. These meetings are *essential* to gaining the skills you need for the problem sets, exams, and final project. You are **expected** to attend sections. We will not assign you a particular section, so you are free to attend one that works for your schedule and attend different sections throughout the semester if a conflict arises. 
+1. In-class participation will be monitored by TFs and CAs
+2. In-section participation will be monitored by TFs
+3. Study hall participation will be monitored by CAs
+    - *Note: Attendance is not mandatory for Study Halls, but can be used to supplement other participation grades.*
 
-Sections will fall into two types based on prior exposure to the course material: more comfortable and less comfortable. While Gov 50 is designed to be accessible to students without prior exposure to data science and computing, we recognize that students with different backgrounds in the material may require different pedagogical approaches. 
+::: callout-note
+#### Grading policy
+
+Participation will be graded as either a 0 (did not meaningfully participate) or a 1 (meaningfully participated) for each class and section.
+
+:::
+
+### Classes
+
+::: callout-important
+#### What to bring to class
+
+As I mentioned above, for every class you should bring a) your laptop, b) a notebook (broadly construed), and c) questions about the materials we've covered.
+
+:::
+
+We will meet twice a week for regular classes. As I mentioned above, these classes will not follow standard lecture structures but will rather be focused on active learning. Most classes will be comprised of:
+
+1.  Story
+2.  Class-participation activity
+3.  Class discussion of questions relating to readings and homework
+4.  Code demonstration
+5.  Drill
+6.  Small-group discussion problems
+
+Classes will alternate between focusing on statistics and research design (including causal inference), though this distinction will likely blur as we continue through the course. The [class schedule is available here](/schedule.html).
+
+::: callout-note
+#### Seating
+
+On the first day of class we will have the TFs and CAs separated into different sections of the lecture hall (they will have a piece of paper with their names) and you will be required to sit with your assigned TF (the one you're taking section with). 
+
+You will be required to sit in these areas for the whole semester so that we are able to a) collect homework quickly and efficiently and (more importantly) b) facilitate class activities and group discussions.
+
+:::
+
+### Section
+
+Sections will be a mandatory part of the course and attendance will be taken. Students will be assigned to their section randomly based on availability. Sections will alternate weekly between: 1) covering material and developing a section-level project; and 2) hosting in-person problem sets.
+
+For material and project weeks, sections will be focused on helping you understand the material we've been covering in class and in developing a research project that everyone in your section will contribute to.
+
+::: callout-note
+
+#### In-section coding problems
+
+For in-person coding problem set weeks, sections will be focused on increasing your skills at using R and interpreting related code. You will be encouraged to work with other students in section and the TF will be helping the class move through the assignment, checking in throughout and answering questions. These assignments will be graded similar to the homework rubric (for each question: 0 not attempted, 0.5 attempted but not thoroughly, 1 thoroughly attempted).
+
+Additionally, *TFs will not solve the problem sets for you.* During section we recommend you, in order, 1) attempt on your own, 2) ask for help from your partner (or attempt with them), and then 3) ask for help from the TF or CA.
+
+:::
+
 
 
 ### Study Halls
 
-Study halls are a combination of office hours and drop-in tutoring sessions. Course assistants will hold a table usually at one of the house dining halls or common rooms and help students with assignments and course material. Study halls work best if you come as a group and work on the assignments on your own while you are there and ask for help from the CAs when you get stuck. 
+Study Halls are a mix of office hours and drop-in tutoring sessions. CAs will hold a table---usually at one of the house dining halls or common rooms---and will answer questions relating to assignments and course material. We highly recommend regularly attending a Study Hall to complete assignments along with your peer study group, attempting to answer questions on your own and looking to a CA when you are stuck.
 
-You can find a list of the Study Hall times on the [Study Hall Schedule](/resources/study-halls.html) page. 
+You can find a list of the Study Hall times on the [Study Hall Schedule](/resources/study-halls.html) page.
 
+::: callout-important
 
-### Problem Sets
+#### CAs will not do the homework for you
 
-Only reading about data science is about as instructive as reading a lot about hammers or watching someone else wield a hammer. You need to get your hands on a hammer or two. Thus, in this course, you will have mostly-weekly problem sets that will give you an opportunity to apply the statistical techniques you are learning. They will usually be focused on data analysis in general and will often involve a real dataset. 
-
-We encourage students to rely on peer working groups as they work on these homeworks, but each student will submit their own work individually. We will facilitate the formation of homework peer groups.
-
-:::{.callout-note}
-## Grace policy
-
-When calculating the final homework portion of the overall grade, we will drop the lowest score and use the remaining scores. Thus, if you have an emergency that forces you to miss one homework, your grade will not be severely affected.
+CAs are instructed to help guide you through homework assignments, not to show you how to answer a question from start to finish. You must actually do the work to complete the assignments.
 
 :::
 
 
-### Exams
 
-There will be two take-home exams during the course. This exam will be similar to a homework in format and in the sense that it will be open book and open internet, but you will not be allowed to collaborate with other students or be able to communicate with any humans about the exam. You will be given several days to complete the exam. We will provide more information about the exam as it approaches. 
+### Homework
 
-| Exam   | Release Date            | Due Date                 |
-|:-------|:------------------------|:-------------------------|
-| Exam 1 | Thu, Oct 19th 5:00pm ET | Sun, Oct 22nd 11:59pm ET |
-| Exam 2 | Thu, Dec 7th 5:00pm ET | Sun, Dec 10th 11:59pm ET |
- 
-### Discussion
+To quote Matt Blackwell, a previous instructor of this course, "Only reading about data science is about as instructive as reading a lot about hammers or watching someone else wield a hammer. You need to get your hands on a hammer or two." In that vein, you will have homework assignments due at the start of each class period **(printed and handed in to your TFs and CAs).**
 
-We will be using the [Ed platform]() for discussions on course material. There is a [users guide](https://us.edstem.org/quickstart/ed-discussion.pdf) to help orient yourself to the platform. We will enroll you into the platform toward the start of the semester. 
+::: callout-important
+#### Homework is due in-person, no exceptions
 
+Homework must be turned in in-person by the start of class, there will not be a way to turn in homework online. There will be no exceptions made to this policy, except for excused absences with prior notice.
 
-### Grading
+:::
 
-You (the student) and I (the instructor) should care the most about what you *learn*, not what numerical/letter summary of that learning you get at the end of the semester. So I would love to not have grades at all, but unfortunately we humans are very good at procrastinating on our good intentions when there is no incentive not to. Thus, we have grades to help solve this commitment problem and to encourage you to put effort into learning the course material. 
+Some will be focused on concepts, while others will focus on coding, and others still will be a mix of both. Homework will be posted no later than a week before it's do (but may be posted earlier).
 
-Here are how each portion of course contributes to the overall grade:
-
-| Category      | Percent of Final Grade |
-|:--------------|:-----------------------|
-| R Tutorials   | 10%                    |
-| Problem Sets  | 40%                    |
-| Exams         | 30%                    |
-| Final Project | 20%                    |
-
-
-We will use [Gradescope](https://www.gradescope.com/) for submission of the various assignments throughout the semester. Once enrollment is finished, Gradescope will automatically connect through Canvas. 
-
-
-**Bump-up policy**: We reserve the right to "bump up" the grades of students who have made valuable contributions to the course in the lecture, sections, study halls, or discussion/Slack. This also applies to students who show tremendous progress and growth over the semester. 
+We encourage you to join peer study groups (we will attempt to facilitate this within section with TFs and CAs) and use them to work on homework and study for the exam. However, the work that you submit should be your own.
 
 
 
+::: callout-note
+#### Grading policy
+
+Each homework question will be graded as either a 0 (not attempted), 0.5 (attempted but incorrect or incomplete), or 1 (correct); no additional partial credit will be given.
+
+We will drop the two lowest homework grades automatically.
+
+:::
+
+
+### Section research project
+
+Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level research project.
+
+For this project, your section will operate as a single research group, headed by your TF, and tasked with investigating some research question. You, your classmates, your TF, and your CA will decide upon this question in the first few meetings of section and will spend the rest of the semester developing this into a completed project that will be presented to a different TF (or myself) in the last section meeting.
+
+50% of your grade will depend on your section participation and contribution to the project and the other 50% will be determined by the presentation.
+
+Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for:
+
+1. Data collection and cleanup
+2. Statistical summaries and analyses
+3. Visualizations of data and analyses
+4. Interpretation of results and figures
+5. Linking the results to the broader question in your section
+6. Clearly defining the scope of your results (limitations, how your analyses could be improved)
+
+Project presentations should be ~35 minutes long, with the first five minutes outlining the general research question, and the following thirty minutes divided between each of the three groups. Each group will present on the six components listed above and will field questions for ~7 minutes from the attending TF (and/or myself).
+
+::: callout-tip
+#### This process will be highly structured (and fun!)
+
+While this may all sound like a lot, you will be collaborating with your whole section and both your TF and CA will guide you through this process. This will be fun! You're going to start producing knowledge rather than just consuming it (that's really cool!).
+
+:::
 
 
 
-## Final Project
+| Milestone                                        | Due Date[^2]       |
+|:-------------------------------------------------|:-------------------|
+| Research question finalized                      | Section Meeting 2  |
+| Data sources identified, research plan drafted   | Section Meeting 4  |
+| Data cleaned, first summaries of data            | Section Meeting 6  |
+| Main analyses completed, draft of visualizations | Section Meeting 8  |
+| Paper draft due 1 week before peer review        | Section Meeting 9  |
+| Peer review of other section                     | Section Meeting 10 |
+| Incorporate feedback                             | Section Meeting 11 |
+| Presentation to other TF (or Dr. Fuller)         | Section Meeting 12 |
+
+[^2]: These meetings correspond (roughly) to the modules of the course. So Section Meeting 2 will correspond to Module 2, Meeting 3 module 3, and so on. Check out the [schedule](/schedule.html) for more info.
 
 
+::: callout-important
+#### A reminder about AI and academic honesty
 
-The final project is a data analysis project about whatever data excites you. That could be public opinion in U.S. elections, United Nations voting patterns, patterns of racial discrimination in police behavior, the distribution of salaries in basketball, or the economics of the Marvel Cinematic Universe. No matter the topic, you will formula a key research question, find data on that question, answer the question using the tools of the course, and present those results for public consumption. 
+Remember, AI is expressly prohibited for any writing or slide generation. Anything written for this project should only be written by you and/or in collaboration with other students, your TF, or your CA. Again, coding can be done by AI, but we highly recommend against doing this for your own sake.
 
-The goal is for this to be a *professional* project that you can use to showcase the skills that you have gained to potential employers. Your final submission will be a publicly available article/website that contains: (1) a brief introduction to the research question and data collected; (2) a visualization of the data in question that speaks to your research question; (3) a presentation (as a table or graph) of a regression model assessing your question along with a plain-English interpretation; (4) a brief (one-paragraph) section that describes limitations of your analysis and threats to inference, and states how your analysis could be improved (e.g., improved data that would be useful to collect). Finally, there must be a link to the GitHub repo that contains the source code to load, clean, and analyze the data and produce the article. 
-
-The data collection and cleaning must be meaningful---it's not sufficient to simply use a pre-cleaned data from an R package. Self-collected data is allowed and even encouraged, though beware that it can only be used for the final project itself only unless you go through [human subjects approval from the University](https://cuhs.harvard.edu/undergraduate-research-and-course-projects).  
-
-
-| Milestone                    | Due Date                 |
-|:-----------------------------|:-------------------------|
-| Creating a GitHub Repository | Fri, Sep 29th 11:59pm ET |
-| Data and Proposal            | Fri, Oct 13th 11:59pm ET |
-| First Visualization          | Fri, Nov 3rd 11:59pm ET  |
-| First Analysis               | Fri, Nov 17th 11:59pm ET |
-| Final Report                 | Wed, Dec 13th 11:59pm ET |
+:::
 
 
+### Final exam
+
+There will be one three-hour, *in-person* exam held during exam week. We will provide a practice exam before the start of reading week and Study Halls will run throughout that week. The exams will test you on 1) your understanding of concepts in the course; 2) your ability to interpret R code, analyses, and figures; and 3) some math related to how these methods function.
+
+::: callout-important
+
+#### Exam material will only (explicitly) be covered in study halls
+
+Neither lectures nor TF sections will be explicitly focused on the exam (though obviously we will be covering material that will be on the exam in both). 
+
+:::
+
+### Grades
+
+::: callout-important
+
+#### The dreaded grade capping
+
+According to directives from the University, instructors have been advised to operate this academic year *as if* the new grading policy were in effect.[^3] That being said, the goal of this course is for as many of you as possible to learn as much as possible and to earn a, correspondingly, high grade.
+
+[^3]: I, and others, actually think that capping grades is *not* the most effective strategy to address grade inflation (in fact, it may lead to myriad unintended, negative consequences). In fact, to fully address this issue we need a major reappraisal of the purpose (and societal-level goals) of higher education (and corresponding national-level policies aimed at both enabling and pushing universities to accomplish said purpose/goals). But I digress...
+
+:::
+
+Overall, we (both you as the student and I as the instructor) should both be focusing on *learning* as our primary outcome, not the specific grade you earn. Now while grades, ideally, should be a direct reflection of how much you have learned in a course, they are, in fact, imperfect signals. While it's easier said than done (I was a student too not *too* long ago...), you should focus on learning the material as much as possible and the grades will follow.
+
+Here's the breakdown of how your final grade will be calculated:
+
+| Category                | Percent of Final Grade |
+|:------------------------|:-----------------------|
+| Warmup Questions        | 10%                    |
+| Class Participation     | 10%                    |
+| Section Participation   | 10%                    |
+| Homework                | 20%                    |
+| Section Project         | 20%                    |
+| Final Exam              | 30%                    |
 
 
+::: callout-note
 
-## Course Policies
+#### Bump-up policy 
 
-### Late Policy
+As mentioned above, we reserve the right to "bump up" the grades of students who significantly participate in Study Halls and on the Ed Discussion Board (this includes posting questions but, more importantly, answering questions, engaging with content, and sharing interesting things too).
 
-For problem sets, late submissions will be penalized 10% if submitted 0-24 hours late and penalized 20% if submitted 24-48 hours late. We will not accept any submissions after 48 hours. This penalty will be waived the **first time** a submission is late. 
-
-
-### Regrading Policy
-
-If you feel there has been an error in the grading of one your assignment, you may request (in writing) a regrade of the assignment. Please send your request in an email to Professor Blackwell and the Head TF. A member of the teaching staff will regrade the entire assignment, not just the part you are disputing. Therefore, your regrade might increase or decrease the overall grade on the assignment. 
+:::
 
 
-### Office Hours and Availability
+## Course policies
 
-Office hours for the teaching staff are listed on the [Office Hours Schedule](/resources/office-hours.html) page. 
+### Laptops and written materials
 
-If you have a general question, you should post it to the Ed discussion board (where you can make your question anonymous if you would like). This is almost always the fastest way to get an answer. However, you can also email me directly at [mblackwell@gov.harvard.edu](mailto:mblackwell@gov.harvard.edu) if you have a question that is about a personal situation. 
+Given that this course heavily focuses on data analysis we will be using computers consistently in class, you should always bring your laptop. That being said, we will be putting away our laptops for significant portions of class. Consequently, you will be expected to use some sort of real, existing material to take notes. This could be printer paper, a notebook or binder, even chalk-and-slate, just so long as you are able to physically write notes with some sort of writing utensil. This is not only important because you won't have access to your laptop to take notes but also because physically writing notes is far better for memorization and retention than typing (see [this study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11943480/) for a summary of this research).
 
-### Academic Honesty
+### Academic honesty
 
-The work that you do in both the problem sets should be your own work. You may seek help from others so long as this does not result in someone else completing your work for you. When asking for help, you may show others your code to help diagnose a bug or highlight a potential issue, but you should not view their (working) code. You should cite any discussions you have with other students in your problem set and note if they helped you with your code. You should never copy and paste code from another student or elsewhere (e.g., websites, former students). 
+Don't cheat! Like really, just don't do it. We also take plagiarism (including the use of AI to generate text) very seriously and expect you to write all of your own text. If you are found to have cheated on any of your assignments (or plagiarized someone else's work) you will be reported directly to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/). 
 
-I also strongly suggest that you make a solo effort at all the problems before consulting others. The exams will be very difficult if you have no experience working on your own. **There is no collaboration allowed on the exams.**
+### Coding and AI
+
+While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. **I strongly suggest that you do not use AI in any capacity in this course**.
+
+Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI. That being said, given the imprecision of detecting AI-use we will not be checking coding assignments for AI (though its use is obvious to both me and the TFs).
+
+::: callout-important
+
+#### AI for any writing is **explicitly prohibited** 
+
+As mentioned above, you are explicitly prohibited from using AI to generate any written portion of any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
+
+:::
+
+### Late policy
+
+Warmup assignments are due 1 hour prior to the start of class *online* and homework assignments are due by the start of class *in-person*. These assignments **will not be accepted late under any circumstances.**
+
+### Regrading policy
+
+If you believe that there has been a grading error for your homework and you have **proof of said error** then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. **This request should be sent to the head TF Nicholas Conroy.**
+
+### Office hours and availability
+
+Office hours for all of the teaching staff are listed on the [Office Hours page](/resources/office-hours.html).
+
+If you have a general question, you should post it to either the class or your section Ed Discussion Board. This is by far the fastest way to get an answer, much faster than emailing one of the teaching staff. However, you can also email me directly at [sfuller\@fas.harvard.edu](mailto:sfuller@fas.harvard.edu) if you have a question that is about a personal situation.
+
 
 
 ## Course materials
 
-###  Books
-We will use the following books in this class:
+### Books
 
-- Imai, Kosuke and Nora Webb Willaims. 2022. [*Quantitative Social Science: An Introduction with Tidyverse*](https://press.princeton.edu/books/paperback/9780691222288/quantitative-social-science), 2022. Princeton University Press.
-- Ismay, Chester and Albert Y. Kim. 2022. [*Statistical Inference via Data Science: A ModernDive into R and the Tidyverse*](https://moderndive.com/index.html). 
-- Mine Cetinkaya-Rundel and Johanna Hardin. 2021. [*Introduction to Modern Statistics*](https://www.openintro.org/book/ims/). OpenIntro. 
+As mentioned above We will use the following books in this class:
 
-The following books are optional, but may be helpful to build you understanding of the material:
+- [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, & Aki Vehtari
 
-- Freedman, David, Pisani, Robert, and Purves, Roger. 2007. *Statistics*. W.W. Norton & Company. 4th edition.
-- Gonick, Larry, and Woollcott Smith. 1993. *The Cartoon Guide to Statistics*. HarperPerinnial. 
+- [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/) by Nick Huntington-Klein.
 
+Both of these books are free online but you can also purchase hard-copies if you're a big spender (or just prefer hard copies).
 
 ### Computing
 
-We'll use R in this class to conduct data analysis. R is free,  open source, and available on all
-major platforms (including Solaris, so no excuses). [RStudio](http://www.rstudio.com) (also free) is a graphical interface to R that is widely used to work with the R language. You can find a virtually endless set of resources for R and RStudio on the internet. For beginners, there are several web-based tutorials. In these, you will be able to learn the basic syntax of R. We'll post more R resources on the course website. We will also use git and Github to manage our projects. 
+We're gonna be using R, and a whole bunch of it, to conduct our data analysis. The nice thing about R is that it's free, open-source, and available on essentially every platform (yes, even you Linux sickos). While some of you may be wondering why we aren't using something like Python or Stata the answer is three-fold: 1) R has a ridiculous amount of support and capabilities when it comes to data analysis and it is overwhelmingly the most common language for Political Science (and the social sciences generally, though economists and some sociologists still love Stata for some reason; there are those in the social sciences who even use SAS or SPSS, but we don't talk about them...); 2) it's completely free (Stata is obscenely expensive, though there may be a Harvard license, I haven't checked) *and* super easy to install and setup (yes, I'm criticizing you, Python).
 
-You can get setup with all of these tools by completing [Problem Set 0][ps0]. 
+- You can download [R here](https://cran.r-project.org/), just choose your operating system.
 
-## Mental Health
+We're also going to use a ""graphical user interface"" (scare quotes intended) called RStudio to actually interact with R (if you're familiar with Python this is like using VSCode to work with Python). All you need to know is that RStudio makes it a lot easier to code in R. So use it.
 
-College is a stressful time in one's life and mixing it with a global pandemic, remote learning, and dislocation makes this one of the most fraught semester any of us have probably faced. We acknowledge that nothing is quite normal and that there may be times when you feel overwhelmed by this course or by life more generally. Please feel free to reach out to any of the course staff if you want to talk about any issues you are having with the course or anything else. We will always try to help and we are committed to being extra accommodating this semester on course policy issues. Please just get in touch. 
+- You can download [RStudio here](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads), just choose your operating system.
 
-Of course, there are other resources at Harvard if you need them. A few are listed below:
+Feel free to download these before your first section, but that meeting will cover this and more.
 
-* [Counseling and Mental Health Services](https://camhs.huhs.harvard.edu/)
-* [Room 13](https://www.hcs.harvard.edu/~room13/)
+## Accessibility
+
+If you need reasonable accommodations for this course please contact the [Disability Access Office (DAO)](https://dao.fas.harvard.edu/) and ensure that I (Dr. Fuller) am notified as soon as possible. Accommodations will not alter the core requirements of the course and will not be retroactive. If something changes during the semester, you should contact DAO.
 
 
-[ps0]: assignments/00-problem-set.html
+## Acknowledgements
 
-## Accessibility 
-
-Harvard University values inclusive excellence and providing equal educational opportunities for all students. Our goal is to remove barriers for disabled students related to inaccessible elements of instruction or design in this course. If reasonable accommodations are necessary to provide access, please contact the [Disability Access Office (DAO)](https://aeo.fas.harvard.edu/). Accommodations do not alter fundamental requirements of the course and are not retroactive. Students should request accommodations as early as possible, since they may take time to implement. Students should notify DAO at any time during the semester if adjustments to their communicated accommodation plan are needed.
+First, I want to thank Matt Blackwell for all of the materials that have served as a foundation from which this course (and site) is built. Second, I'd like to thank Jack Rametta and Chris Hare for their recommendations on books and pedagogy. Third, I especially want to thank Noah Shenker (previous head TF of the course for two years) for invaluable suggestions and feedback for how this course could be improved. And finally, I would like to thank all of the TFs and CAs (especially Head TF Nicholas Conroy) for their hard work and significant contributions to this course.

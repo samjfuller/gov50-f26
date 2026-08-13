@@ -1,29 +1,28 @@
-author: Matthew Blackwell
+author: Sam Fuller
 
 instructor:
-  name: Prof. Matt Blackwell
-  name_no_title: Matt Blackwell
-  email: mblackwell@gov.harvard.edu
-  url: "https://mattblackwell.org"
-  twitter: matt_blackwell
-  github: matt_blackwell
-  office: "CGIS Knafel 305"
+  name: Dr. Sam Fuller
+  name_no_title: Sam Fuller
+  email: sfuller@fas.harvard.edu
+  url: "https://samjfuller.com"
+  github: samjfuller
+  office: "CGIS Knafel 428"
   contact_policy: >-
-    General questions about the course should be posted to either the course Ed Discussion board or the course Slack. Someone on the teaching staff will attempt to respond to these messages within 25 hours, but also remember that life can be busy and chaotic for everyone (including me!), so if I don't respond right away, don't worry! For other issues (absences, etc), feel free to email me or send me a direct message on Slack.
-  appointment_url: https://calendly.com/matt_blackwell/
+    General questions should be posted to either the course or your section Slack channel. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don't respond right away don't worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email or Slack.
+  appointment_url: PLACEHOLDER
 
 course:
   number: "Gov 50"
-  semester: "Fall 2023"
-  days: "Tue/Thu"
-  time: "12:00–1:15 PM"
+  semester: "Fall 2026"
+  days: "Mon/Wed"
+  time: "3:00–4:15 PM"
   location: "Emerson 105"
-  dates: "September 3rd-December 20th, 2023"
-  github: "https://github.com/gov50/gov50-f23"
-  url: "https://mattblackwell.github.io/gov50-f23"
-  copyright_year: "2023"
-  slack: "https://gov-50-f23-dbz.slack.com/ssb/redirect"
-  ed: "https://edstem.org/us/courses/43339/"
+  dates: "September 2nd-December 18th, 2026"
+  github: "https://github.com/samjfuller/gov50-f26.github.io"
+  url: "PLACEHOLDER"
+  copyright_year: "2026"
+  slack: "PLACEHOLDER"
+  ed: "PLACEHOLDER"
 
 university:
   name: "Harvard University"
