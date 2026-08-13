@@ -17,6 +17,8 @@ website:
       - schedule.qmd
       - text: "Staff"
         file: staff.qmd
+      - text: "Office Hours & Study Halls"
+        file: office_hours.qmd
       - text: "Assignments"
         file: assignments.qmd
       - text: "Resources"

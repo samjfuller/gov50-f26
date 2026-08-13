@@ -8,8 +8,8 @@ instructor:
   github: samjfuller
   office: "CGIS Knafel 428"
   contact_policy: >-
-    General questions should be posted to either the course or your section Slack channel. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don't respond right away don't worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email or Slack.
-  appointment_url: PLACEHOLDER
+    General questions should be posted to either the course or your section Ed Discussion Board. Someone on the teaching staff will attempt to respond to these messages within 24 hours, but given that sometimes life is a bit crazy and chaotic, if we don't respond right away don't worry, we will. For section-level questions, reach out to your TF. For major logistics like excused absences, moving section, etc., reach out to the Head TF Nicholas Conroy. And finally, for any other issue you can reach out to me over email.
+  appointment_url: https://calendly.com/sfuller-fas
 
 course:
   number: "Gov 50"
@@ -18,11 +18,10 @@ course:
   time: "3:00–4:15 PM"
   location: "Emerson 105"
   dates: "September 2nd-December 18th, 2026"
-  github: "https://github.com/samjfuller/gov50-f26.github.io"
-  url: "PLACEHOLDER"
+  github: "https://github.com/samjfuller/gov50-f26"
+  url: "https://canvas.harvard.edu/courses/172106"
   copyright_year: "2026"
-  slack: "PLACEHOLDER"
-  ed: "PLACEHOLDER"
+  ed: "https://edstem.org/us/courses/101357/discussion"
 
 university:
   name: "Harvard University"

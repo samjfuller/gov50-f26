@@ -34,7 +34,6 @@ course-logo: /files/img/gov50-icon-512.png
 - {{< fa calendar-alt >}}  {{< var course.dates >}}
 - {{< fa clock >}}  {{< var course.time >}}
 - {{< fa location-dot >}}  {{< var course.location >}}
-- {{< fa brands slack >}}  [Slack]({{< var course.slack >}})
 - {{< fa wrench >}}  [Study Hall Schedule](resources/study-halls.qmd)
 - {{< fa person-circle-question >}}  [Office Hours Schedule](resources/office-hours.qmd)
 - {{< fa calendar >}}  [Gov 50 Google Calendar](https://tinyurl.com/gov50calendar)
