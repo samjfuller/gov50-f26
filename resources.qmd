@@ -6,20 +6,21 @@ title: "Resources"
 ## Gov 50 Resources
 
 - [Getting Software Set Up](/assignments/00-problem-set.qmd)
-- [R Tutorials Instructions](/assignments/tutorials.qmd) (for running locally in RStudio)
-- [Problem Sets and Exams Instructions](/assignments/problem-sets.qmd)
 - [Gov 50 R Cheatsheet](/resources/cheatsheet.qmd)
 - [Gov 50 Troubleshooting Guide](/assignments/troubleshooting.qmd)
+- [Gov 50 Intro to (Base) R Handout (PDF)](Intro_to_Base_R_Lab.pdf)
 
 ## R Tutorials
 
 - [Hands On Programming with R](https://rstudio-education.github.io/hopr/)
 - [R for Data Science](https://r4ds.had.co.nz/)
 
-## R Markdown
+## Quarto (Replaced RMarkdown)
 
-- [R Markdown Tutorial](https://rmarkdown.rstudio.com/lesson-1.html)
+- [Quarto Tutorials](https://quarto.org/docs/get-started/hello/rstudio.html)
+- [Quarto Guide/Documentation](https://quarto.org/docs/guide/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+  - This guide is applicable to much of Quarto
 
 ## Git and GitHub Resources
 

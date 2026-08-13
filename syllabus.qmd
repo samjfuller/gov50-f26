@@ -43,7 +43,7 @@ output:
 :::
 :::::
 
-## Course objectives
+# Course objectives
 
 In this course you will learn the basics of quantitative analysis (data science) in the social sciences. These basics can be broken down into two broad categories: 1) understanding the theoretical basis of data analysis and how that influences our analytical decisions; and 2) learning how to actually collect, manage, and analyze data (as well as report the results of said analyses).
 
@@ -65,7 +65,7 @@ Additionally, by taking this knowledge and applying it you will be able to:
 
 All of this together will hopefully generate an interest (and maybe passion!) for data analysis through creating a welcoming community among students and instructors.
 
-### A note on the structure and difficulty of this course
+## A note on the structure and difficulty of this course
 
 Learning statistical/social-science/political methodology *is* difficult, there's no two ways about it. You will be tasked with essentially learning two foreign languages: statistics/data-analysis and R. Continuing with this analogy of language, the goal here is to learn how to have and understand conversations, not to simply learn basic turns of phrase rote grammatical rules.
 
@@ -77,7 +77,7 @@ The goal of active learning is to, first and foremost, improve your learning, bu
 
 I'm very excited to be teaching you all (along with my wonderful TFs and CAs) and I think you all will learn a lot and enjoy it too!
 
-### Expectations and time commitment
+## Expectations and time commitment
 
 In this course, you will be expected to:
 
@@ -99,17 +99,17 @@ The course is designed to require 10 hours of work per week, roughly divided as:
 
 For reading week before your exam you are expected to study for another 10 hours.
 
-### Prerequisites
+## Prerequisites
 
 We will assume you are coming in (relatively) blind given that the course has no prerequisites. If you don't have much experience with downloading, installing, and interacting with software on your computer, you should probably spend additional time on those aspects (particularly early on in the course) to make sure everything proceeds smoothly. We will be providing an Intro to R handout and will dedicate the first meeting of sections to getting you up to speed with R.
 
-### Credit
+## Credit
 
 This course satisfies the Methods requirement for the Government Department, the [Quantitative Reasoning with Data](https://qrd.college.harvard.edu) requirement in the Harvard College Curriculum, and also counts toward the Government Department's [Data Science track](https://www.gov.harvard.edu/undergraduate/programs-of-study/data-science/).
 
-## Course structure
+# Course structure
 
-### Textbooks & readings
+## Textbooks & readings
 
 Back when I was in undergrad I was (mostly) able to get my textbooks through Inter-Library Loan, mooching, or other means. The few times that I was forced to spend \$100 (or more) on textbooks I was quite annoyed...
 
@@ -119,11 +119,11 @@ You will be expected to have completed the assigned readings by the time you att
 
 [^1]: Special thanks to [Jack Rametta](https://jackrametta.com/) and [Chris Hare](https://christopherdanielhare.github.io/about.html) for their book recommendations here.
 
-### Warmup questions
+## Warmup questions
 
 You will be required to answer a small set of questions for every class meeting (due 1 hour before class). These will be graded on completion not on accuracy. That being said, if you provide answers that fail to signal that you're engaging with the material (e.g., a response unrelated to the material) you will not be given credit. 
 
-### In-Person participation
+## In-Person participation
 
 Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs.
 
@@ -139,7 +139,7 @@ Participation will be graded as either a 0 (did not meaningfully participate) or
 
 :::
 
-### Classes
+## Classes
 
 ::: callout-important
 #### What to bring to class
@@ -168,7 +168,7 @@ You will be required to sit in these areas for the whole semester so that we are
 
 :::
 
-### Section
+## Section
 
 Sections will be a mandatory part of the course and attendance will be taken. Students will be assigned to their section randomly based on availability. Sections will alternate weekly between: 1) covering material and developing a section-level project; and 2) hosting in-person problem sets.
 
@@ -186,7 +186,7 @@ Additionally, *TFs will not solve the problem sets for you.* During section we r
 
 
 
-### Study Halls
+## Study Halls
 
 Study Halls are a mix of office hours and drop-in tutoring sessions. CAs will hold a table---usually at one of the house dining halls or common rooms---and will answer questions relating to assignments and course material. We highly recommend regularly attending a Study Hall to complete assignments along with your peer study group, attempting to answer questions on your own and looking to a CA when you are stuck.
 
@@ -202,7 +202,7 @@ CAs are instructed to help guide you through homework assignments, not to show y
 
 
 
-### Homework
+## Homework
 
 To quote Matt Blackwell, a previous instructor of this course, "Only reading about data science is about as instructive as reading a lot about hammers or watching someone else wield a hammer. You need to get your hands on a hammer or two." In that vein, you will have homework assignments due at the start of each class period **(printed and handed in to your TFs and CAs).**
 
@@ -229,7 +229,7 @@ We will drop the two lowest homework grades automatically.
 :::
 
 
-### Section research project
+## Section research project
 
 Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level research project.
 
@@ -279,7 +279,7 @@ Remember, AI is expressly prohibited for any writing or slide generation. Anythi
 :::
 
 
-### Final exam
+## Final exam
 
 There will be one three-hour, *in-person* exam held during exam week. We will provide a practice exam before the start of reading week and Study Halls will run throughout that week. The exams will test you on 1) your understanding of concepts in the course; 2) your ability to interpret R code, analyses, and figures; and 3) some math related to how these methods function.
 
@@ -291,7 +291,7 @@ Neither lectures nor TF sections will be explicitly focused on the exam (though 
 
 :::
 
-### Grades
+## Grades
 
 ::: callout-important
 
@@ -326,17 +326,17 @@ As mentioned above, we reserve the right to "bump up" the grades of students who
 :::
 
 
-## Course policies
+# Course policies
 
-### Laptops and written materials
+## Laptops and written materials
 
 Given that this course heavily focuses on data analysis we will be using computers consistently in class, you should always bring your laptop. That being said, we will be putting away our laptops for significant portions of class. Consequently, you will be expected to use some sort of real, existing material to take notes. This could be printer paper, a notebook or binder, even chalk-and-slate, just so long as you are able to physically write notes with some sort of writing utensil. This is not only important because you won't have access to your laptop to take notes but also because physically writing notes is far better for memorization and retention than typing (see [this study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11943480/) for a summary of this research).
 
-### Academic honesty
+## Academic honesty
 
 Don't cheat! Like really, just don't do it. We also take plagiarism (including the use of AI to generate text) very seriously and expect you to write all of your own text. If you are found to have cheated on any of your assignments (or plagiarized someone else's work) you will be reported directly to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/). 
 
-### Coding and AI
+## Coding and AI
 
 While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. **I strongly suggest that you do not use AI in any capacity in this course**.
 
@@ -350,15 +350,15 @@ As mentioned above, you are explicitly prohibited from using AI to generate any 
 
 :::
 
-### Late policy
+## Late policy
 
 Warmup assignments are due 1 hour prior to the start of class *online* and homework assignments are due by the start of class *in-person*. These assignments **will not be accepted late under any circumstances.**
 
-### Regrading policy
+## Regrading policy
 
 If you believe that there has been a grading error for your homework and you have **proof of said error** then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. **This request should be sent to the head TF Nicholas Conroy.**
 
-### Office hours and availability
+## Office hours and availability
 
 Office hours for all of the teaching staff are listed on the [Office Hours page](/resources/office-hours.html).
 
@@ -366,9 +366,9 @@ If you have a general question, you should post it to either the class or your s
 
 
 
-## Course materials
+# Course materials
 
-### Books
+## Books
 
 As mentioned above We will use the following books in this class:
 
@@ -378,7 +378,7 @@ As mentioned above We will use the following books in this class:
 
 Both of these books are free online but you can also purchase hard-copies if you're a big spender (or just prefer hard copies).
 
-### Computing
+## Computing
 
 We're gonna be using R, and a whole bunch of it, to conduct our data analysis. The nice thing about R is that it's free, open-source, and available on essentially every platform (yes, even you Linux sickos). While some of you may be wondering why we aren't using something like Python or Stata the answer is three-fold: 1) R has a ridiculous amount of support and capabilities when it comes to data analysis and it is overwhelmingly the most common language for Political Science (and the social sciences generally, though economists and some sociologists still love Stata for some reason; there are those in the social sciences who even use SAS or SPSS, but we don't talk about them...); 2) it's completely free (Stata is obscenely expensive, though there may be a Harvard license, I haven't checked) *and* super easy to install and setup (yes, I'm criticizing you, Python).
 
@@ -390,11 +390,11 @@ We're also going to use a ""graphical user interface"" (scare quotes intended) c
 
 Feel free to download these before your first section, but that meeting will cover this and more.
 
-## Accessibility
+# Accessibility
 
 If you need reasonable accommodations for this course please contact the [Disability Access Office (DAO)](https://dao.fas.harvard.edu/) and ensure that I (Dr. Fuller) am notified as soon as possible. Accommodations will not alter the core requirements of the course and will not be retroactive. If something changes during the semester, you should contact DAO.
 
 
-## Acknowledgements
+# Acknowledgements
 
 First, I want to thank Matt Blackwell for all of the materials that have served as a foundation from which this course (and site) is built. Second, I'd like to thank Jack Rametta and Chris Hare for their recommendations on books and pedagogy. Third, I especially want to thank Noah Shenker (previous head TF of the course for two years) for invaluable suggestions and feedback for how this course could be improved. And finally, I would like to thank all of the TFs and CAs (especially Head TF Nicholas Conroy) for their hard work and significant contributions to this course.

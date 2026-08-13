@@ -52,12 +52,12 @@ $headings-font-family:        "Atkinson Hyperlegible Next", sans-serif !default;
 $font-size-base:              1.25rem !default;
 $headings-font-weight:        700 !default;
 
-$h1-font-size: $font-size-base * 2.45;
-$h2-font-size: $font-size-base * 1.85;
-$h3-font-size: $font-size-base * 1.5;
-$h4-font-size: $font-size-base * 1.2;
-$h5-font-size: $font-size-base * 1;
-$h6-font-size: $font-size-base * 0.8;
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.66;
+$h3-font-size: $font-size-base * 1.33;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: $font-size-base * 0.8;
+$h6-font-size: $font-size-base * 0.6;
 
 $toc-font-size: 1.1rem;
 $sidebar-font-size: 1.1rem;
@@ -110,6 +110,13 @@ h5,
 h6 {
   color: $white;
   letter-spacing: -0.012em;
+}
+
+h1 {
+  color: #d99b7f;
+  margin-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 4px solid rgba(217, 155, 127, 0.38);
 }
 
 h2 {

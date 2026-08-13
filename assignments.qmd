@@ -1,0 +1,290 @@
+---
+title: "Assignments"
+slug: assignments
+summary: "List of readings, warmup questions, and homework assignments by module and class for Gov 50"
+citeproc: true
+output:
+  blogdown::html_page:
+      toc: TRUE
+---
+
+Below are the readings and assignments organized by module and class/date. 
+
+For every class you should:
+   
+- complete readings;
+- submit answers to warmup questions on Canvas by 1 hour before class; and
+- turn in homework assignments, printed and in-person to your TF/CA, by the beginning of class.
+
+
+# **Module 1** --- An introduction to ‘Quantitative Social Science’
+
+## Class 1 (09/02/2026)
+
+### Readings
+None
+
+### Warmup questions: 
+None
+
+### Homework questions: 
+None
+
+## Class 2 (09/09/2026)
+
+### Readings: 
+- Chapter 1: Overview from *Regression and Other Stories*
+- Chapter 0: Introduction (Welcome & Note to Students) and Chapter 1: Designing Research from *The Effect*
+
+### Warmup questions: Overview of statistics
+1. What are the three challenges of statistical inference?
+2. What are the key skills you should learn from the textbook?
+3. What is the URL of the website with data and examples from the textbook?
+
+### Homework Questions: 
+
+
+
+
+# **Module 2** --- Critical thinking: the role of prediction and defining research questions
+
+## Class 1 (09/14/2026)
+
+### Readings: 
+- Appendices A.1-A.3: Computing in R from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (09/16/2026)
+### Readings: 
+- Chapter 2: Research Questions from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+# **Module 3** --- Back to the basics: data collection, description, and visualization 
+
+## Class 1 (09/21/2026)
+
+### Readings: 
+- Chapter 2: Data and measurement from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (09/23/2026)
+### Readings: 
+- Chapter 3: Describing Variables and Chapter 4: Describing Relationships from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+# **Module 4** --- Nuts and bolts: a review of some math and probability
+
+## Class 1 (09/28/2026)
+
+### Readings: 
+- Chapter 3: Some basic methods in mathematics and probability from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (09/30/2026)
+### Readings: 
+- Chapter 3: Appendices A.4-A.5: Computing from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+# **Module 5** --- Bread and butter: statistical inference and identification
+
+## Class 1 (10/05/2026)
+
+### Readings: 
+- Chapter 4: Statistical inference from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (10/07/2026)
+### Readings: 
+- Chapter 5: Identification from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+
+# **Module 6** --- The city on the hill: simulation(s) and causal diagrams
+
+## Class 1 (10/14/2026)
+
+### Readings: 
+- Chapter 5: Simulation and Appendices A.6-A.7: Computing in R from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (10/19/2026)
+### Readings: 
+- Chapter 6: Causal Diagrams and Chapter 7: Drawing Causal Diagrams from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+# **Module 7** --- Laying the foundation: background on regression modeling and ‘doors’ in causal inference
+
+## Class 1 (10/21/2026)
+
+### Readings: 
+- Chapter 6: Background on regression modeling from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (10/26/2026)
+### Readings: 
+- Chapter 8: Causal Paths and Closing Back Doors and Chapter 9: Finding Front Doors from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+# **Module 8** --- y = mx + b: regression with a single predictor and causal treatment effects
+
+## Class 1 (10/28/2026)
+
+### Readings: 
+- Chapter 7: Linear regression with a single predictor from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (11/02/2026)
+### Readings: 
+- Chapter 10: Treatment Effects from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+# **Module 9** --- y = b1x1 + b2x2 + b3x3...: linear regression with multiple predictors
+
+## Class 1 (11/04/2026)
+
+### Readings: 
+- Chapter 10: Linear regression with multiple predictors from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (11/09/2026)
+### Readings: 
+- Chapter 11: Causality with less modeling and Chapter 12: Opening the Toolbox from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+
+# **Module 10** --- But what about causality?: experiments and selection on observables
+
+## Class 1 (11/11/2026)
+
+### Readings: 
+- Chapter 18: Causal inference and randomized experiments from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (11/16/2026)
+### Readings: 
+- Sections 20.1, 20.2, 20.3 from Chapter 20: Observational studies with measured confounders from *Regression and Other Stories*
+- Sections 13.1, 13.2.0, 13.2.1, 13.4.1, 13.4.2, 13.4.3 from Chapter 13: Regression from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+# **Module 11** --- Rubber meets the road: using regression for experiments and matching
+
+## Class 1 (11/18/2026)
+
+### Readings: 
+- Chapter 19: Causal inference using regression on the treatment variable from *Regression and Other Stories*
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (11/23/2026)
+### Readings: 
+- Sections 20.4, 20.5, 20.7 from Chapter 20: Observational studies with measured confounders from *Regression and Other Stories*
+- Sections 14.1, 14.2, 14.3, 14.5, 14.6 from Chapter 14: Matching from *The Effect*
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
+# **Module 12** --- All by design: design-based causal inference
+
+## Class 1 (11/30/2026)
+
+### Readings: 
+- Section 18.1 from Chapter 18: Difference-in-Differences from *The Effect*
+- [Card & Krueger (1994)](jstor.org/stable/2118030)
+
+### Warmup Questions: 
+
+### Homework Questions: 
+
+## Class 2 (11/02/2026)
+### Readings: 
+- Section 20.1 from Chapter 20: Regression Discontinuity from *The Effect*
+- [Hoekstra (2009)](https://hollis.harvard.edu/permalink/01HVD_INST/726dgh/cdi_mit_journals_restv91i4_304162_2021_11_09_zip_rest_91_4_717)
+
+### Warmup Questions: 
+
+
+### Homework Questions: 
+
+
