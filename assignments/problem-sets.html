@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-91b860f8cae9403a0cdb8892c5f7adc8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-c98774a4e460dec60eec69f233253dee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ccc80ef1fd95a2190f18360a8c644c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-68e9b706887e261a046bbd568647146d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -304,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Click on the Github Classroom link for the assignment in question. You’ll be presented with a page that asks you to accept the assignment. Click “Accept this assignment”.</li>
 <li>Go to this new problem set repository on GitHub. Click on the green “Code” button toward the top right of the page. When you click that, a popup will appear and you can copy the URL (you can click the little clipboard icon to copy this automatically).</li>
 </ol>
-<p><img src="..\files/img/assignments/github-clone.png" class="img-fluid" alt="Cloning the repo"></p>
+<p><img src="../files/img/assignments/github-clone.png" class="img-fluid" alt="Cloning the repo"></p>
 <ol start="4" type="1">
 <li><p>Now, switch to RStudio. Go to the menu bar and hit “File &gt; New Project”. You can then choose what type of project to start. Since we’re importing from Github, we’ll use the “Version Control” option (it’s the bottom of the list). In the next menu, choose “Git”. Now, you can paste the URL in the “Repository URL” box. Choose a set of local directories to place this project and hit “Create Project”. Because this is a <strong>private</strong> repository, you will be prompted to enter your GitHub username and password. Go ahead and do this.</p></li>
 <li><p>As you make changes to your file, make sure to commit those changes. Every commit is a point that you can always go back to if your code stops working for some reason. So doing this often will make sure that you have access to that great feature of git. At an absolute minimum, you should do this every time you complete a question, though you may want to do it more often than that. Committing often means you also don’t have to constantly create new versions of the same file because you’re afraid of making some change. Also, make sure to use informative commit messages so you know what’s changing. <strong>Important: be sure to answer the questions in the Rmd file provided by the template. This is what the autograder will look for when you submit.</strong></p></li>
@@ -316,14 +319,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="step-1-submit-the-github-repository-to-gradescope" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-submit-the-github-repository-to-gradescope">Step 1: Submit the GitHub repository to Gradescope</h3>
 <p>On Gradescope, you’ll find two entries for each assignment. One will be labelled “Autograder” and the other “PDF”. Click on the Autograder entry and select the GitHub submission option. The first time you do this step, you will first need to connect your GitHub account to your Gradescope account.</p>
-<p><img src="..\files/img/assignments/gradescope-github-connect.png" class="img-fluid" alt="Connect Gradescope to GitHub"></p>
+<p><img src="../files/img/assignments/gradescope-github-connect.png" class="img-fluid" alt="Connect Gradescope to GitHub"></p>
 <p>Once you have connected your GitHub account, you can find the repository for the relevant problem set and the “main” branch and hit “Submit”.</p>
-<p><img src="..\files/img/assignments/gradescope-submit.png" class="img-fluid" alt="Choosing repository for submission"></p>
+<p><img src="../files/img/assignments/gradescope-submit.png" class="img-fluid" alt="Choosing repository for submission"></p>
 </section>
 <section id="step-2-check-autograder-output" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-check-autograder-output">Step 2: Check autograder output</h3>
 <p>When you submit the repository, Gradescope will run a series of tests on your code to see if it runs and to check that you have completed the coding tasks asked of you in the assignment. You’ll see a list of test results and an overall score.</p>
-<p><img src="..\files/img/assignments/autograder-results.png" class="img-fluid" alt="Autograder results"></p>
+<p><img src="../files/img/assignments/autograder-results.png" class="img-fluid" alt="Autograder results"></p>
 <p>Check the messages on any questions you got wrong for hints about how to fix them. You may then resubmit the GitHub repository again once you have fixed the code and pushed your changes to GitHub. You should repeat this process as many times as needed before you get a perfect score.</p>
 </section>
 <section id="step-3-upload-pdf" class="level3">

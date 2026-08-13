@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -74,10 +77,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-91b860f8cae9403a0cdb8892c5f7adc8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-c98774a4e460dec60eec69f233253dee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ccc80ef1fd95a2190f18360a8c644c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-68e9b706887e261a046bbd568647146d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -218,25 +221,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-your-github-repository" class="level2">
 <h2 class="anchored" data-anchor-id="create-your-github-repository">Create your GitHub repository</h2>
 <p>The next thing you will do is create the GitHub repository that will house your final project. You can do this easily by using the <a href="https://github.com/gov50/gov50-final-project">Gov 50 Final Project template</a>. After going to that repository, click on the green “Use this template” button:</p>
-<p><img src="..\files/img/assignments/final-project-template.png" class="img-fluid" alt="Using template"></p>
+<p><img src="../files/img/assignments/final-project-template.png" class="img-fluid" alt="Using template"></p>
 <p>When presented with the option of the repository name, for now you can call it <code>gov50-final-project</code> or something similar. You can change the name of repository later once you have a more solid idea for your final project idea. Make sure that <strong>Public</strong> option is selected.</p>
 </section>
 <section id="setting-up-github-pages" class="level2">
 <h2 class="anchored" data-anchor-id="setting-up-github-pages">Setting up GitHub pages</h2>
 <p>Once you have your repository created, it’s time to have GitHub publish the pages. In the repository click on the settings tab and then select the “Pages” entry in the side bar. There you should be able to select a branch to publish the site from. Select the “main” branch and hit “Save”. The setup should look like this:</p>
-<p><img src="..\files/img/assignments/github-pages.png" class="img-fluid" alt="GitHub Pages setup"></p>
+<p><img src="../files/img/assignments/github-pages.png" class="img-fluid" alt="GitHub Pages setup"></p>
 <p>Once you do this, GitHub will start to publish your site. After a few minutes, you’ll see a new box on the Pages settings pane that gives you the URL:</p>
-<p><img src="..\files/img/assignments/github-pages-after.png" class="img-fluid" alt="GitHub Pages link"></p>
+<p><img src="../files/img/assignments/github-pages-after.png" class="img-fluid" alt="GitHub Pages link"></p>
 <p>Click on “Visit Site” to see your site in progress. It should be at the URL <code>https://{username}.github.io/{repo-name}</code>.</p>
 </section>
 <section id="working-with-your-repo" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-your-repo">Working with your repo</h2>
 <p>You should now create a project in RStudio based on your final project repository. Open the <code>index.Rmd</code> file and update it with your name and some thoughts about your final project ideas. Hit the “Knit” button to preview your site. If you are happy with your edits, stage the files and commit them in the usual way:</p>
-<p><img src="..\files/img/assignments/rstudio-update-distill.png" class="img-fluid" alt="Committing changes"></p>
+<p><img src="../files/img/assignments/rstudio-update-distill.png" class="img-fluid" alt="Committing changes"></p>
 <p>Once committed, push your changes to GitHub. When you go back to your repo, you’ll see a yellow dot, indicating that GitHub is working on publishing your changes:</p>
-<p><img src="..\files/img/assignments/github-pages-updating.png" class="img-fluid" alt="GitHub Pages Updating"></p>
+<p><img src="../files/img/assignments/github-pages-updating.png" class="img-fluid" alt="GitHub Pages Updating"></p>
 <p>Once it is done publishing, you’ll see a green checkmark:</p>
-<p><img src="..\files/img/assignments/github-pages-done.png" class="img-fluid" alt="GitHub Pages Done Publishing"></p>
+<p><img src="../files/img/assignments/github-pages-done.png" class="img-fluid" alt="GitHub Pages Done Publishing"></p>
 <p>You can now go to your site and see the changes.</p>
 </section>
 <section id="milestone-1" class="level2">

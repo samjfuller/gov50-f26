@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -76,10 +79,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-91b860f8cae9403a0cdb8892c5f7adc8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-c98774a4e460dec60eec69f233253dee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ccc80ef1fd95a2190f18360a8c644c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-68e9b706887e261a046bbd568647146d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -385,9 +388,9 @@ git config --global user.email "john@harvard.edu"</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>This will open a page on GitHub asking you to create a “Personal Access Token” or PAT (this is the secret code). You’ll have to give the PAT a note that describes what it’s for and choose an expiration date. To minimize problems throughout the semester, you should set it to a date after the semester ends such as 12/31/2023. We recommend keeping the “scope” selections as they are and clicking the “Generate Token” button at the bottom of the page.</p>
-<p><img src="..\files/img/assignments/github-pat.png" class="img-fluid" alt="Create a GitHub PAT"></p>
+<p><img src="../files/img/assignments/github-pat.png" class="img-fluid" alt="Create a GitHub PAT"></p>
 <p>You will then see a new screen with a long sequence of letters. This is your token or secret code. You should treat it like a password and do not share it with anyone. If you use a password manager like 1Password or LastPass, you can put it in a secure note in those programs. Copy this by hitting the button with the two boxes.</p>
-<p><img src="..\files/img/assignments/github-pat-copy.png" class="img-fluid" alt="Copy the GitHub PAT"></p>
+<p><img src="../files/img/assignments/github-pat-copy.png" class="img-fluid" alt="Copy the GitHub PAT"></p>
 <p>Once you have copied the PAT, call <code>gitcreds::gitcreds_set()</code> from the RStudio console and paste the PAT when prompted. You should see the following:</p>
 <pre><code>&gt; gitcreds::gitcreds_set()
 ? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -399,28 +402,28 @@ git config --global user.email "john@harvard.edu"</code></pre>
 <section id="creating-your-first-repo" class="level3">
 <h3 class="anchored" data-anchor-id="creating-your-first-repo">Creating your first repo</h3>
 <p>Once you are logged into Github and at its homepage, you can now create a new repo (shorthand for “repository”). These repositories are like folders in Dropbox except a bit more structured. Create one by clicking on the green “New” button in the top-left of the screen next to “Repositories.” It should look like this:</p>
-<p><img src="..\files/img/assignments/github-create-new.png" class="img-fluid" alt="Create a new repo"></p>
+<p><img src="../files/img/assignments/github-create-new.png" class="img-fluid" alt="Create a new repo"></p>
 <p>Now a new screen should pop up requesting some information for the new repo. Give this new Repository the name <code>gov50-problem-set0</code> and set it to be a private repository. You can give it an informative description and check the “Initialize this repository with a README” checkbox. This latter option will add a README to the repository where you can add more information that will display nicely in the repository’s homepage. Your setup should look something like this:</p>
-<p><img src="..\files/img/assignments/github-create-options.png" class="img-fluid" alt="New Repo Options"></p>
+<p><img src="../files/img/assignments/github-create-options.png" class="img-fluid" alt="New Repo Options"></p>
 <p>Once you create your repo, you are ready to connect it to RStudio on your local computer. The easiest way to do this is go to the repo homepage (you’re already there if you’ve just created it) and click on the green “Code” button toward the top right of the page. When you click that, a popup will appear and you can copy the URL (you can click the little clipboard icon to copy this automatically).</p>
-<p><img src="..\files/img/assignments/github-clone.png" class="img-fluid" alt="Cloning the repo"></p>
+<p><img src="../files/img/assignments/github-clone.png" class="img-fluid" alt="Cloning the repo"></p>
 <p>Now, switch to RStudio. Go to the menu bar and hit “File &gt; New Project”. You can then choose what type of project to start. Since we’re importing from Github, we’ll use the “Version Control” option (it’s the bottom of the list). In the next menu, choose “Git”. Now, you can paste the URL in the “Repository URL” box. Choose a set of local directories to place this project and hit “Create Project”. And now you’ll have your project ready to go in RStudio.</p>
 </section>
 </section>
 <section id="working-with-a-project-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="working-with-a-project-in-rstudio">Working with a project in RStudio</h2>
 <p>You’ll see in the bottom right window of RStudio you’ll now see the files from your Github project.</p>
-<p><img src="..\files/img/assignments/rstudio-files.png" class="img-fluid" alt="Files in RStudio"></p>
+<p><img src="../files/img/assignments/rstudio-files.png" class="img-fluid" alt="Files in RStudio"></p>
 <p>Let’s edit the README file by clicking on <code>README.md</code> in that file pane and you’ll be able to edit it in the top-left pane. Change the header from <code># gov-50-problem-set0</code> to <code># Introduction</code> and save the file (⌘+S or Ctrl+S). If you click on the “Git” tab in the top right panel, you will a list of the changes you’ve made to the repo since the last commit (you can think of a commit as a more permanent type of saving work to the git repo).</p>
-<p><img src="..\files/img/assignments/rstudio-git-panel.png" class="img-fluid" alt="Git panel in RStudio"></p>
+<p><img src="../files/img/assignments/rstudio-git-panel.png" class="img-fluid" alt="Git panel in RStudio"></p>
 <p>One thing you’ll notice here is that git thinks that <code>gov50-problem-set0.Rproj</code> is a file that maybe should go into the repo. But this file is just for our local copy of RStudio and shouldn’t really go into the repo. To prevent git from bothering us about it every time we open something, we can modify the <code>.gitignore</code> file to tell git to ignore certain files. Open <code>.gitignore</code> and add a new line with <code>*.Rproj</code> on it to tell git to ignore any file with the extension <code>.Rproj</code>. Make sure to save the file.</p>
-<p><img src="..\files/img/assignments/rstudio-edit-gitignore.png" class="img-fluid" alt="Editing .gitignore"></p>
+<p><img src="../files/img/assignments/rstudio-edit-gitignore.png" class="img-fluid" alt="Editing .gitignore"></p>
 <p>If you go back to the Git tab in the top right and refresh (little circular arrow in the top right corner), you see that <code>gov50-problem-set0.Rproj</code> is removed from our list. Now we are ready to commit our changes. Click the “Staged” box for <code>.gitignore</code> and <code>README.md</code> and hit the “Commit” button just above the file list. You’ll see a window with the changes that you are about to commit.</p>
-<p><img src="..\files/img/assignments/rstudio-commit.png" class="img-fluid" alt="Commit dialog box in RStudio"></p>
+<p><img src="../files/img/assignments/rstudio-commit.png" class="img-fluid" alt="Commit dialog box in RStudio"></p>
 <p>You can click on different files to see what exactly you are changing. Add a short but informative commit message that describes what you are committing and hit “Commit”. Once this completes, you can hit the “Push” button in the top right to push that commit back to Github.</p>
-<p><img src="..\files/img/assignments/rstudio-push.png" class="img-fluid" alt="Push to GitHub"></p>
+<p><img src="../files/img/assignments/rstudio-push.png" class="img-fluid" alt="Push to GitHub"></p>
 <p>If you go back to your repo’s homepage on Github and refresh the page, you’ll see the updates to your README file and the new <code>.gitignore</code>.</p>
-<p><img src="..\files/img/assignments/github-changed.png" class="img-fluid" alt="Github repo after commit"></p>
+<p><img src="../files/img/assignments/github-changed.png" class="img-fluid" alt="Github repo after commit"></p>
 <p>And you’re done! You’ve just created your first repo.</p>
 
 

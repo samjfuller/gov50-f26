@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-91b860f8cae9403a0cdb8892c5f7adc8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-c98774a4e460dec60eec69f233253dee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ccc80ef1fd95a2190f18360a8c644c27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-68e9b706887e261a046bbd568647146d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -182,9 +185,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="missing-git-tab-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="missing-git-tab-in-rstudio">Missing Git tab in RStudio</h2>
 <p>If you are missing your Git tab in RStudio, the most likely culprit is that you simply don’t have the RStudio project for the repository open in RStudio. In the upper right-hand corner of RStudio, you can see the current project that is open. If you do not have a project open, you might see this:</p>
-<p><img src="..\files/img/no_project.png" class="img-fluid"></p>
+<p><img src="../files/img/no_project.png" class="img-fluid"></p>
 <p>To get to your project, simply click on that Project: (None) button to reveal a list of recent projects, from which you will usually see the one you are working on:</p>
-<p><img src="..\files/img/project_list.png" class="img-fluid"></p>
+<p><img src="../files/img/project_list.png" class="img-fluid"></p>
 </section>
 <section id="errors-pushing-to-github" class="level2">
 <h2 class="anchored" data-anchor-id="errors-pushing-to-github">Errors pushing to GitHub</h2>
@@ -193,22 +196,22 @@ ul.task-list li input[type="checkbox"] {
 <p>/usr/bin/git push origin HEAD:refs/heads/main To https://github.com/gov50-f23/gov-50-hw-2-mattblackwell.git ! [rejected] HEAD -&gt; main (non-fast-forward) error: failed to push some refs to ‘https://github.com/gov50-f23/gov-50-hw-2-mattblackwell.git’ hint: Updates were rejected because the tip of your current branch is behind hint: its remote counterpart. Integrate the remote changes (e.g.&nbsp;hint: ‘git pull …’) before pushing again. hint: See the ‘Note about fast-forwards’ in ‘git push –help’ for details.</p>
 </blockquote>
 <p>This can happen if you edit the repository manually on the GitHub website rather than in your local version. Sometimes you can fix this problem by simply hitting the “Pull” button in RStudio:</p>
-<p><img src="..\files/img/pull.png" class="img-fluid"></p>
+<p><img src="../files/img/pull.png" class="img-fluid"></p>
 <p>If this solves your problem, great! If you get an error message when trying to pull, then you’ll need to resolve the conflicts manually. First start a new session of RStudio by going to the Session menu and hitting “New Session”:</p>
-<p><img src="..\files/img/new_session.png" class="img-fluid"></p>
+<p><img src="../files/img/new_session.png" class="img-fluid"></p>
 <p>This will open a new RStudio window. In this new window, we are going to create a new project from the same repository. When creating this new project, be sure to add <code>_new</code> to the end of the project directory name:</p>
-<p><img src="..\files/img/new_clone.png" class="img-fluid"></p>
+<p><img src="../files/img/new_clone.png" class="img-fluid"></p>
 <p>Now you should have two RStudio sessions with two different projects: the original local one and a new one directly from GitHub:</p>
-<p><img src="..\files/img/both_projects.png" class="img-fluid"></p>
+<p><img src="../files/img/both_projects.png" class="img-fluid"></p>
 <p>Assuming you want to overwrite whatever is on the GitHub website with what is on you local computer, copy the contents of your Rmd file from the old RStudio project to the same Rmd file in the new RStudio project. In the new RStudio project, knit the Rmd file, commit any changes, and then push to GitHub. Thew new RStudio project should be all synced now.</p>
 <p>Once you are confident that the new project has all of the changes that you want, simply delete the old RStudio project from your computer.</p>
 </section>
 <section id="files-larger-than-100-mb" class="level2">
 <h2 class="anchored" data-anchor-id="files-larger-than-100-mb">Files larger than 100 MB</h2>
 <p>If you get a push error complaining about files greater than 100 MB, you will need to follow similar steps to the <a href="https://gov50-f23.github.io/assignments/troubleshooting.html#errors-pushing-to-github">pull error steps</a> in the last section. Once you have copied over the contents of your Rmd files, you can then add your data files. For files over 100 MB, you will add them to the the <code>.gitignore</code> file of your new repository. To do this, add the file to your new repository and it will show up in the Git tab. Right-click on the new file in the Git tab and hit the Ignore button:</p>
-<p><img src="..\files/img/gitignore.png" class="img-fluid"></p>
+<p><img src="../files/img/gitignore.png" class="img-fluid"></p>
 <p>A dialog box will open and you can hit “Save” which will add or amend a <code>.gitignore</code> file in your repository. You should then stage and commit that <code>.gitignore</code> file and push.</p>
-<p><img src="..\files/img/committing-gitignore.png" class="img-fluid"></p>
+<p><img src="../files/img/committing-gitignore.png" class="img-fluid"></p>
 <p>A good practice would be to now write an Rmd file or R script that will load the ignored big data file, subset it to certain rows and columns and then save the file as a csv file using <a href="https://readr.tidyverse.org/reference/write_delim.html"><code>write_csv()</code></a>. Once you get that csv file to under 100 MB, you can commit that file and use it as the main data file in your main Rmd file.</p>
 </section>
 <section id="final-project-website-is-not-updating" class="level2">
@@ -219,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="missing-images-and-figures-in-final-project-website" class="level2">
 <h2 class="anchored" data-anchor-id="missing-images-and-figures-in-final-project-website">Missing images and figures in final project website</h2>
 <p>If you are missing the figures on your final project website, but you saw them when you knitted on your computer, you probably need to stage, commit, and push the output of your knitting to GitHub. In particular, you should see a bunch of files in your Git tab:</p>
-<p><img src="..\files/img/distill-img-files.png" class="img-fluid"></p>
+<p><img src="../files/img/distill-img-files.png" class="img-fluid"></p>
 <p>You need to stage all of those, commit the changes, and push. Make sure that you do not stage any large data files by accident.</p>
 
 
