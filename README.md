@@ -1,6 +1,6 @@
 # Gov50: Data Science for the Social Sciences <a href='https://gov50.mattblackwell.org/'><img src='files/img/gov50-icon-512.png' align="right" height="139" /></a>
 
-This repo houses the [Quarto][] sources for an updated version of the GOV 50 website which is built directly off of [Matt Blackwell's](https://mattblackwell.org/) [GOV 50 course from Fall 2023](https://github.com/mattblackwell/gov50-f23.github.io).
+This repo houses the Quarto sources for an updated version of the GOV 50 website which is built directly off of [Matt Blackwell's](https://mattblackwell.org/) [GOV 50 course from Fall 2023](https://github.com/mattblackwell/gov50-f23.github.io).
 
 ## How to build this site
 
