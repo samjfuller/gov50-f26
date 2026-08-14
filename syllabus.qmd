@@ -67,7 +67,7 @@ All of this together will hopefully generate an interest (and maybe passion!) fo
 
 ## A note on the structure and difficulty of this course
 
-Learning statistical/social-science/political methodology *is* difficult, there's no two ways about it. You will be tasked with essentially learning two foreign languages: statistics/data-analysis and R. Continuing with this analogy of language, the goal here is to learn how to have and understand conversations, not to simply learn basic turns of phrase rote grammatical rules.
+Learning statistical/social-science/political methodology *is* difficult, there's no two ways about it. You will be tasked with essentially learning two foreign languages: statistics/data-analysis and R. Continuing with this analogy of language, the goal here is to learn how to have and understand conversations, not to simply learn basic turns of phrase and rote grammatical rules.
 
 That being said, each and every one of you is capable of grasping this material, both conceptually and computationally. If you do really engage with this course then you will come away with a great deal of knowledge that will prepare you to interpret, critique, and build upon social science research.
 
@@ -113,7 +113,7 @@ This course satisfies the Methods requirement for the Government Department, the
 
 Back when I was in undergrad I was (mostly) able to get my textbooks through Inter-Library Loan, mooching, or other means. The few times that I was forced to spend \$100 (or more) on textbooks I was quite annoyed...
 
-Consequently, I have assigned two *completely free* textbooks for this course: [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman (take a look at his [blog](https://statmodeling.stat.columbia.edu/) for really great thinking on statistics and science, we'll be reading some of his posts for class, in fact), Jennifer Hill, & Aki Vehtari as well as [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/) by Nick Huntington-Klein.[^1] You are more than welcome to purchase hard copies of either book but you are by no means required (and technically the online copies are the most up-to-date).
+Consequently, I have assigned two *completely free* textbooks for this course: [Regression and Other Stories](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman (take a look at his [blog](https://statmodeling.stat.columbia.edu/) for really great thinking on statistics and science), Jennifer Hill, & Aki Vehtari as well as [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/) by Nick Huntington-Klein.[^1] You are more than welcome to purchase hard copies of either book but you are by no means required (and technically the online copies are the most up-to-date).
 
 You will be expected to have completed the assigned readings by the time you attend class. Relatedly, warmup assignments will be due 1 hour before each class and will correspond directly to the readings assigned for each class.
 
@@ -190,7 +190,7 @@ Additionally, *TFs will not solve the problem sets for you.* During section we r
 
 Study Halls are a mix of office hours and drop-in tutoring sessions. CAs will hold a table---usually at one of the house dining halls or common rooms---and will answer questions relating to assignments and course material. We highly recommend regularly attending a Study Hall to complete assignments along with your peer study group, attempting to answer questions on your own and looking to a CA when you are stuck.
 
-You can find a list of the Study Hall times on the [Study Hall Schedule](/resources/study-halls.html) page.
+You can find a list of the Study Hall times on the [Study Hall Schedule](office-hours_study-halls.html) page.
 
 ::: callout-important
 
@@ -281,13 +281,20 @@ Remember, AI is expressly prohibited for any writing or slide generation. Anythi
 
 ## Final exam
 
-There will be one three-hour, *in-person* exam held during exam week. We will provide a practice exam before the start of reading week and Study Halls will run throughout that week. The exams will test you on 1) your understanding of concepts in the course; 2) your ability to interpret R code, analyses, and figures; and 3) some math related to how these methods function.
+There will be one three-hour, *in-person* exam held during exam week. We will provide a practice exam before the start of reading week and Study Halls will run throughout that week. The exam will test you on:
+
+1. your understanding of how to use statistics for quantitative social science
+2. your understanding of causality and how we can make causal inferences (you will not be tested on designs if we do not end up covering them); 
+3. your ability to think through and generate research designs to answer research questions; and 
+4. your ability to interpret code, results from statistical analyses, and data visualizations.
+
+Neither lectures nor TF sections will be explicitly focused on the exam (though obviously we will be covering material that will be on the exam in both).
 
 ::: callout-important
 
-#### Exam material will only (explicitly) be covered in study halls
+#### The exam will only be on class material
 
-Neither lectures nor TF sections will be explicitly focused on the exam (though obviously we will be covering material that will be on the exam in both). 
+ You will only be tested on material explicitly covered in the course. If we didn't read about it or cover it in class then you will not be expected to know it.
 
 :::
 
@@ -344,7 +351,7 @@ Simply put, using AI in this course *will actively hurt you* in a) understanding
 
 ::: callout-important
 
-#### AI for any writing is **explicitly prohibited** 
+#### AI for any writing is **expressly prohibited** 
 
 As mentioned above, you are explicitly prohibited from using AI to generate any written portion of any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
 
@@ -360,10 +367,9 @@ If you believe that there has been a grading error for your homework and you hav
 
 ## Office hours and availability
 
-Office hours for all of the teaching staff are listed on the [Office Hours page](/resources/office-hours.html).
+Office hours for all of the teaching staff are listed on the [Office Hours page](office-hours_study-halls.html).
 
 If you have a general question, you should post it to either the class or your section Ed Discussion Board. This is by far the fastest way to get an answer, much faster than emailing one of the teaching staff. However, you can also email me directly at [sfuller\@fas.harvard.edu](mailto:sfuller@fas.harvard.edu) if you have a question that is about a personal situation.
-
 
 
 # Course materials
@@ -380,11 +386,17 @@ Both of these books are free online but you can also purchase hard-copies if you
 
 ## Computing
 
-We're gonna be using R, and a whole bunch of it, to conduct our data analysis. The nice thing about R is that it's free, open-source, and available on essentially every platform (yes, even you Linux sickos). While some of you may be wondering why we aren't using something like Python or Stata the answer is three-fold: 1) R has a ridiculous amount of support and capabilities when it comes to data analysis and it is overwhelmingly the most common language for Political Science (and the social sciences generally, though economists and some sociologists still love Stata for some reason; there are those in the social sciences who even use SAS or SPSS, but we don't talk about them...); 2) it's completely free (Stata is obscenely expensive, though there may be a Harvard license, I haven't checked) *and* super easy to install and setup (yes, I'm criticizing you, Python).
+We're gonna be using R, and a whole bunch of it, to conduct our data analysis. The nice thing about R is that it's free, open-source, and available on essentially every platform (yes, even you Linux sickos). While some of you may be wondering why we aren't using something like Python or Stata the answer is three-fold: 
 
-- You can download [R here](https://cran.r-project.org/), just choose your operating system.
+1. R has a ridiculous amount of support and capabilities when it comes to data analysis and it is overwhelmingly the most common language for Political Science (and the social sciences generally, though economists and some sociologists still love Stata for some reason; there are those in the social sciences who even use SAS or SPSS, but we don't talk about them...)
+
+2. it's completely free (Stata is obscenely expensive, though there may be a Harvard license, I haven't checked) *and* 
+
+3. it's super easy to install and setup (yes, I'm criticizing you, Python).
 
 We're also going to use a ""graphical user interface"" (scare quotes intended) called RStudio to actually interact with R (if you're familiar with Python this is like using VSCode to work with Python). All you need to know is that RStudio makes it a lot easier to code in R. So use it.
+
+- You can download [R here](https://cran.r-project.org/), just choose your operating system.
 
 - You can download [RStudio here](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads), just choose your operating system.
 
