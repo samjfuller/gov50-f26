@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,6 +109,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -393,6 +471,26 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="homework-questions-1" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-1">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Sketching a regression model and data</strong> (Exercise 1.2 of <em>Regression and Other Stories</em>). Figure 1.1b of <em>Regression and Other Stories</em> shows data corresponding to the fitted line <span class="math inline">y = 46.3 + 3.0x</span> with residual standard deviation 3.9, and values of <span class="math inline">x</span> ranging roughly from 0 to 4%.</p>
+<ul>
+<li>Sketch hypothetical data with the same range of <span class="math inline">x</span> but corresponding to the line <span class="math inline">y = 30 + 10x</span> with residual standard deviation 3.9.</li>
+<li>Sketch hypothetical data with the same range of <span class="math inline">x</span> but corresponding to the line <span class="math inline">y = 30 + 10x</span> with residual standard deviation 10.</li>
+</ul></li>
+<li><p><strong>Goals of regression</strong> (Exercise 1.3 of <em>Regression and Other Stories</em>). Download data on a topic of interest to you. Without graphing the data or performing any statistical analysis, discuss how you might use these data to:</p>
+<ul>
+<li>fit a regression to estimate a relationship of interest;</li>
+<li>use regression to adjust for differences between treatment and control groups; and</li>
+<li>use a regression to make predictions.</li>
+</ul></li>
+<li><p><strong>Problems of statistics</strong> (Exercise 1.4 of <em>Regression and Other Stories</em>). Give examples of applied statistics problems of interest to you with challenges in:</p>
+<ul>
+<li>generalizing from sample to population;</li>
+<li>generalizing from treatment to control group; and</li>
+<li>generalizing from observed measurements to the underlying constructs of interest.</li>
+</ul>
+<p>Explain your answers.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -408,9 +506,22 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-1" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-1">Warmup Questions:</h3>
+<p><strong>Coding: sequences, sampling, looping, and vectors</strong></p>
 </section>
 <section id="homework-questions-2" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-2">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Goals of regression</strong> (Exercise 1.5 of <em>Regression and Other Stories</em>). Give examples of applied statistics problems of interest to you in which the goals are:</p>
+<ul>
+<li>forecasting/classification;</li>
+<li>exploring associations;</li>
+<li>extrapolation; and</li>
+<li>causal inference.</li>
+</ul>
+<p>Explain your answers.</p></li>
+<li><p><strong>Causal inference</strong> (Exercise 1.6 of <em>Regression and Other Stories</em>). Find a real-world example of interest with a treatment group, control group, a pre-treatment predictor, and a post-treatment predictor. Make a graph like Figure 1.8 using the data from this example.</p></li>
+<li><p><strong>In pairs: Working through your own example</strong> (Exercise 1.10 of <em>Regression and Other Stories</em>). Download or collect data on a topic of interest to you. You can use this example to work through the concepts and methods covered in the book, so the example should be worth your time and should have some complexity. This assignment continues throughout the book as the final exercise of each chapter. For this first exercise, discuss your applied goals in studying this example and how the data can address these goals.</p></li>
+</ol>
 </section>
 </section>
 <section id="class-2-09162026" class="level2">
@@ -423,9 +534,35 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-2" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-2">Warmup Questions:</h3>
+<ol type="1">
+<li>What is data mining useful for? What are its limitations?</li>
+<li>What is the difference between a theory, research question, and hypothesis?</li>
+</ol>
 </section>
 <section id="homework-questions-3" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-3">Homework Questions:</h3>
+<ol type="1">
+<li><p>Are each of the following questions a good research question? Explain your reasoning. If a question is not good, suggest ways to make it a better question if possible.</p>
+<ul>
+<li>Do severe hurricanes cause psychological disorders in children in gestation during the hurricanes?</li>
+<li>Are dogs the best pets?</li>
+<li>Do organic labels on grocery-store items increase sales of those items?</li>
+</ul></li>
+<li><p>Think about a possible research question in your field of study (e.g., your major).</p>
+<ul>
+<li>Can this question be answered? Is it feasible to answer it?</li>
+<li>Does the question answer something about how the world works? If so, how?</li>
+<li>Write down some hypotheses based on the question.</li>
+<li>What kind of data needs to be collected to test the hypothesis?</li>
+</ul></li>
+<li><p>For each of the following theories and research questions, does the research question inform theory? That is, does answering the research question tell you something about the theory?</p>
+<ul>
+<li><strong>Theory:</strong> People donate to political campaigns largely because they want to defeat a political opponent, not because they like the candidate they are donating to. <strong>Research question:</strong> Do negative advertisements increase political campaign donations in U.S. Congressional races more than positive advertisements do?</li>
+<li><strong>Theory:</strong> Men have higher average salaries than women in the U.S. partially because employers discriminate against women in job interviews. <strong>Research question:</strong> Does the use of a gender-blind interview process, where hiring decisions and salary offers are made without knowing the employee’s gender, shrink the salary gap between men and women?</li>
+<li><strong>Theory:</strong> Living in a rich country improves happiness. <strong>Research question:</strong> Do people who live in richer countries on average report higher happiness levels?</li>
+<li><strong>Theory:</strong> Many plants survive without eating because they collect energy from sunlight. <strong>Research question:</strong> Are plants that live underneath a thick canopy, where little light can get through, less healthy than those in a loose canopy?</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -441,9 +578,30 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-3" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-3">Warmup Questions:</h3>
+<ol type="1">
+<li>In R, create data <span class="math inline">x</span> taking on the values 0, 0.5, 1, <span class="math inline">\ldots</span>, 10; then create <span class="math inline">y = \sqrt{x}</span> and make a scatterplot of <span class="math inline">y</span> versus <span class="math inline">x</span>.</li>
+<li>In R, create a plot of the line <span class="math inline">y = \sqrt{x}</span> for <span class="math inline">x</span> ranging from 0 to 10.</li>
+</ol>
 </section>
 <section id="homework-questions-4" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-4">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Statistics as generalization</strong> (Exercise 1.7 of <em>Regression and Other Stories</em>). Find a published paper on a topic of interest where you feel there has been insufficient attention to:</p>
+<ul>
+<li>generalizing from sample to population;</li>
+<li>generalizing from treatment to control group; and</li>
+<li>generalizing from observed measurements to the underlying constructs of interest.</li>
+</ul>
+<p>Explain your answers.</p></li>
+<li><p><strong>Statistics as generalization</strong> (Exercise 1.8 of <em>Regression and Other Stories</em>). Find a published paper on a topic of interest where you feel the following issues have been addressed well:</p>
+<ul>
+<li>generalizing from sample to population;</li>
+<li>generalizing from treatment to control group; and</li>
+<li>generalizing from observed measurements to the underlying constructs of interest.</li>
+</ul>
+<p>Explain your answers.</p></li>
+<li><p><strong>Composite measures</strong> (Exercise 2.1 of <em>Regression and Other Stories</em>). Following the example of the Human Development Index in Section 2.1, find a composite measure on a topic of interest to you. Track down its individual components and use scatterplots to understand how the measure works, as was done for that example in the book.</p></li>
+</ol>
 </section>
 </section>
 <section id="class-2-09232026" class="level2">
@@ -456,9 +614,141 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-4" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-4">Warmup Questions:</h3>
+<ol type="1">
+<li><p>What is a variable?</p></li>
+<li><p>Which of the following commonly represents the truth we are trying to estimate in statistics?</p>
+<ul>
+<li>English/Latin letters like <span class="math inline">x</span> and <span class="math inline">y</span></li>
+<li>Modifications of English letters like <span class="math inline">\bar{x}</span></li>
+<li>Greek letters like <span class="math inline">\mu</span> and <span class="math inline">\beta</span></li>
+<li>Modifications of Greek letters like <span class="math inline">\hat{\beta}</span></li>
+</ul></li>
+<li><p>Which term provides a description of the probability that each possible value of a variable will occur?</p>
+<ul>
+<li>Variation</li>
+<li>Distribution</li>
+<li>Range</li>
+<li>Mean</li>
+</ul></li>
+<li><p>What is a conditional distribution?</p></li>
+<li><p>Which term describes a measurement of how much two variables vary with each other?</p>
+<ul>
+<li>Variance</li>
+<li>Conditional mean</li>
+<li>Covariance</li>
+<li>Local mean</li>
+</ul></li>
+</ol>
 </section>
 <section id="homework-questions-5" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-5">Homework Questions:</h3>
+<ol type="1">
+<li><p>For each of the following variables, what type of variable is it: continuous, count, ordinal, categorical, or qualitative?</p>
+<ul>
+<li>Age</li>
+<li>Gender</li>
+<li>The number of times that the President has tweeted in the past day</li>
+<li>Income</li>
+<li>Number of Instagram posts about statistics in the past month</li>
+<li>The number of unemployment claims filed in the U.S. last week</li>
+<li>The university or college that a student attends</li>
+<li>A therapist’s written assessment of a patient’s symptoms of depression</li>
+<li>Whether a soccer team is in its league’s A division (highest), B division (next highest), or C division (lowest)</li>
+</ul></li>
+<li><p>Below is a frequency table depicting the salaries of political science professors employed at a university. The <code>Salary</code> column contains the salary, and the <code>Frequency</code> column contains the number of professors who earn the stated salary.</p></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Salary</th>
+<th style="text-align: right;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">$85,000</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">$90,000</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">$100,000</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">$120,000</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">$125,000</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">$130,000</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Calculate the average salary earned by professors in the Economics department.</li>
+<li>Calculate the median.</li>
+<li>Calculate the minimum and maximum.</li>
+<li>Calculate the interquartile range.</li>
+</ul>
+<ol start="3" type="1">
+<li>The following graph represents the final-exam scores for 1,000 students who took an Introduction to Statistics course at a university.</li>
+</ol>
+<p><img src="files/img/assignments/m3_d2_density.jpg" class="img-fluid"></p>
+<ul>
+<li>Describe the distribution.</li>
+<li>Is there skewness to the data?</li>
+<li>Would the mean or the median be a better measure to describe the center of the distribution?</li>
+<li>What measure would you use to describe the variability in the distribution?</li>
+</ul>
+<ol start="4" type="1">
+<li>The fictional table below depicts data collected from 3,000 university students on their classification (Freshman, Sophomore, Junior, Senior) and whether they receive financial aid.</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Financial aid</th>
+<th style="text-align: right;">Freshman</th>
+<th style="text-align: right;">Sophomore</th>
+<th style="text-align: right;">Junior</th>
+<th style="text-align: right;">Senior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">508</td>
+<td style="text-align: right;">349</td>
+<td style="text-align: right;">425</td>
+<td style="text-align: right;">288</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">371</td>
+<td style="text-align: right;">337</td>
+<td style="text-align: right;">384</td>
+<td style="text-align: right;">338</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Calculate the probability of receiving financial aid given that a student is a Senior.</li>
+<li>Calculate the probability that a student is a Senior given that they receive financial aid.</li>
+<li>Calculate the probability of receiving financial aid given that a student is a Freshman.</li>
+</ul>
+<ol start="5" type="1">
+<li><p>Consider the line of best fit shown in class.</p>
+<ul>
+<li>What is the conditional predicted mean when <span class="math inline">x</span> takes the specified value?</li>
+<li>What is the conditional predicted mean for the second specified value of <span class="math inline">x</span>?</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -474,9 +764,25 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-5" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-5">Warmup Questions:</h3>
+<p><strong>Weighted averages</strong></p>
+<p>In R, create three vectors each of length 10: the number 1 repeated 10 times; the numbers 1 to 10; and the sequence 1, 4, 9, <span class="math inline">\ldots</span>, 100. Compute the following weighted averages of these three vectors. In each case, your output should be a vector of length 10.</p>
+<ol type="1">
+<li>Weights <span class="math inline">1/3</span>, <span class="math inline">1/3</span>, <span class="math inline">1/3</span></li>
+<li>Weights 1, 1, 1</li>
+<li>Weights 1, 2, 3</li>
+<li>Weights 0, 1, 2</li>
+</ol>
 </section>
 <section id="homework-questions-6" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-6">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Data visualization</strong> (Exercise 2.6 of <em>Regression and Other Stories</em>). Take data from some problem of interest to you and make several plots to highlight different aspects of the data, as was done in the baby-names example in Figures 2.6–2.8.</p></li>
+<li><p><strong>Reliability and validity</strong> (Exercise 2.7 of <em>Regression and Other Stories</em>).</p>
+<ul>
+<li>Give an example of measurements that have validity but not reliability.</li>
+<li>Give an example of measurements that have reliability but not validity.</li>
+</ul></li>
+</ol>
 </section>
 </section>
 <section id="class-2-09302026" class="level2">
@@ -489,9 +795,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="warmup-questions-6" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-6">Warmup Questions:</h3>
+<p>Express each line of code in story form. For example, the first could describe the number of shots made by a basketball player who takes 20 shots and has a 30% chance of making each shot. Run each line in R to check that your story interpretation makes sense.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">1</span>, <span class="dv">20</span>, <span class="fl">0.3</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">1</span>, <span class="dv">20</span>, <span class="fl">0.4</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">2</span>, <span class="dv">20</span>, <span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.4</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">rbinom</span>(<span class="dv">2</span>, <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">20</span>), <span class="fu">c</span>(<span class="fl">0.3</span>, <span class="fl">0.4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="homework-questions-7" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-7">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Weighted averages</strong> (Exercise 3.1 of <em>Regression and Other Stories</em>). A survey is conducted in a city regarding support for increased property taxes to fund schools. Higher taxes are supported by 50% of respondents aged 18–29, 60% of respondents aged 30–44, 40% of respondents aged 45–64, and 30% of respondents aged 65 and up. Assume there is no nonresponse. The sample includes 200 respondents aged 18–29, 250 aged 30–44, 300 aged 45–64, and 250 aged 65+. Use the weighted-average formula to compute the proportion of respondents in the sample who support higher taxes.</p></li>
+<li><p><strong>Weighted averages</strong> (Exercise 3.2 of <em>Regression and Other Stories</em>). Continuing the previous exercise, suppose you would like to estimate the proportion of all adults in the population who support higher taxes. Give a set of weights for the four age categories so that the estimated proportion who support higher taxes for all adults in the city is 40%.</p></li>
+<li><p><strong>Probability distributions</strong> (Exercise 3.3 of <em>Regression and Other Stories</em>). Using R, graph probability densities for the normal distribution, plotting several curves corresponding to different choices of mean and standard deviation parameters.</p></li>
+<li><p><strong>In pairs: Working through your own example</strong> (Exercise 2.10 of <em>Regression and Other Stories</em>). Continuing the example from Exercise 1.10, graph your data and discuss issues of validity and reliability. How could you gather additional data, at least in theory, to address these issues?</p></li>
+</ol>
 </section>
 </section>
 </section>
