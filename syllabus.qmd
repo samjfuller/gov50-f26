@@ -21,8 +21,9 @@ output:
 
 - [(Head TF) Nicholas Conroy](mailto:nconroy@fas.harvard.edu)
 - [Antonio Camara](mailto:acamara@g.harvard.edu)
+- [Amin Karimi](mailto:akarimi@hks.harvard.edu)
+- [Shashwat Kulkarni](mailto:shashwatk@fas.harvard.edu)
 - [Zhiyu Li](mailto:zhiyuli@fas.harvard.edu)
-- [Zheng Ma](mailto:zma@g.harvard.edu)
 - [Tianyu Qiao](mailto:tianyu_qiao@g.harvard.edu)
 - [George Yean](mailto:gyean@fas.harvard.edu)
 

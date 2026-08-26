@@ -105,6 +105,7 @@ format:
       - litera
       - html/custom.scss
     highlight-style: github-dark
+    html-math-method: katex
     page-layout: full
     toc: true
     toc-location: left
