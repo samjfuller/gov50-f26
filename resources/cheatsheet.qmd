@@ -12,7 +12,7 @@ library(gapminder)
 ```
 
 
-## R Basics (Week 1)
+## R Basics
 
 ### Creating a vector 
 
@@ -51,7 +51,7 @@ We can also use the `mypackage::` prefix to access package functions without loa
 knitr::kable(head(mtcars))
 ```
 
-## Data Visualization (Week 2)
+## Data Visualization
 
 ### Scatter plot
 
@@ -173,7 +173,7 @@ ggplot(data = midwest,
 ```
 
 
-## Data Wrangling (week 2-3)
+## Data Wrangling
 
 ### Subsetting a data frame
 
@@ -657,7 +657,7 @@ news |>
 ```
 
 
-## Causality (Week 4)
+## Causality
 
 For this week, we'll use the data from the transphobia randomized experiment 
 
@@ -853,7 +853,7 @@ newspapers |>
 ```
 
 
-## Summarizing data (Week 5)
+## Summarizing data
 
 
 ### Calculating the mean, median, and standard deviation
@@ -1100,7 +1100,7 @@ ggplot(aes(x = pid3, y = prop, fill = pres_vote)) +
   scale_fill_manual(values = c(Biden = "steelblue1", Trump = "indianred1"))
 ```
 
-## Bivariate Relationships and Joins (Week 6)
+## Bivariate Relationships and Joins
 
 ### Calculating a correlation
 
@@ -1246,7 +1246,7 @@ flights |>
 Because both data sets had a `year` variable, the join function renames them to `year.x` in the first data frame and `year.y` for the second. We could rename them before merging to solve this problem. 
 
 
-## Regression (Week 8)
+## Regression
 
 
 ### Add binned means to a scatterplot
@@ -1324,7 +1324,7 @@ mult.fit
 ```
 
 
-## Sampling (Week 9)
+## Sampling
 
 
 ### Selecting a random subset of rows of the data
@@ -1396,7 +1396,7 @@ midwest |>
   geom_histogram(aes(y = after_stat(density)), binwidth = 1)
 ```
 
-## Bootstrap (Week 10)
+## Bootstrap
 
 
 ### Bootstrap distributions
@@ -1543,7 +1543,7 @@ int_boots <- trains |>
 int_boots
 ```
 
-## Hypothesis testing (Week 11)
+## Hypothesis testing
 
 ### Generating the null distribution of a sample mean
 

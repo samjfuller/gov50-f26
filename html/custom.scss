@@ -113,13 +113,13 @@ h6 {
 }
 
 h1 {
-  color: #d99b7f;
   margin-top: 2.4rem;
   padding-bottom: 0.4rem;
   border-bottom: 4px solid rgba(217, 155, 127, 0.38);
 }
 
 h2 {
+  color: #d99b7f;
   margin-top: 2.4rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid rgba(217, 155, 127, 0.38);
@@ -471,7 +471,7 @@ table {
 .table > thead,
 table > thead {
   color: $white;
-  background-color: $surface-raised;
+  background-color: $monokai-bg;
 }
 
 .table > :not(caption) > * > *,

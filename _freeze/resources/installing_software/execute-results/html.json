@@ -1,0 +1,15 @@
+{
+  "hash": "ee18a709fc10740b48e17dd5edb1a655",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Getting Started with R & R Studio\"\nslug: startup\nsummary: >-\n  A guide to installing and setting up the software required for Gov 50. \n---\n\n\n## Installing R and RStudio\n\nIn this problem set, we're going to get R, RStudio, and R Markdown set up on your computer. To get started, follow these steps: \n\n1. Download and install the most recent version of [R here](https://cran.r-project.org/). There are versions available for the Windows, Mac, and Linux operating systems. On a Windows machine, you will want to install using the `R-x.y.z-win.exe` file where `x.y.z` is a version number. On a Mac, you will want to install using the `R-x.y.z.pkg` file that is notarized and signed. \n\n2. With R installed, download and install [RStudio here](https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads). RStudio is a type of \"integrated development environment\" or IDE designed for R. It makes working with R considerably easier and is available for most platforms. It is also free. \n\n3. Install the packages we will use throughout the semester. To do this, either type or copy and paste each of the following lines of code into the \"Console\" in RStudio (lower left panel by default). Make sure you do this separately for each line. If you are asked if you want to install any packages from source, type \"no\". Note that the symbols next to `my_package` are a less than sign `<` followed by a minus sign `-` with no space between them. (Don't be worried if you see some red text here. Those are usually just messages telling you information about the packages you are installing. Unless you see the word `Error` you should be fine.)\n\n\n::: {.cell}\n\n```{.r .cell-code}\nmy_packages <- c(\"tidyverse\", \"usethis\", \"devtools\", \"learnr\",\n                 \"tinytex\", \"gapminder\",\"pak\")\ninstall.packages(my_packages)\n```\n:::\n\n\nYou can also install packages from other sources, like Github, which we'll be using for some datasets that we'll use in class:\n\n\n::: {.cell}\n\n```{.r .cell-code}\npak::pak(\"samjfuller/gov50data\")\n```\n:::\n\n\n::: callout-important\n\nWe will be using other packages in class---and in section depending on your TF's preferences---so we will be installing more over the course of class.\n\n:::\n\n\n4. For some things in the course, you may need to produce PDFs from R and that requires something called LaTeX. If you've never heard of that, it's completely fine and you should just run the following two lines of R code:\n\n\n::: {.cell}\n\n```{.r .cell-code}\ninstall.packages('tinytex')\ntinytex::install_tinytex()  # install TinyTeX\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -40,7 +40,22 @@ output:
 
 ### Course assistants
 
-- TBD
+- [Avi Agarwal](mailto:aviagarwal@college.harvard.edu)
+- [Frida Bravo Lopez](mailto:fridalopezbravo@college.harvard.edu) 
+- [Daniel Cabrera](mailto:danielcabrera@college.harvard.edu)
+- [Alan Cai](mailto:alancai@college.harvard.edu)
+- [Abril Diaz](mailto:abrilrodriguezdiaz@college.harvard.edu)
+- [Alex Draghia](mailto:adraghia@college.harvard.edu)
+- [Shuxin Ho](mailto:shuxin_ho@college.harvard.edu)
+- [Harrison Huang](mailto:harrisonhuang@college.harvard.edu)
+- [Jenna Jiang](mailto:jennajiang@college.harvard.edu)
+- [Mateo Quintero](mailto:mateoquintero@college.harvard.edu)
+- [Megan Martinez](mailto:meganmartinez@college.harvard.edu)
+- [Lenny Pische](mailto:lenny_pische@college.harvard.edu)
+- [Amy Tan](mailto:amy_tan@college.harvard.edu)
+- [Reed Trimble](mailto:rtrimble@college.harvard.edu)
+- [Todd Zhou](mailto:toddzhou@college.harvard.edu)
+
 :::
 :::::
 
@@ -348,7 +363,7 @@ Don't cheat! Like really, just don't do it. We also take plagiarism (including t
 
 While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. **I strongly suggest that you do not use AI in any capacity in this course**.
 
-Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI. That being said, given the imprecision of detecting AI-use we will not be checking coding assignments for AI (though its use is obvious to both me and the TFs).
+Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI.
 
 ::: callout-important
 
@@ -396,6 +411,8 @@ We're gonna be using R, and a whole bunch of it, to conduct our data analysis. T
 3. it's super easy to install and setup (yes, I'm criticizing you, Python).
 
 We're also going to use a ""graphical user interface"" (scare quotes intended) called RStudio to actually interact with R (if you're familiar with Python this is like using VSCode to work with Python). All you need to know is that RStudio makes it a lot easier to code in R. So use it.
+
+Details on how do get up and running with R and RStudio [are available here](resources/installing_software.qmd)
 
 - You can download [R here](https://cran.r-project.org/), just choose your operating system.
 
