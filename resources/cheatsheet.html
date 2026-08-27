@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-c98774a4e460dec60eec69f233253dee.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fc2e13e27ef1cb16d58f670168fee124.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-1d7c3ec343d7eb001d247cfb0cded61c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -219,13 +219,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-basics-week-1" id="toc-r-basics-week-1" class="nav-link active" data-scroll-target="#r-basics-week-1">R Basics (Week 1)</a>
+  <li><a href="#r-basics" id="toc-r-basics" class="nav-link active" data-scroll-target="#r-basics">R Basics</a>
   <ul class="collapse">
   <li><a href="#creating-a-vector" id="toc-creating-a-vector" class="nav-link" data-scroll-target="#creating-a-vector">Creating a vector</a></li>
   <li><a href="#installing-and-loading-a-package" id="toc-installing-and-loading-a-package" class="nav-link" data-scroll-target="#installing-and-loading-a-package">Installing and loading a package</a></li>
   <li><a href="#calling-functions-from-specific-packages" id="toc-calling-functions-from-specific-packages" class="nav-link" data-scroll-target="#calling-functions-from-specific-packages">Calling functions from specific packages</a></li>
   </ul></li>
-  <li><a href="#data-visualization-week-2" id="toc-data-visualization-week-2" class="nav-link" data-scroll-target="#data-visualization-week-2">Data Visualization (Week 2)</a>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a>
   <ul class="collapse">
   <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot">Scatter plot</a></li>
   <li><a href="#smoothed-curves" id="toc-smoothed-curves" class="nav-link" data-scroll-target="#smoothed-curves">Smoothed curves</a></li>
@@ -237,7 +237,7 @@ window.Quarto = {
   <li><a href="#setting-the-aesthetics-for-all-observations" id="toc-setting-the-aesthetics-for-all-observations" class="nav-link" data-scroll-target="#setting-the-aesthetics-for-all-observations">Setting the aesthetics for all observations</a></li>
   <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">Histograms</a></li>
   </ul></li>
-  <li><a href="#data-wrangling-week-2-3" id="toc-data-wrangling-week-2-3" class="nav-link" data-scroll-target="#data-wrangling-week-2-3">Data Wrangling (week 2-3)</a>
+  <li><a href="#data-wrangling" id="toc-data-wrangling" class="nav-link" data-scroll-target="#data-wrangling">Data Wrangling</a>
   <ul class="collapse">
   <li><a href="#subsetting-a-data-frame" id="toc-subsetting-a-data-frame" class="nav-link" data-scroll-target="#subsetting-a-data-frame">Subsetting a data frame</a></li>
   <li><a href="#filtering-to-the-largestsmallest-values-of-a-variable" id="toc-filtering-to-the-largestsmallest-values-of-a-variable" class="nav-link" data-scroll-target="#filtering-to-the-largestsmallest-values-of-a-variable">Filtering to the largest/smallest values of a variable</a></li>
@@ -262,7 +262,7 @@ window.Quarto = {
   <li><a href="#converting-logicals" id="toc-converting-logicals" class="nav-link" data-scroll-target="#converting-logicals">Converting logicals</a></li>
   <li><a href="#grouped-logical-summaries-with-sums-and-means" id="toc-grouped-logical-summaries-with-sums-and-means" class="nav-link" data-scroll-target="#grouped-logical-summaries-with-sums-and-means">Grouped logical summaries with sums and means</a></li>
   </ul></li>
-  <li><a href="#causality-week-4" id="toc-causality-week-4" class="nav-link" data-scroll-target="#causality-week-4">Causality (Week 4)</a>
+  <li><a href="#causality" id="toc-causality" class="nav-link" data-scroll-target="#causality">Causality</a>
   <ul class="collapse">
   <li><a href="#calculating-a-difference-in-means-by-filtering" id="toc-calculating-a-difference-in-means-by-filtering" class="nav-link" data-scroll-target="#calculating-a-difference-in-means-by-filtering">Calculating a difference in means by filtering</a></li>
   <li><a href="#pivoting-a-tibble-to-make-a-cross-tab" id="toc-pivoting-a-tibble-to-make-a-cross-tab" class="nav-link" data-scroll-target="#pivoting-a-tibble-to-make-a-cross-tab">Pivoting a tibble to make a cross-tab</a></li>
@@ -274,7 +274,7 @@ window.Quarto = {
   <li><a href="#calculating-before-and-after-difference-in-means" id="toc-calculating-before-and-after-difference-in-means" class="nav-link" data-scroll-target="#calculating-before-and-after-difference-in-means">Calculating before and after difference in means</a></li>
   <li><a href="#calculating-difference-in-differences-estimator" id="toc-calculating-difference-in-differences-estimator" class="nav-link" data-scroll-target="#calculating-difference-in-differences-estimator">Calculating difference-in-differences estimator</a></li>
   </ul></li>
-  <li><a href="#summarizing-data-week-5" id="toc-summarizing-data-week-5" class="nav-link" data-scroll-target="#summarizing-data-week-5">Summarizing data (Week 5)</a>
+  <li><a href="#summarizing-data" id="toc-summarizing-data" class="nav-link" data-scroll-target="#summarizing-data">Summarizing data</a>
   <ul class="collapse">
   <li><a href="#calculating-the-mean-median-and-standard-deviation" id="toc-calculating-the-mean-median-and-standard-deviation" class="nav-link" data-scroll-target="#calculating-the-mean-median-and-standard-deviation">Calculating the mean, median, and standard deviation</a></li>
   <li><a href="#adding-a-vertical-line-to-a-plot" id="toc-adding-a-vertical-line-to-a-plot" class="nav-link" data-scroll-target="#adding-a-vertical-line-to-a-plot">Adding a vertical line to a plot</a></li>
@@ -287,7 +287,7 @@ window.Quarto = {
   <li><a href="#create-cross-tab-proportion-tables" id="toc-create-cross-tab-proportion-tables" class="nav-link" data-scroll-target="#create-cross-tab-proportion-tables">Create cross-tab proportion tables</a></li>
   <li><a href="#visualizing-a-proportion-table" id="toc-visualizing-a-proportion-table" class="nav-link" data-scroll-target="#visualizing-a-proportion-table">Visualizing a proportion table</a></li>
   </ul></li>
-  <li><a href="#bivariate-relationships-and-joins-week-6" id="toc-bivariate-relationships-and-joins-week-6" class="nav-link" data-scroll-target="#bivariate-relationships-and-joins-week-6">Bivariate Relationships and Joins (Week 6)</a>
+  <li><a href="#bivariate-relationships-and-joins" id="toc-bivariate-relationships-and-joins" class="nav-link" data-scroll-target="#bivariate-relationships-and-joins">Bivariate Relationships and Joins</a>
   <ul class="collapse">
   <li><a href="#calculating-a-correlation" id="toc-calculating-a-correlation" class="nav-link" data-scroll-target="#calculating-a-correlation">Calculating a correlation</a></li>
   <li><a href="#writing-a-function" id="toc-writing-a-function" class="nav-link" data-scroll-target="#writing-a-function">Writing a function</a></li>
@@ -296,7 +296,7 @@ window.Quarto = {
   <li><a href="#merging-one-data-frame-into-another-joins" id="toc-merging-one-data-frame-into-another-joins" class="nav-link" data-scroll-target="#merging-one-data-frame-into-another-joins">Merging one data frame into another (joins)</a></li>
   <li><a href="#specifying-the-key-variables-for-a-join" id="toc-specifying-the-key-variables-for-a-join" class="nav-link" data-scroll-target="#specifying-the-key-variables-for-a-join">Specifying the key variables for a join</a></li>
   </ul></li>
-  <li><a href="#regression-week-8" id="toc-regression-week-8" class="nav-link" data-scroll-target="#regression-week-8">Regression (Week 8)</a>
+  <li><a href="#regression" id="toc-regression" class="nav-link" data-scroll-target="#regression">Regression</a>
   <ul class="collapse">
   <li><a href="#add-binned-means-to-a-scatterplot" id="toc-add-binned-means-to-a-scatterplot" class="nav-link" data-scroll-target="#add-binned-means-to-a-scatterplot">Add binned means to a scatterplot</a></li>
   <li><a href="#running-a-regression-estimating-the-line-of-best-fit" id="toc-running-a-regression-estimating-the-line-of-best-fit" class="nav-link" data-scroll-target="#running-a-regression-estimating-the-line-of-best-fit">Running a regression (estimating the line of best fit)</a></li>
@@ -305,7 +305,7 @@ window.Quarto = {
   <li><a href="#obtaining-overall-information-about-the-model-fitted" id="toc-obtaining-overall-information-about-the-model-fitted" class="nav-link" data-scroll-target="#obtaining-overall-information-about-the-model-fitted">Obtaining overall information about the model fitted</a></li>
   <li><a href="#running-a-multiple-regression" id="toc-running-a-multiple-regression" class="nav-link" data-scroll-target="#running-a-multiple-regression">Running a multiple regression</a></li>
   </ul></li>
-  <li><a href="#sampling-week-9" id="toc-sampling-week-9" class="nav-link" data-scroll-target="#sampling-week-9">Sampling (Week 9)</a>
+  <li><a href="#sampling" id="toc-sampling" class="nav-link" data-scroll-target="#sampling">Sampling</a>
   <ul class="collapse">
   <li><a href="#selecting-a-random-subset-of-rows-of-the-data" id="toc-selecting-a-random-subset-of-rows-of-the-data" class="nav-link" data-scroll-target="#selecting-a-random-subset-of-rows-of-the-data">Selecting a random subset of rows of the data</a></li>
   <li><a href="#repeated-sampling-from-a-data-frame" id="toc-repeated-sampling-from-a-data-frame" class="nav-link" data-scroll-target="#repeated-sampling-from-a-data-frame">Repeated sampling from a data frame</a></li>
@@ -313,14 +313,14 @@ window.Quarto = {
   <li><a href="#barplot-with-proportions-rather-than-counts" id="toc-barplot-with-proportions-rather-than-counts" class="nav-link" data-scroll-target="#barplot-with-proportions-rather-than-counts">Barplot with proportions rather than counts</a></li>
   <li><a href="#density-histograms" id="toc-density-histograms" class="nav-link" data-scroll-target="#density-histograms">Density histograms</a></li>
   </ul></li>
-  <li><a href="#bootstrap-week-10" id="toc-bootstrap-week-10" class="nav-link" data-scroll-target="#bootstrap-week-10">Bootstrap (Week 10)</a>
+  <li><a href="#bootstrap" id="toc-bootstrap" class="nav-link" data-scroll-target="#bootstrap">Bootstrap</a>
   <ul class="collapse">
   <li><a href="#bootstrap-distributions" id="toc-bootstrap-distributions" class="nav-link" data-scroll-target="#bootstrap-distributions">Bootstrap distributions</a></li>
   <li><a href="#calculating-bootstrap-confidence-intervals" id="toc-calculating-bootstrap-confidence-intervals" class="nav-link" data-scroll-target="#calculating-bootstrap-confidence-intervals">Calculating bootstrap confidence intervals</a></li>
   <li><a href="#bootstrapping-a-difference-in-means" id="toc-bootstrapping-a-difference-in-means" class="nav-link" data-scroll-target="#bootstrapping-a-difference-in-means">Bootstrapping a difference in means</a></li>
   <li><a href="#bootstrapping-the-difference-between-estimated-ates" id="toc-bootstrapping-the-difference-between-estimated-ates" class="nav-link" data-scroll-target="#bootstrapping-the-difference-between-estimated-ates">Bootstrapping the difference between estimated ATEs</a></li>
   </ul></li>
-  <li><a href="#hypothesis-testing-week-11" id="toc-hypothesis-testing-week-11" class="nav-link" data-scroll-target="#hypothesis-testing-week-11">Hypothesis testing (Week 11)</a>
+  <li><a href="#hypothesis-testing" id="toc-hypothesis-testing" class="nav-link" data-scroll-target="#hypothesis-testing">Hypothesis testing</a>
   <ul class="collapse">
   <li><a href="#generating-the-null-distribution-of-a-sample-mean" id="toc-generating-the-null-distribution-of-a-sample-mean" class="nav-link" data-scroll-target="#generating-the-null-distribution-of-a-sample-mean">Generating the null distribution of a sample mean</a></li>
   <li><a href="#calculating-the-p-value-of-a-hypothesis-test" id="toc-calculating-the-p-value-of-a-hypothesis-test" class="nav-link" data-scroll-target="#calculating-the-p-value-of-a-hypothesis-test">Calculating the p-value of a hypothesis test</a></li>
@@ -360,8 +360,8 @@ window.Quarto = {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gov50data)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gapminder)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="r-basics-week-1" class="level2">
-<h2 class="anchored" data-anchor-id="r-basics-week-1">R Basics (Week 1)</h2>
+<section id="r-basics" class="level2">
+<h2 class="anchored" data-anchor-id="r-basics">R Basics</h2>
 <section id="creating-a-vector" class="level3">
 <h3 class="anchored" data-anchor-id="creating-a-vector">Creating a vector</h3>
 <p>You can create a vector using the <code>c</code> function:</p>
@@ -516,8 +516,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="data-visualization-week-2" class="level2">
-<h2 class="anchored" data-anchor-id="data-visualization-week-2">Data Visualization (Week 2)</h2>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
 <section id="scatter-plot" class="level3">
 <h3 class="anchored" data-anchor-id="scatter-plot">Scatter plot</h3>
 <p>You can produce a scatter plot with using the <code>x</code> and <code>y</code> aesthetics along with the <code>geom_point()</code> function.</p>
@@ -529,7 +529,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -549,7 +549,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -569,7 +569,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -591,7 +591,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -613,7 +613,9 @@ window.Quarto = {
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"Among Counties in the Midwest"</span>,</span>
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">source =</span> <span class="st">"US Census, 2000"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+<pre><code>Ignoring unknown labels:
+• source : "US Census, 2000"
+`geom_smooth()` using formula = 'y ~ x'</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -642,7 +644,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -664,7 +666,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -686,7 +688,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -699,7 +701,7 @@ window.Quarto = {
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> percbelowpoverty)) <span class="sc">+</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -711,8 +713,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="data-wrangling-week-2-3" class="level2">
-<h2 class="anchored" data-anchor-id="data-wrangling-week-2-3">Data Wrangling (week 2-3)</h2>
+<section id="data-wrangling" class="level2">
+<h2 class="anchored" data-anchor-id="data-wrangling">Data Wrangling</h2>
 <section id="subsetting-a-data-frame" class="level3">
 <h3 class="anchored" data-anchor-id="subsetting-a-data-frame">Subsetting a data frame</h3>
 <p>Use the <code>filter()</code> function from the <code>dplyr</code> package to subset a data frame.</p>
@@ -1183,8 +1185,12 @@ window.Quarto = {
 <span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_ideology =</span> <span class="fu">mean</span>(ideology)</span>
 <span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'sinclair2017'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by sinclair2017 and post.
+ℹ Output is grouped by sinclair2017.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(sinclair2017, post))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
@@ -1227,8 +1233,12 @@ window.Quarto = {
 <span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(<span class="fu">c</span>(ideology, national_politics), mean)</span>
 <span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'sinclair2017'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by sinclair2017 and post.
+ℹ Output is grouped by sinclair2017.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(sinclair2017, post))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 4
@@ -1249,8 +1259,12 @@ window.Quarto = {
 <span id="cb74-4"><a href="#cb74-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">across</span>(ideology<span class="sc">:</span>local_politics, mean)</span>
 <span id="cb74-5"><a href="#cb74-5" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'sinclair2017'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by sinclair2017 and post.
+ℹ Output is grouped by sinclair2017.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(sinclair2017, post))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 5
@@ -1479,7 +1493,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-44-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1499,7 +1513,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-45-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1520,7 +1534,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-46-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-39-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1540,13 +1554,17 @@ window.Quarto = {
 <span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a>                       <span class="at">x =</span> avg_ideology)) <span class="sc">+</span></span>
 <span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">fill =</span> affiliation))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'callsign'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by callsign and affiliation.
+ℹ Output is grouped by callsign.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(callsign, affiliation))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-47-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1756,8 +1774,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="causality-week-4" class="level2">
-<h2 class="anchored" data-anchor-id="causality-week-4">Causality (Week 4)</h2>
+<section id="causality" class="level2">
+<h2 class="anchored" data-anchor-id="causality">Causality</h2>
 <p>For this week, we’ll use the data from the transphobia randomized experiment</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb107"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb107-1"><a href="#cb107-1" aria-hidden="true" tabindex="-1"></a>trans</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1820,8 +1838,12 @@ window.Quarto = {
 <span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(treat_ind, racename) <span class="sc">|&gt;</span></span>
 <span id="cb115-3"><a href="#cb115-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">n</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treat_ind'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treat_ind and racename.
+ℹ Output is grouped by treat_ind.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treat_ind, racename))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 9 × 3
@@ -1849,8 +1871,12 @@ window.Quarto = {
 <span id="cb118-6"><a href="#cb118-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> n</span>
 <span id="cb118-7"><a href="#cb118-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treat_ind'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treat_ind and racename.
+ℹ Output is grouped by treat_ind.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treat_ind, racename))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 3
@@ -1930,8 +1956,12 @@ window.Quarto = {
 <span id="cb125-13"><a href="#cb125-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">diff_in_means =</span> Treated <span class="sc">-</span> Control</span>
 <span id="cb125-14"><a href="#cb125-14" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treat_ind'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treat_ind and party.
+ℹ Output is grouped by treat_ind.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treat_ind, party))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 4
@@ -1995,8 +2025,12 @@ window.Quarto = {
 <span id="cb130-17"><a href="#cb130-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">diff_in_means =</span> Treated <span class="sc">-</span> Control</span>
 <span id="cb130-18"><a href="#cb130-18" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treat_ind'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treat_ind and age_group.
+ℹ Output is grouped by treat_ind.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treat_ind, age_group))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 4
@@ -2051,8 +2085,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="summarizing-data-week-5" class="level2">
-<h2 class="anchored" data-anchor-id="summarizing-data-week-5">Summarizing data (Week 5)</h2>
+<section id="summarizing-data" class="level2">
+<h2 class="anchored" data-anchor-id="summarizing-data">Summarizing data</h2>
 <section id="calculating-the-mean-median-and-standard-deviation" class="level3">
 <h3 class="anchored" data-anchor-id="calculating-the-mean-median-and-standard-deviation">Calculating the mean, median, and standard deviation</h3>
 <p>Many of the summary functions have intuitive names:</p>
@@ -2089,7 +2123,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-69-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-62-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2228,8 +2262,12 @@ window.Quarto = {
 <span id="cb162-5"><a href="#cb162-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb162-6"><a href="#cb162-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pid3'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pid3 and pres_vote.
+ℹ Output is grouped by pid3.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pid3, pres_vote))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
@@ -2258,8 +2296,12 @@ window.Quarto = {
 <span id="cb165-5"><a href="#cb165-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">|&gt;</span></span>
 <span id="cb165-6"><a href="#cb165-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prop =</span> n <span class="sc">/</span> <span class="fu">sum</span>(n))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pres_vote'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pres_vote and pid3.
+ℹ Output is grouped by pres_vote.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pres_vote, pid3))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
@@ -2318,8 +2360,12 @@ window.Quarto = {
 <span id="cb170-9"><a href="#cb170-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> prop</span>
 <span id="cb170-10"><a href="#cb170-10" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pid3'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pid3 and pres_vote.
+ℹ Output is grouped by pid3.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pid3, pres_vote))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 4
@@ -2352,8 +2398,12 @@ window.Quarto = {
 <span id="cb173-10"><a href="#cb173-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> prop</span>
 <span id="cb173-11"><a href="#cb173-11" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pid3'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pid3 and pres_vote.
+ℹ Output is grouped by pid3.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pid3, pres_vote))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 3
@@ -2381,8 +2431,12 @@ window.Quarto = {
 <span id="cb176-10"><a href="#cb176-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> prop</span>
 <span id="cb176-11"><a href="#cb176-11" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pid3'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pid3 and pres_vote.
+ℹ Output is grouped by pid3.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pid3, pres_vote))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 3
@@ -2414,8 +2468,12 @@ window.Quarto = {
 <span id="cb179-11"><a href="#cb179-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
 <span id="cb179-12"><a href="#cb179-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">Biden =</span> <span class="st">"steelblue1"</span>, <span class="at">Trump =</span> <span class="st">"indianred1"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'pid3'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by pid3 and pres_vote.
+ℹ Output is grouped by pid3.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(pid3, pres_vote))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -2427,8 +2485,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="bivariate-relationships-and-joins-week-6" class="level2">
-<h2 class="anchored" data-anchor-id="bivariate-relationships-and-joins-week-6">Bivariate Relationships and Joins (Week 6)</h2>
+<section id="bivariate-relationships-and-joins" class="level2">
+<h2 class="anchored" data-anchor-id="bivariate-relationships-and-joins">Bivariate Relationships and Joins</h2>
 <section id="calculating-a-correlation" class="level3">
 <h3 class="anchored" data-anchor-id="calculating-a-correlation">Calculating a correlation</h3>
 <p>You can calcuate a correlation between two variables using the <code>cor</code> function:</p>
@@ -2717,8 +2775,8 @@ window.Quarto = {
 <p>Because both data sets had a <code>year</code> variable, the join function renames them to <code>year.x</code> in the first data frame and <code>year.y</code> for the second. We could rename them before merging to solve this problem.</p>
 </section>
 </section>
-<section id="regression-week-8" class="level2">
-<h2 class="anchored" data-anchor-id="regression-week-8">Regression (Week 8)</h2>
+<section id="regression" class="level2">
+<h2 class="anchored" data-anchor-id="regression">Regression</h2>
 <section id="add-binned-means-to-a-scatterplot" class="level3">
 <h3 class="anchored" data-anchor-id="add-binned-means-to-a-scatterplot">Add binned means to a scatterplot</h3>
 <p>You can add binned means of the y-axis variable in a scatterplot using the <code>stat_summary_bin(fun = "mean")</code> function with your ggplot call:</p>
@@ -2733,10 +2791,12 @@ window.Quarto = {
 <span id="cb212-8"><a href="#cb212-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary_bin</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">color =</span> <span class="st">"indianred1"</span>, <span class="at">size =</span> <span class="dv">3</span>,</span>
 <span id="cb212-9"><a href="#cb212-9" aria-hidden="true" tabindex="-1"></a>                   <span class="at">geom =</span> <span class="st">"point"</span>, <span class="at">binwidth =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1 rows containing non-finite values (`stat_summary_bin()`).</code></pre>
+<pre><code>Warning: Removed 1 row containing non-finite outside the scale range
+(`stat_summary_bin()`).</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Warning: Removed 1 rows containing missing values (`geom_point()`).</code></pre>
+<pre><code>Warning: Removed 1 row containing missing values or values outside the scale range
+(`geom_point()`).</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -2838,8 +2898,8 @@ Coefficients:
 </div>
 </section>
 </section>
-<section id="sampling-week-9" class="level2">
-<h2 class="anchored" data-anchor-id="sampling-week-9">Sampling (Week 9)</h2>
+<section id="sampling" class="level2">
+<h2 class="anchored" data-anchor-id="sampling">Sampling</h2>
 <section id="selecting-a-random-subset-of-rows-of-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="selecting-a-random-subset-of-rows-of-the-data">Selecting a random subset of rows of the data</h3>
 <p>The <code>slice_sample</code> function will return a random subset of rows from your data:</p>
@@ -2848,13 +2908,13 @@ Coefficients:
 <span id="cb227-2"><a href="#cb227-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 1
-  year      
-  &lt;chr&gt;     
-1 Junior    
-2 Not Set   
-3 Sophomore 
-4 First-Year
-5 First-Year</code></pre>
+  year           
+  &lt;chr&gt;          
+1 Junior         
+2 Sophomore      
+3 Graduate Year 1
+4 Sophomore      
+5 Sophomore      </code></pre>
 </div>
 </div>
 </section>
@@ -2868,18 +2928,18 @@ Coefficients:
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 10 × 2
 # Groups:   replicate [2]
-   replicate year           
-       &lt;int&gt; &lt;chr&gt;          
- 1         1 First-Year     
- 2         1 Junior         
- 3         1 Graduate Year 1
- 4         1 Sophomore      
- 5         1 Junior         
- 6         2 Sophomore      
- 7         2 First-Year     
- 8         2 Sophomore      
- 9         2 Sophomore      
-10         2 Junior         </code></pre>
+   replicate year      
+       &lt;int&gt; &lt;chr&gt;     
+ 1         1 First-Year
+ 2         1 Senior    
+ 3         1 Junior    
+ 4         1 Sophomore 
+ 5         1 Sophomore 
+ 6         2 Junior    
+ 7         2 Sophomore 
+ 8         2 Sophomore 
+ 9         2 Sophomore 
+10         2 Sophomore </code></pre>
 </div>
 </div>
 <p>You can use this to get repeated draws of a sample statistic like the sample proportion:</p>
@@ -2893,16 +2953,16 @@ Coefficients:
 <pre><code># A tibble: 100 × 2
    replicate fy_prop
        &lt;int&gt;   &lt;dbl&gt;
- 1         1    0.35
- 2         2    0.3 
- 3         3    0.5 
- 4         4    0.3 
- 5         5    0.3 
+ 1         1    0.3 
+ 2         2    0.35
+ 3         3    0.4 
+ 4         4    0.25
+ 5         5    0.4 
  6         6    0.3 
- 7         7    0.4 
- 8         8    0.2 
- 9         9    0.15
-10        10    0.3 
+ 7         7    0.2 
+ 8         8    0.35
+ 9         9    0.45
+10        10    0.35
 # ℹ 90 more rows</code></pre>
 </div>
 </div>
@@ -2915,7 +2975,7 @@ Coefficients:
 <span id="cb233-2"><a href="#cb233-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">5</span>) <span class="sc">|&gt;</span></span>
 <span id="cb233-3"><a href="#cb233-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(year)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "First-Year" "Sophomore"  "Junior"     "Junior"     "Sophomore" </code></pre>
+<pre><code>[1] "First-Year" "Sophomore"  "Sophomore"  "First-Year" "Not Set"   </code></pre>
 </div>
 </div>
 </section>
@@ -2953,8 +3013,8 @@ Coefficients:
 </div>
 </section>
 </section>
-<section id="bootstrap-week-10" class="level2">
-<h2 class="anchored" data-anchor-id="bootstrap-week-10">Bootstrap (Week 10)</h2>
+<section id="bootstrap" class="level2">
+<h2 class="anchored" data-anchor-id="bootstrap">Bootstrap</h2>
 <section id="bootstrap-distributions" class="level3">
 <h3 class="anchored" data-anchor-id="bootstrap-distributions">Bootstrap distributions</h3>
 <p>You can generate bootstrap samples by using <code>rep_slice_sample(prop = 1, replace = TRUE)</code>. From there, if you group by the replicate column, you can do summaries within each bootstrap sample.</p>
@@ -2968,16 +3028,16 @@ Coefficients:
 <pre><code># A tibble: 1,000 × 2
    replicate sci_therm_mean
        &lt;int&gt;          &lt;dbl&gt;
- 1         1           80.6
- 2         2           80.8
- 3         3           80.3
- 4         4           80.8
- 5         5           80.4
- 6         6           80.6
- 7         7           80.4
- 8         8           80.7
- 9         9           80.8
-10        10           80.5
+ 1         1           80.5
+ 2         2           80.3
+ 3         3           80.5
+ 4         4           80.6
+ 5         5           80.6
+ 6         6           80.7
+ 7         7           80.5
+ 8         8           81.0
+ 9         9           80.3
+10        10           80.6
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -2993,16 +3053,16 @@ Coefficients:
 # A tibble: 1,000 × 2
    replicate  stat
        &lt;int&gt; &lt;dbl&gt;
- 1         1  80.6
- 2         2  80.7
- 3         3  80.9
- 4         4  80.9
- 5         5  80.7
- 6         6  80.6
- 7         7  80.5
- 8         8  80.7
- 9         9  80.3
-10        10  80.6
+ 1         1  80.5
+ 2         2  80.6
+ 3         3  81.2
+ 4         4  80.8
+ 5         5  80.8
+ 6         6  80.9
+ 7         7  81.1
+ 8         8  80.1
+ 9         9  81.1
+10        10  80.5
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -3012,7 +3072,7 @@ Coefficients:
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-115-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-104-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -3028,7 +3088,7 @@ Coefficients:
 <pre><code># A tibble: 1 × 2
   lower_ci upper_ci
      &lt;dbl&gt;    &lt;dbl&gt;
-1     80.1     81.1</code></pre>
+1     80.1     81.2</code></pre>
 </div>
 </div>
 </section>
@@ -3043,25 +3103,29 @@ Coefficients:
 <span id="cb244-5"><a href="#cb244-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> treatment, <span class="at">values_from =</span> post_mean) <span class="sc">|&gt;</span></span>
 <span id="cb244-6"><a href="#cb244-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ATE =</span> <span class="st">`</span><span class="at">1</span><span class="st">`</span> <span class="sc">-</span> <span class="st">`</span><span class="at">0</span><span class="st">`</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'replicate'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by replicate and treatment.
+ℹ Output is grouped by replicate.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(replicate, treatment))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb246"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb246-1"><a href="#cb246-1" aria-hidden="true" tabindex="-1"></a>dim_boots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,000 × 4
 # Groups:   replicate [1,000]
-   replicate   `0`   `1`   ATE
-       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
- 1         1  2.65  3.04 0.395
- 2         2  2.80  3.20 0.399
- 3         3  2.62  2.95 0.327
- 4         4  2.71  2.88 0.172
- 5         5  2.71  2.98 0.263
- 6         6  2.70  3.04 0.344
- 7         7  2.95  3.13 0.182
- 8         8  2.78  3.30 0.522
- 9         9  2.71  3.24 0.532
-10        10  2.87  3.26 0.388
+   replicate   `0`   `1`      ATE
+       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+ 1         1  2.6   3.05  0.450  
+ 2         2  2.95  2.95 -0.00455
+ 3         3  2.82  3.22  0.402  
+ 4         4  2.79  2.93  0.134  
+ 5         5  2.93  3.26  0.329  
+ 6         6  2.72  3.02  0.304  
+ 7         7  3     3     0      
+ 8         8  2.89  3.02  0.126  
+ 9         9  2.72  3.12  0.397  
+10        10  2.98  3     0.0172 
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -3074,7 +3138,7 @@ Coefficients:
 <pre><code># A tibble: 1 × 2
   lower_ci upper_ci
      &lt;dbl&gt;    &lt;dbl&gt;
-1   0.0519    0.702</code></pre>
+1   0.0335    0.728</code></pre>
 </div>
 </div>
 <p>We can also use the <code>specify</code> workflow from <code>infer</code>, but we need to be careful about setting the order of the groups for the difference in means in the <code>calculate</code> step:</p>
@@ -3091,16 +3155,16 @@ Explanatory: treatment (factor)
 # A tibble: 1,000 × 2
    replicate  stat
        &lt;int&gt; &lt;dbl&gt;
- 1         1 0.662
- 2         2 0.216
- 3         3 0.613
- 4         4 0.393
- 5         5 0.379
- 6         6 0.453
- 7         7 0.339
- 8         8 0.244
- 9         9 0.247
-10        10 0.422
+ 1         1 0.261
+ 2         2 0.435
+ 3         3 0.382
+ 4         4 0.441
+ 5         5 0.202
+ 6         6 0.558
+ 7         7 0.503
+ 8         8 0.383
+ 9         9 0.687
+10        10 0.258
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -3121,8 +3185,12 @@ Explanatory: treatment (factor)
 <span id="cb252-10"><a href="#cb252-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> post_mean</span>
 <span id="cb252-11"><a href="#cb252-11" aria-hidden="true" tabindex="-1"></a>  ) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treatment'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treatment and college.
+ℹ Output is grouped by treatment.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treatment, college))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 4
@@ -3150,8 +3218,12 @@ Explanatory: treatment (factor)
 <span id="cb255-15"><a href="#cb255-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">interaction =</span> ATE_c <span class="sc">-</span> ATE_nc</span>
 <span id="cb255-16"><a href="#cb255-16" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'treatment'. You can override using the
-`.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by treatment and college.
+ℹ Output is grouped by treatment.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(treatment, college))` for per-operation grouping
+  (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 7
@@ -3182,8 +3254,12 @@ Explanatory: treatment (factor)
 <span id="cb258-17"><a href="#cb258-17" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb258-18"><a href="#cb258-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(replicate, ATE_c, ATE_nc, interaction)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>`summarise()` has grouped output by 'replicate', 'treatment'. You can override
-using the `.groups` argument.</code></pre>
+<pre><code>`summarise()` has regrouped the output.
+ℹ Summaries were computed grouped by replicate, treatment, and college.
+ℹ Output is grouped by replicate and treatment.
+ℹ Use `summarise(.groups = "drop_last")` to silence this message.
+ℹ Use `summarise(.by = c(replicate, treatment, college))` for per-operation
+  grouping (`?dplyr::dplyr_by`) instead.</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb260"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb260-1"><a href="#cb260-1" aria-hidden="true" tabindex="-1"></a>int_boots</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -3191,23 +3267,23 @@ using the `.groups` argument.</code></pre>
 # Groups:   replicate [1,000]
    replicate ATE_c ATE_nc interaction
        &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;       &lt;dbl&gt;
- 1         1 0.240 -0.667      0.907 
- 2         2 0.647 -0.319      0.967 
- 3         3 0.667 -0.857      1.52  
- 4         4 0.284  0.375     -0.0908
- 5         5 0.358  0.25       0.108 
- 6         6 0.428  0.667     -0.239 
- 7         7 0.596 -0.667      1.26  
- 8         8 0.444 -1.14       1.59  
- 9         9 0.8    0.143      0.657 
-10        10 0.360 -0.321      0.682 
+ 1         1 0.652 -0.375       1.03 
+ 2         2 0.240 -0.25        0.490
+ 3         3 0.529 -0.205       0.734
+ 4         4 0.477 -0.304       0.780
+ 5         5 0.124 -0.923       1.05 
+ 6         6 0.277 -1.09        1.37 
+ 7         7 0.519 -0.9         1.42 
+ 8         8 0.583 -1           1.58 
+ 9         9 0.941 -0.709       1.65 
+10        10 0.378 -0.5         0.878
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
 </section>
 </section>
-<section id="hypothesis-testing-week-11" class="level2">
-<h2 class="anchored" data-anchor-id="hypothesis-testing-week-11">Hypothesis testing (Week 11)</h2>
+<section id="hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing">Hypothesis testing</h2>
 <section id="generating-the-null-distribution-of-a-sample-mean" class="level3">
 <h3 class="anchored" data-anchor-id="generating-the-null-distribution-of-a-sample-mean">Generating the null distribution of a sample mean</h3>
 <div class="cell">
@@ -3223,16 +3299,16 @@ Null Hypothesis: point
 # A tibble: 1,000 × 2
    replicate  stat
        &lt;int&gt; &lt;dbl&gt;
- 1         1  40.4
- 2         2  39.0
- 3         3  39.1
- 4         4  41.2
- 5         5  40.8
- 6         6  40.1
- 7         7  39.9
- 8         8  40.7
- 9         9  40.2
-10        10  40.5
+ 1         1  40.1
+ 2         2  41.0
+ 3         3  40.2
+ 4         4  38.7
+ 5         5  40.3
+ 6         6  40.6
+ 7         7  39.8
+ 8         8  40.2
+ 9         9  40.3
+10        10  39.7
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -3260,7 +3336,7 @@ Null Hypothesis: point
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="cheatsheet_files/figure-html/unnamed-chunk-125-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="cheatsheet_files/figure-html/unnamed-chunk-113-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -3296,20 +3372,20 @@ Explanatory: treated (factor)
 <div class="cell-output cell-output-stdout">
 <pre><code>Response: numberim.post (numeric)
 Explanatory: treated (factor)
-Null Hypothesis: independence
+Null Hypothes...
 # A tibble: 1,000 × 2
    replicate    stat
        &lt;int&gt;   &lt;dbl&gt;
- 1         1 -0.180 
- 2         2  0.207 
- 3         3  0.242 
- 4         4  0.313 
+ 1         1 -0.0395
+ 2         2 -0.251 
+ 3         3  0.348 
+ 4         4  0.0309
  5         5 -0.0395
- 6         6 -0.145 
+ 6         6 -0.180 
  7         7 -0.110 
- 8         8 -0.0395
- 9         9  0.101 
-10        10 -0.110 
+ 8         8 -0.145 
+ 9         9  0.0662
+10        10  0.172 
 # ℹ 990 more rows</code></pre>
 </div>
 </div>
@@ -3320,7 +3396,7 @@ Null Hypothesis: independence
 <pre><code># A tibble: 1 × 1
   p_value
     &lt;dbl&gt;
-1   0.026</code></pre>
+1   0.034</code></pre>
 </div>
 </div>
 
