@@ -34,8 +34,8 @@ course-logo: /files/img/gov50-icon-512.png
 - {{< fa calendar-alt >}}  {{< var course.dates >}}
 - {{< fa clock >}}  {{< var course.time >}}
 - {{< fa location-dot >}}  {{< var course.location >}}
-- {{< fa calendar >}}  [Office Hours and Study Hall Schedule](resources/office-hours_study-halls.qmd)
-- {{< fa calendar-alt >}}  [Gov 50 Google Calendar](https://tinyurl.com/gov50calendar)
+- {{< fa calendar >}}  [Office Hours and Study Hall Schedule](office-hours_study-halls.qmd)
+- {{< fa calendar-alt >}}  [Gov 50 Google Calendar](https://calendar.google.com/calendar/embed?src=3b972e74b5950a9517aa8811bfe06e4f1738be5661f5a1c451e2f10e440f5f06%40group.calendar.google.com&ctz=America%2FDetroit)
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
