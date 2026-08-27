@@ -36,7 +36,7 @@ output:
 - {{< fa calendar-alt >}} {{< var course.dates >}}
 - {{< fa clock >}} {{< var course.time >}}
 - {{< fa location-dot >}} {{< var course.location >}}
-- {{< fa globe >}} [Ed Discussion](https://edstem.org/us/courses/101357/discussion)
+- {{< fa globe >}} [Ed Discussion Board](https://edstem.org/us/courses/101357/discussion)
 
 ### Course assistants
 
@@ -344,7 +344,7 @@ Here's the breakdown of how your final grade will be calculated:
 
 #### Bump-up policy 
 
-As mentioned above, we reserve the right to "bump up" the grades of students who significantly participate in Study Halls and on the Ed Discussion Board (this includes posting questions but, more importantly, answering questions, engaging with content, and sharing interesting things too).
+As mentioned above, we reserve the right to "bump up" the grades of students who significantly participate in Study Halls and on the [Ed Discussion Board](https://edstem.org/us/courses/101357/discussion) (this includes posting questions but, more importantly, answering questions, engaging with content, and sharing interesting things too).
 
 :::
 
@@ -381,11 +381,11 @@ Warmup assignments are due 1 hour prior to the start of class *online* and homew
 
 If you believe that there has been a grading error for your homework and you have **proof of said error** then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. **This request should be sent to the head TF Nicholas Conroy.**
 
-## Office hours and availability
+## Office hours, study halls, and availability
 
-Office hours for all of the teaching staff are listed on the [Office Hours page](office-hours_study-halls.html).
+Office hours and study halls for all of the teaching staff are listed on the [Office Hours page](office-hours_study-halls.html).
 
-If you have a general question, you should post it to either the class or your section Ed Discussion Board. This is by far the fastest way to get an answer, much faster than emailing one of the teaching staff. However, you can also email me directly at [sfuller\@fas.harvard.edu](mailto:sfuller@fas.harvard.edu) if you have a question that is about a personal situation.
+If you have a general question, you should post it to either the class or your section [Ed Discussion Board](https://edstem.org/us/courses/101357/discussion). This is by far the fastest way to get an answer, much faster than emailing one of the teaching staff. However, you can also email me directly at [sfuller\@fas.harvard.edu](mailto:sfuller@fas.harvard.edu) if you have a question that is about a personal situation.
 
 
 # Course materials
@@ -427,4 +427,4 @@ If you need reasonable accommodations for this course please contact the [Disabi
 
 # Acknowledgements
 
-First, I want to thank Matt Blackwell for all of the materials that have served as a foundation from which this course (and site) is built. Second, I'd like to thank Jack Rametta and Chris Hare for their recommendations on books and pedagogy. Third, I especially want to thank Noah Shenker (previous head TF of the course for two years) for invaluable suggestions and feedback for how this course could be improved. And finally, I would like to thank all of the TFs and CAs (especially Head TF Nicholas Conroy) for their hard work and significant contributions to this course.
+First, I want to thank [Matt Blackwell](https://www.mattblackwell.org/) for all of the materials that have served as a foundation from which this course (and site) is built. Second, I'd like to thank [Jack Rametta](https://jackrametta.com/) and [Chris Hare](https://christopherdanielhare.github.io/) for their recommendations on books and pedagogy. Third, I especially want to thank Noah Shenker (previous head TF of the course for two years) for invaluable suggestions and feedback for how this course could be improved. And finally, I would like to thank all of the TFs and CAs (especially Head TF Nicholas Conroy) for their hard work and significant contributions to this course.

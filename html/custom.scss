@@ -592,6 +592,19 @@ main {
 
 
 // Code stuff
+.calendar-embed {
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+}
+
+.calendar-embed iframe {
+  display: block;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #777;
+}
+
 code:not(.sourceCode) {
   padding: 0.12em 0.32em;
   border: 1px solid var(--gov50-border);

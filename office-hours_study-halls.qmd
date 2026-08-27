@@ -11,10 +11,12 @@ page-layout: full
 ::: callout-important
 #### These schedules are subject to change
 
-  For the latest schedule, including changes, please check Ed or the [Gov 50 Google calendar](https://tinyurl.com/gov50calendar).
-
+  For the latest schedule, including changes, please check the [Gov 50 Google calendar](https://calendar.google.com/calendar/embed?src=3b972e74b5950a9517aa8811bfe06e4f1738be5661f5a1c451e2f10e440f5f06%40group.calendar.google.com&ctz=America%2FDetroit):
 :::
 
+::: {.calendar-embed}
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FDetroit&showPrint=0&title=GOV%2050%20Fall%202026%20Calendar&src=M2I5NzJlNzRiNTk1MGE5NTE3YWE4ODExYmZlMDZlNGYxNzM4YmU1NjYxZjVhMWM0NTFlMmYxMGU0NDBmNWYwNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" title="Gov 50 Fall 2026 Calendar" frameborder="0" scrolling="no"></iframe>
+:::
 
 
 # Office Hours
@@ -51,7 +53,6 @@ tbl.oh <- office_hrs |>
  
 ```{r build-sh-table, eval = TRUE, echo=FALSE, results="asis"}
 tbl.sh <- study_halls |>
-  filter(confirmed == "X") |>  
   select(name, day, start_time, end_time, location) |>
   rename(Name = name, Day = day, `Start Time` = start_time, `End Time` = end_time, Location = location) |>  
   kbl(escap = FALSE, align = "llll", table.attr = 'class="schedule-table"') |>
