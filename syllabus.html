@@ -76,6 +76,49 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -159,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">Section</a></li>
   <li><a href="#study-halls" id="toc-study-halls" class="nav-link" data-scroll-target="#study-halls">Study Halls</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  <li><a href="#section-research-project" id="toc-section-research-project" class="nav-link" data-scroll-target="#section-research-project">Section research project</a></li>
+  <li><a href="#section-replication-project" id="toc-section-replication-project" class="nav-link" data-scroll-target="#section-replication-project">Section replication project</a></li>
   <li><a href="#final-exam" id="toc-final-exam" class="nav-link" data-scroll-target="#final-exam">Final exam</a></li>
   <li><a href="#grades" id="toc-grades" class="nav-link" data-scroll-target="#grades">Grades</a></li>
   </ul></li>
@@ -259,6 +302,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="mailto:meganmartinez@college.harvard.edu">Megan Martinez</a></li>
 <li><a href="mailto:lenny_pische@college.harvard.edu">Lenny Pische</a></li>
 <li><a href="mailto:amy_tan@college.harvard.edu">Amy Tan</a></li>
+<li><a href="mailto:jahirtineo@college.harvard.edu">Jahir Tineo Castillo</a></li>
 <li><a href="mailto:rtrimble@college.harvard.edu">Reed Trimble</a></li>
 <li><a href="mailto:toddzhou@college.harvard.edu">Todd Zhou</a></li>
 </ul>
@@ -339,6 +383,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="in-person-participation" class="level2">
 <h2 class="anchored" data-anchor-id="in-person-participation">In-Person participation</h2>
 <p>Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs.</p>
+<p>Missing class/section or failing to participate will hurt your grade in the class, each unexcused absence will reduce your overall grade by 0.5pts and failing to participate significantly will decrease your grade by 0.25pts.</p>
 <ol type="1">
 <li>In-class participation will be monitored by TFs and CAs</li>
 <li>In-section participation will be monitored by TFs</li>
@@ -353,11 +398,11 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Grading policy
+<span class="screen-reader-only">Note</span>Example grade with participation policy
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Participation will be graded as either a 0 (did not meaningfully participate) or a 1 (meaningfully participated) for each class and section.</p>
+<p>So, for example, if you have earned a 92 in the class, but you miss 2 classes and 2 sections (4 unexcused absences) and fail to participate significantly 4 times, then your final grade would actually be an <strong>89</strong> (<span class="math inline">92 - ((4\times0.5)+(4\times0.25))=92 - (2+1)=89</span>).</p>
 </div>
 </div>
 </section>
@@ -382,7 +427,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Class-participation activity</li>
 <li>Class discussion of questions relating to readings and homework</li>
 <li>Code demonstration</li>
-<li>Drill</li>
+<li>Drill (do something yourself)</li>
 <li>Small-group discussion problems</li>
 </ol>
 <p>Classes will alternate between focusing on statistics and research design (including causal inference), though this distinction will likely blur as we continue through the course. The <a href="./schedule.html">class schedule is available here</a>.</p>
@@ -471,12 +516,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="section-research-project" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="section-research-project">Section research project</h2>
-<p>Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level research project.</p>
-<p>For this project, your section will operate as a single research group, headed by your TF, and tasked with investigating some research question. You, your classmates, your TF, and your CA will decide upon this question in the first few meetings of section and will spend the rest of the semester developing this into a completed project that will be presented to a different TF (or myself) in the last section meeting.</p>
+<section id="section-replication-project" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="section-replication-project">Section replication project</h2>
+<p>Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level replication (research) project.</p>
+<p>For this project, your section will divide into 3-4 research groups, headed by your TF, and tasked with exploring and extending a published paper. You, your classmates, your TF, and your CA will decide upon a paper to replicate in the first few meetings of section and will spend the rest of the semester conducting the replication and an extension (an additional research question inspired by the paper). This process culminates into a completed project that will be presented to a different TF (or myself) in the last section meeting.</p>
 <p>50% of your grade will depend on your section participation and contribution to the project and the other 50% will be determined by the presentation.</p>
-<p>Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for:</p>
+<p>Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for, for both the replication and extension:</p>
 <ol type="1">
 <li>Data collection and cleanup</li>
 <li>Statistical summaries and analyses</li>
@@ -485,7 +530,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Linking the results to the broader question in your section</li>
 <li>Clearly defining the scope of your results (limitations, how your analyses could be improved)</li>
 </ol>
-<p>Project presentations should be ~35 minutes long, with the first five minutes outlining the general research question, and the following thirty minutes divided between each of the three groups. Each group will present on the six components listed above and will field questions for ~7 minutes from the attending TF (and/or myself).</p>
+<p>Project presentations should be ~45 minutes long, with the first ten minutes outlining the combined replication results from the different groups, and the following thirty-five minutes divided between the different extensions conducted by each research group. After the presentations, students will field questions from the attending TF (and/or myself).</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -496,7 +541,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>While this may all sound like a lot, you will be collaborating with your whole section and both your TF and CA will guide you through this process. This will be fun! You’re going to start producing knowledge rather than just consuming it (that’s really cool!).</p>
+<p>While this may all sound like a lot, you will be collaborating with members of your section and both your TF and CA will guide you through this process. This will be fun! You’re going to start producing knowledge rather than just consuming it (that’s really cool!).</p>
 </div>
 </div>
 <table class="caption-top table">
@@ -508,11 +553,11 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Research question finalized</td>
+<td style="text-align: left;">Paper for replication selected</td>
 <td style="text-align: left;">Section Meeting 2</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Data sources identified, research plan drafted</td>
+<td style="text-align: left;">Paper outlined, replication plan drafted</td>
 <td style="text-align: left;">Section Meeting 4</td>
 </tr>
 <tr class="odd">
@@ -524,15 +569,15 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">Section Meeting 8</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Paper draft due 1 week before peer review</td>
+<td style="text-align: left;">Replication draft and extension proposal due for peer review</td>
 <td style="text-align: left;">Section Meeting 9</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Peer review of other section</td>
+<td style="text-align: left;">Peer review of other groups</td>
 <td style="text-align: left;">Section Meeting 10</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Incorporate feedback</td>
+<td style="text-align: left;">Incorporate feedback, finalize presentation</td>
 <td style="text-align: left;">Section Meeting 11</td>
 </tr>
 <tr class="even">
@@ -657,7 +702,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="coding-and-ai" class="level2">
 <h2 class="anchored" data-anchor-id="coding-and-ai">Coding and AI</h2>
-<p>While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI <em>when learning</em> has significant deleterious effects. <strong>I strongly suggest that you do not use AI in any capacity in this course</strong>.</p>
+<p>While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI <em>when learning</em> has significant deleterious effects. You will not be able to use AI on in-section coding problem sets, though we will be discussing how to use AI in research in section.</p>
 <p>Simply put, using AI in this course <em>will actively hurt you</em> in a) understanding the course material and b) preparing for assessments where you will have no access to said AI.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -665,11 +710,11 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>AI for any writing is <strong>expressly prohibited</strong>
+<span class="screen-reader-only">Important</span>AI for warmup questions, homework, or any writing is <strong>expressly prohibited</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>As mentioned above, you are explicitly prohibited from using AI to generate any written portion of any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the <a href="https://oaisc.fas.harvard.edu/">Office of Academic Integrity and Student Conduct</a>.</p>
+<p>As mentioned above, you are explicitly prohibited from using AI to respond to any part any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the <a href="https://oaisc.fas.harvard.edu/">Office of Academic Integrity and Student Conduct</a>.</p>
 </div>
 </div>
 </section>
@@ -679,7 +724,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="regrading-policy" class="level2">
 <h2 class="anchored" data-anchor-id="regrading-policy">Regrading policy</h2>
-<p>If you believe that there has been a grading error for your homework and you have <strong>proof of said error</strong> then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. <strong>This request should be sent to the head TF Nicholas Conroy.</strong></p>
+<p>If you believe that there has been a grading error for your warmup questions, homework, or in-section coding problem sets and you have <strong>proof of said error</strong> then you may be granted a regrade of the error. Requests without sufficient evidence will be denied.</p>
+<p>For the exam and final project any regrade requests will result in a complete regrade by a different TF or Dr.&nbsp;Fuller—the entire assignment will be graded again and will have a new grade assigned. There is no guarantee of a higher score.</p>
+<p><strong>Requests should be sent to the head TF <a href="mailto:nconroy@fas.harvard.edu">Nicholas Conroy</a>.</strong></p>
 </section>
 <section id="office-hours-study-halls-and-availability" class="level2">
 <h2 class="anchored" data-anchor-id="office-hours-study-halls-and-availability">Office hours, study halls, and availability</h2>
