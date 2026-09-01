@@ -53,6 +53,7 @@ output:
 - [Megan Martinez](mailto:meganmartinez@college.harvard.edu)
 - [Lenny Pische](mailto:lenny_pische@college.harvard.edu)
 - [Amy Tan](mailto:amy_tan@college.harvard.edu)
+- [Jahir Tineo Castillo](mailto:jahirtineo@college.harvard.edu)
 - [Reed Trimble](mailto:rtrimble@college.harvard.edu)
 - [Todd Zhou](mailto:toddzhou@college.harvard.edu)
 
@@ -141,7 +142,9 @@ You will be required to answer a small set of questions for every class meeting 
 
 ## In-Person participation
 
-Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs.
+Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs. 
+
+Missing class/section or failing to participate will hurt your grade in the class, each unexcused absence will reduce your overall grade by 0.5pts and failing to participate significantly will decrease your grade by 0.25pts. 
 
 1. In-class participation will be monitored by TFs and CAs
 2. In-section participation will be monitored by TFs
@@ -149,9 +152,9 @@ Your participation in class, section, and study-halls is not only a requirement 
     - *Note: Attendance is not mandatory for Study Halls, but can be used to supplement other participation grades.*
 
 ::: callout-note
-#### Grading policy
+#### Example grade with participation policy
 
-Participation will be graded as either a 0 (did not meaningfully participate) or a 1 (meaningfully participated) for each class and section.
+So, for example, if you have earned a 92 in the class, but you miss 2 classes and 2 sections (4 unexcused absences) and fail to participate significantly 4 times, then your final grade would actually be an **89** ($92 - ((4\times0.5)+(4\times0.25))=92 - (2+1)=89$).
 
 :::
 
@@ -170,7 +173,7 @@ We will meet twice a week for regular classes. As I mentioned above, these class
 2.  Class-participation activity
 3.  Class discussion of questions relating to readings and homework
 4.  Code demonstration
-5.  Drill
+5.  Drill (do something yourself)
 6.  Small-group discussion problems
 
 Classes will alternate between focusing on statistics and research design (including causal inference), though this distinction will likely blur as we continue through the course. The [class schedule is available here](/schedule.html).
@@ -245,15 +248,15 @@ We will drop the two lowest homework grades automatically.
 :::
 
 
-## Section research project
+## Section replication project
 
-Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level research project.
+Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level replication (research) project.
 
-For this project, your section will operate as a single research group, headed by your TF, and tasked with investigating some research question. You, your classmates, your TF, and your CA will decide upon this question in the first few meetings of section and will spend the rest of the semester developing this into a completed project that will be presented to a different TF (or myself) in the last section meeting.
+For this project, your section will divide into 3-4 research groups, headed by your TF, and tasked with exploring and extending a published paper. You, your classmates, your TF, and your CA will decide upon a paper to replicate in the first few meetings of section and will spend the rest of the semester conducting the replication and an extension (an additional research question inspired by the paper). This process culminates into a completed project that will be presented to a different TF (or myself) in the last section meeting.
 
 50% of your grade will depend on your section participation and contribution to the project and the other 50% will be determined by the presentation.
 
-Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for:
+Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for, for both the replication and extension:
 
 1. Data collection and cleanup
 2. Statistical summaries and analyses
@@ -262,27 +265,26 @@ Your section will be divided into three groups, each tasked with a different par
 5. Linking the results to the broader question in your section
 6. Clearly defining the scope of your results (limitations, how your analyses could be improved)
 
-Project presentations should be ~35 minutes long, with the first five minutes outlining the general research question, and the following thirty minutes divided between each of the three groups. Each group will present on the six components listed above and will field questions for ~7 minutes from the attending TF (and/or myself).
+Project presentations should be ~45 minutes long, with the first ten minutes outlining the combined replication results from the different groups, and the following thirty-five minutes divided between the different extensions conducted by each research group. After the presentations, students will field questions from the attending TF (and/or myself).
 
 ::: callout-tip
 #### This process will be highly structured (and fun!)
 
-While this may all sound like a lot, you will be collaborating with your whole section and both your TF and CA will guide you through this process. This will be fun! You're going to start producing knowledge rather than just consuming it (that's really cool!).
+While this may all sound like a lot, you will be collaborating with members of your section and both your TF and CA will guide you through this process. This will be fun! You're going to start producing knowledge rather than just consuming it (that's really cool!).
 
 :::
 
 
-
-| Milestone                                        | Due Date[^2]       |
-|:-------------------------------------------------|:-------------------|
-| Research question finalized                      | Section Meeting 2  |
-| Data sources identified, research plan drafted   | Section Meeting 4  |
-| Data cleaned, first summaries of data            | Section Meeting 6  |
-| Main analyses completed, draft of visualizations | Section Meeting 8  |
-| Paper draft due 1 week before peer review        | Section Meeting 9  |
-| Peer review of other section                     | Section Meeting 10 |
-| Incorporate feedback                             | Section Meeting 11 |
-| Presentation to other TF (or Dr. Fuller)         | Section Meeting 12 |
+| Milestone                                                     | Due Date[^2]       |
+|:--------------------------------------------------------------|:-------------------|
+| Paper for replication selected                                | Section Meeting 2  |
+| Paper outlined, replication plan drafted                      | Section Meeting 4  |
+| Data cleaned, first summaries of data                         | Section Meeting 6  |
+| Main analyses completed, draft of visualizations              | Section Meeting 8  |
+| Replication draft and extension proposal due for peer review  | Section Meeting 9  |
+| Peer review of other groups                                   | Section Meeting 10 |
+| Incorporate feedback, finalize presentation                   | Section Meeting 11 |
+| Presentation to other TF (or Dr. Fuller)                      | Section Meeting 12 |
 
 [^2]: These meetings correspond (roughly) to the modules of the course. So Section Meeting 2 will correspond to Module 2, Meeting 3 module 3, and so on. Check out the [schedule](/schedule.html) for more info.
 
@@ -361,15 +363,15 @@ Don't cheat! Like really, just don't do it. We also take plagiarism (including t
 
 ## Coding and AI
 
-While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. **I strongly suggest that you do not use AI in any capacity in this course**.
+While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. You will not be able to use AI on in-section coding problem sets, though we will be discussing how to use AI in research in section.
 
 Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI.
 
 ::: callout-important
 
-#### AI for any writing is **expressly prohibited** 
+#### AI for warmup questions, homework, or any writing is **expressly prohibited** 
 
-As mentioned above, you are explicitly prohibited from using AI to generate any written portion of any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
+As mentioned above, you are explicitly prohibited from using AI to respond to any part any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
 
 :::
 
@@ -379,7 +381,11 @@ Warmup assignments are due 1 hour prior to the start of class *online* and homew
 
 ## Regrading policy
 
-If you believe that there has been a grading error for your homework and you have **proof of said error** then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. **This request should be sent to the head TF Nicholas Conroy.**
+If you believe that there has been a grading error for your warmup questions, homework, or in-section coding problem sets and you have **proof of said error** then you may be granted a regrade of the error. Requests without sufficient evidence will be denied. 
+
+For the exam and final project any regrade requests will result in a complete regrade by a different TF or Dr. Fuller---the entire assignment will be graded again and will have a new grade assigned. There is no guarantee of a higher score.
+
+**Requests should be sent to the head TF [Nicholas Conroy](mailto:nconroy@fas.harvard.edu).**
 
 ## Office hours, study halls, and availability
 
