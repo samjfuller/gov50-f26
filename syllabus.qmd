@@ -335,11 +335,10 @@ Here's the breakdown of how your final grade will be calculated:
 | Category                | Percent of Final Grade |
 |:------------------------|:-----------------------|
 | Warmup Questions        | 10%                    |
-| Class Participation     | 10%                    |
-| Section Participation   | 10%                    |
 | Homework                | 20%                    |
+| Section Coding Problems | 10%                    |
 | Section Project         | 20%                    |
-| Final Exam              | 30%                    |
+| Final Exam              | 40%                    |
 
 
 ::: callout-note

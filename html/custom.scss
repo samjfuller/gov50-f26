@@ -605,11 +605,14 @@ main {
   border: 1px solid #777;
 }
 
+p code:not(.sourceCode),
+li code:not(.sourceCode),
+td code:not(.sourceCode),
 code:not(.sourceCode) {
   padding: 0.12em 0.32em;
   border: 1px solid var(--gov50-border);
   border-radius: 0.25rem;
-  background-color: $surface-raised;
+  background-color: $monokai-bg;
 }
 
 div.sourceCode,
