@@ -46,7 +46,7 @@ output:
 - [Alan Cai](mailto:alancai@college.harvard.edu)
 - [Abril Diaz](mailto:abrilrodriguezdiaz@college.harvard.edu)
 - [Alex Draghia](mailto:adraghia@college.harvard.edu)
-- [Shuxin Ho](mailto:shuxin_ho@college.harvard.edu)
+- [ShuXin Ho](mailto:shuxin_ho@college.harvard.edu)
 - [Harrison Huang](mailto:harrisonhuang@college.harvard.edu)
 - [Jenna Jiang](mailto:jennajiang@college.harvard.edu)
 - [Mateo Quintero](mailto:mateoquintero@college.harvard.edu)
