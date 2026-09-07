@@ -28,7 +28,7 @@ Below is the schedule for the semester. You should:
 The readings refer to following texts:   
 
 - **ROS**: [*Regression and Other Stories*](https://avehtari.github.io/ROS-Examples/) by Andrew Gelman, Jennifer Hill, & Aki Vehtari
-- **TE**: [*The Effect: An Introduction to Research Design and Causality*](https://moderndive.com/index.html) by Nick Huntington-Klein
+- **TE**: [*The Effect: An Introduction to Research Design and Causality*](https://theeffectbook.net/) by Nick Huntington-Klein
 
 
 ::: callout-important
