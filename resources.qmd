@@ -5,11 +5,18 @@ title: "Resources"
 
 # R Information & Tutorials
 
+## Basics
 - [Getting Software Set Up](/resources/installing_software.qmd)
 - [Gov 50 R Cheatsheet](/resources/cheatsheet.qmd)
 - [Gov 50 Intro to (Base) R Handout (PDF)](/resources/Intro_to_Base_R_Lab.pdf)
+
+## More advanced coding
 - [Hands On Programming with R](https://rstudio-education.github.io/hopr/)
 - [R for Data Science](https://r4ds.had.co.nz/)
+
+## Plotting/Graphics in R
+- [ggplot2 Book](https://ggplot2-book.org/)
+- [R Graphics Cookbook (good resource for ggplot)](https://r-graphics.org/)
 
 # Quarto Information & Tutorials (Replaced RMarkdown)
 

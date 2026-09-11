@@ -69,7 +69,7 @@ None
 
 ### Readings:
 
-- Appendices A.1-A.3: Computing in R from *Regression and Other Stories*
+- Appendices A.1-A.3: Computing in R from *Regression and Other Stories*; Ch.5.1-5.3 and 5.6 from [*R Graphics Cookbook*](https://r-graphics.org/CHAPTER-SCATTER.html) for Homework Question 2.
 
 ### Warmup Questions: sequences, sampling, looping, and vectors
 
@@ -291,7 +291,7 @@ In R, create three vectors each of length 10: the number 1 repeated 10 times; th
 
 ### Readings:
 
-- Chapter 3: Appendices A.4-A.5: Computing from *Regression and Other Stories*
+- Appendices A.4-A.5: Computing from *Regression and Other Stories*
 
 ### Warmup Questions:
 
