@@ -24,7 +24,6 @@ output:
 - [Shashwat Kulkarni](mailto:shashwatk@fas.harvard.edu)
 - [Zhiyu Li](mailto:zhiyuli@fas.harvard.edu)
 - [Tianyu Qiao](mailto:tianyu_qiao@g.harvard.edu)
-- [Mayank Sharma](mailto:mayank.sharma.bits@gmail.com)
 - [George Yean](mailto:gyean@fas.harvard.edu)
 
 :::
@@ -45,6 +44,7 @@ output:
 - [Daniel Cabrera](mailto:danielcabrera@college.harvard.edu)
 - [Alan Cai](mailto:alancai@college.harvard.edu)
 - [Abril Diaz](mailto:abrilrodriguezdiaz@college.harvard.edu)
+- [Grace De Vita](mailto:gracedevita@college.harvard.edu)
 - [Alex Draghia](mailto:adraghia@college.harvard.edu)
 - [ShuXin Ho](mailto:shuxin_ho@college.harvard.edu)
 - [Harrison Huang](mailto:harrisonhuang@college.harvard.edu)
