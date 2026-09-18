@@ -324,7 +324,7 @@ window.Quarto = {
   <li><a href="#homework-questions-13" id="toc-homework-questions-13" class="nav-link" data-scroll-target="#homework-questions-13">Homework Questions:</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects" id="toc-module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects" class="nav-link" data-scroll-target="#module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects"><strong>Module 8</strong> — y = mx + b: regression with a single predictor and causal treatment effects</a>
+  <li><a href="#module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects" id="toc-module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects" class="nav-link" data-scroll-target="#module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects"><strong>Module 8</strong> — <span class="math inline">y = mx + b</span>: regression with a single predictor and causal treatment effects</a>
   <ul class="collapse">
   <li><a href="#class-1-10282026" id="toc-class-1-10282026" class="nav-link" data-scroll-target="#class-1-10282026">Class 1 (10/28/2026)</a>
   <ul class="collapse">
@@ -339,7 +339,7 @@ window.Quarto = {
   <li><a href="#homework-questions-15" id="toc-homework-questions-15" class="nav-link" data-scroll-target="#homework-questions-15">Homework Questions:</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#module-9-y-b1x1-b2x2-b3x3-linear-regression-with-multiple-predictors" id="toc-module-9-y-b1x1-b2x2-b3x3-linear-regression-with-multiple-predictors" class="nav-link" data-scroll-target="#module-9-y-b1x1-b2x2-b3x3-linear-regression-with-multiple-predictors"><strong>Module 9</strong> — y = b1x1 + b2x2 + b3x3…: linear regression with multiple predictors</a>
+  <li><a href="#module-9-y-beta_1x_1-beta_2x_2-beta_2x_3-linear-regression-with-multiple-predictors" id="toc-module-9-y-beta_1x_1-beta_2x_2-beta_2x_3-linear-regression-with-multiple-predictors" class="nav-link" data-scroll-target="#module-9-y-beta_1x_1-beta_2x_2-beta_2x_3-linear-regression-with-multiple-predictors"><strong>Module 9</strong> — <span class="math inline">y = \beta_1x_1 + \beta_2x_2 + \beta_2x_3</span>…: linear regression with multiple predictors</a>
   <ul class="collapse">
   <li><a href="#class-1-11042026" id="toc-class-1-11042026" class="nav-link" data-scroll-target="#class-1-11042026">Class 1 (11/04/2026)</a>
   <ul class="collapse">
@@ -849,9 +849,24 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-6" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-6">Warmup Questions:</h3>
+<p>A sample of 𝑛 people are selected at random from a large population and are asked a question, to which <span class="math inline">y</span> reply Yes and <span class="math inline">n - y</span> reply No.&nbsp;For each example below, give a 95% interval for the proportion in the population who would answer Yes if asked.</p>
+<ol type="1">
+<li><p><span class="math inline">n = 1500</span>, <span class="math inline">y = 750</span></p></li>
+<li><p><span class="math inline">n = 1500</span>, <span class="math inline">y = 900</span></p></li>
+<li><p><span class="math inline">n = 100~000</span>, <span class="math inline">y = 51~000</span></p></li>
+<li><p><span class="math inline">n = 10</span>, <span class="math inline">y = 6</span></p></li>
+<li><p><span class="math inline">n = 3</span>, <span class="math inline">y = 3</span></p></li>
+</ol>
 </section>
 <section id="homework-questions-8" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-8">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Probability distributions</strong> (Exercise 3.5 of <em>Regression and Other Stories</em>). Using a bar plot in R, graph the binomial distribution with <span class="math inline">n = 20</span> and <span class="math inline">p = 0.3</span>.</p></li>
+<li><p><strong>Comparison of proportions</strong> (Exercise 4.1 of <em>Regression and Other Stories</em>). A randomized experiment is performed within a survey. 1000 people are contacted. Half the people contacted are promised a $5 incentive to participate, and half are not promised an incentive. The result is a 50% response rate among the treated group and 40% response rate among the control group. Give an estimate and standard error of the average treatment effect.</p></li>
+<li><p><strong>Choosing sample size</strong> (Exercise 4.2 of <em>Regression and Other Stories</em>). You are designing a survey to estimate the gender gap: the difference in support for a candidate among men and women. Assuming the respondents are a simple random sample of the voting population, how many people do you need to poll so that the standard error is less than 5 percentage points?</p></li>
+<li><p><strong>Comparison of proportions</strong> (Exercise 4.3 of <em>Regression and Other Stories</em>). You want to gather data to determine which of two students is a better basketball shooter. One of them shoots with 30% accuracy and the other is a 40% shooter. Each student takes 20 shots and you then compare their shooting percentages. What is the probability that the better shooter makes more shots in this small experiment?</p></li>
+<li><p><strong>Designing an experiment</strong> (Exercise 4.4 of <em>Regression and Other Stories</em>). You want to gather data to determine which of two students is a better basketball shooter. You plan to have each student take <span class="math inline">N</span> shots and then compare their shooting percentages. Roughly how large does <span class="math inline">N</span> have to be for you to have a good chance of distinguishing a 30% shooter from a 40% shooter?</p></li>
+</ol>
 </section>
 </section>
 <section id="class-2-10072026" class="level2">
@@ -864,9 +879,49 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-7" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-7">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Think about the last time you sat down in a chair (perhaps right now). When you did that, you probably predicted you would observe that you would end up sitting in the chair, rather than passing through it or the chair breaking. List three assumptions you made about the data generating process when you made that prediction.</p></li>
+<li><p>Which of the following is the best definition of the term identified as in “this variation has identified the effect we’re interested in”?</p>
+<ul>
+<li>We’ve generated the data by conducting a controlled experiment in which treatment is randomly assigned.</li>
+<li>In the data generating process, the only reason why we see variation in the outcome variable is because of the treatment variable.</li>
+<li>The relationship we are looking at in the data actually tests a hypothesis.</li>
+<li>In the variation we use, there’s no reason we’d see any relationship at all except for the effect we’re interested in.</li>
+</ul></li>
+<li><p>Which of the following terms describe how a variable changes from observation to observation?</p>
+<ul>
+<li>Data-generating process</li>
+<li>Variation</li>
+<li>Raw data</li>
+<li>Determinants</li>
+</ul></li>
+<li><p>Why is a variable that causes both the “treatment” and “outcome” variables especially concerning for identification? You may want to use the phrase “alternate explanation” in your answer.</p></li>
+</ol>
 </section>
 <section id="homework-questions-9" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-9">Homework Questions:</h3>
+<ol type="1">
+<li><p>Go to your favorite news source and find an article that describes the results of a new empirical study. Describe what you think are some features of the data generating process. What are some ways to explain their result other than the interpretation they had? Did the study (as described in the article) have ways of blocking out the alternate explanation you thought of?</p></li>
+<li><p>You read about a new study with the headline “eating caviar linked to longer lifespan.” The study’s research question is “does eating caviar make you live longer?” In the study’s data, they find that people who eat caviar have, on average, longer lifespans than people who don’t.</p>
+<ul>
+<li>What are some alternate explanations for this relationship?</li>
+<li>What sort of variation would identify the answer to the research question?</li>
+<li>Give one suggestion for how the study authors might isolate variation that would identify the answer to the research question</li>
+</ul></li>
+<li><p>For each of the following news headlines, assume that the underlying data actually only shows a correlation between the two variables mentioned. Give an alternate explanation for the correlation other than the causal relationship implied by the headline.</p>
+<ul>
+<li>“As stock market drops, presidential approval ratings decline.”</li>
+<li>“Dates are announced for the downtown summer concert series, driving up sales at downtown restaurants.”</li>
+<li>“Unsanitary? Hospital visits linked to 20% increased risk of disease.”</li>
+<li>“Dress for success! Every CEO follows this office-wear rule.”</li>
+</ul></li>
+<li><p>Shoe company Crikey claims that people who wear their fancy and expensive professional running-shoe Cool Mistrunner brand run 4 to 5% faster than if they wore an average shoe.</p>
+<ul>
+<li>In a few sentences, describe the data-generating process (you will probably leave some things out, that’s okay).</li>
+<li>What are possible alternative explanations for this claim, aside from the shoe making the person run faster?</li>
+<li>In running their study, the researchers accounted for some alternative explanations, including: gender, enthusiasm for running, and whether runners have participated in marathons and/or half marathons. Think of an alternative explanation not on this list. What is the implication of not accounting for this alternative explanation?</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -882,9 +937,26 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-8" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-8">Warmup Questions:</h3>
+<p>Write R code to do the following:</p>
+<ol type="1">
+<li><p>Simulate a random number representing the number of shots that a basketball player makes in 10 tries, if the results of the shots are independent and she has a 40% chance of making each shot.</p></li>
+<li><p>Simulate a random number representing the number of shots that a basketball player makes in 10 tries, if the results of the shots are independent and her chance of making a shot is 10% for the first shot, 20% for the second shot, 30% for the third, etc.</p></li>
+<li><p>Suppose the distance that you throw a ball has a normal distribution with mean 20 meters and standard deviation 5 meters. Simulate the results of three independent throws.</p></li>
+<li><p>100 people are asked how many pets they have. The respondents are randomly sampled from a population where 30% of the people have no pets, 40% have one pet, 20% have two pets, and 10% have three pets. Simulate the 100 responses and compute the average number of pets among the respondents.</p></li>
+<li><p>100 students are randomly divided into two groups: 50 take a new experimental math course and 50 take the usual class. They are then all given a test. Suppose that test scores are normally distributed with mean 60 and standard deviation 10 after taking the usual class, or mean 70 and standard deviation 15 after taking the experimental course. Simulate the 100 test scores from the experiment and compute the estimated treatment effect and standard error.</p></li>
+</ol>
 </section>
 <section id="homework-questions-10" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-10">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Inference from a proportion with <span class="math inline">y = 0</span></strong> (Exercise 4.7 of <em>Regression and Other Stories</em>). Out of a random sample of 50 Americans, zero report having ever held political office. From this information, give a 95% confidence interval for the proportion of Americans who have ever held political office.</p></li>
+<li><p><strong>Discrete probability simulation</strong> (Exercise 5.1 of <em>Regression and Other Stories</em>). Suppose that a basketball player has a 60% chance of making a shot, and he keeps taking shots until he misses two in a row. Also assume his shots are independent (so that each shot has 60% probability of success, no matter what happened before).</p>
+<ul>
+<li>Write an R function to simulate this process.</li>
+<li>Put the R function in a loop to simulate the process 1000 times. Use the simulation to estimate the mean and standard deviation of the total number of shots that the player will take, and plot a histogram representing the distribution of this random variable.</li>
+<li>Using your simulations, make a scatterplot of the number of shots the player will take and the proportion of shots that are successes.</li>
+</ul></li>
+</ol>
 </section>
 </section>
 <section id="class-2-10192026" class="level2">
@@ -897,9 +969,57 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-9" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-9">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Which of the following describes a representation of a data generating process (DGP) including variables in that DGP and the causal relationships between them?</p>
+<ul>
+<li>Causality</li>
+<li>Direct and indirect effect</li>
+<li>Latent variable</li>
+<li>Causal diagram</li>
+</ul></li>
+<li><p>Consider the below diagram, which reproduces Figure 6.3 In this diagram…</p>
+<ul>
+<li>Which variables have a direct effect on Money?</li>
+<li>Which variables have an indirect effect on Money?</li>
+</ul></li>
+</ol>
+<p><img src="files/img/assignments/m6_d2_diagram.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>You are making a simplified causal diagram to represent the data generating process of viewership for a TV show. Which of the following is true?</p>
+<ul>
+<li>The diagram should include a variable for “number of celebrities in the cast”</li>
+<li>The diagram should contain one variable for “show airs in the evening” and another for “show doesn’t air in the evening”</li>
+<li>The diagram should not contain a variable for “show budget” because budgets are often secret and the researcher can’t measure them</li>
+<li>The diagram should contain the variable “review score in the Jefferson Weekly,” which is the newspaper published by the students at Jefferson High School, with a readership of about 120 people.</li>
+</ul></li>
+<li><p>Define causality. In a few sentences, why is causality interesting and important?</p></li>
+</ol>
 </section>
 <section id="homework-questions-11" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-11">Homework Questions:</h3>
+<ol type="1">
+<li><p>In a conversation with your friend, you mention a study you read that found that being tall causally makes you more likely to earn above $100,000 per year. Your friend says the study must be wrong, since they know several tall people who make much less than that, and several short people who do earn that much. Does your friend’s reasoning make sense or not, and why?</p></li>
+<li><p>You are interested in the question “Does reading Harry Potter as a child make you read more as an adult?” and draw the diagram below.</p>
+<ul>
+<li>What direct effects should be included when trying to answer your research question of interest?</li>
+<li>What indirect effects should be included when trying to answer your research question of interest?</li>
+<li>What is a likely alternative explanation of why we might see a relationship between reading Harry Potter and reading more as an adult?</li>
+</ul></li>
+</ol>
+<p><img src="files/img/assignments/m6_d2_hw_diagram.jpg" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>The figure in Question 2 has LikesReading included as an unobserved variable. In a few sentences each, explain:</p>
+<ul>
+<li>Why do we bother to include variables on our diagrams if we can’t observe them?</li>
+<li>Why might we think that LikesReading is an unobserved or latent variable?</li>
+</ul></li>
+<li><p>Draw a causal diagram for the research question “do long shift hours make doctors give lower-quality care?” that incorporates the following features (and only the following features):</p>
+<ul>
+<li>Long shift hours affect both how tired doctors are, and how much experience they have, both of which affect the quality of care</li>
+<li>How long shifts are is often decided by the hospital the doctor works at. There are plenty of other things about a given hospital that also affect the quality of care, like its funding level, how crowded it is, and so on</li>
+<li>New policies that reduce shift times may be implemented at the same time (with the timing determined by some unobservable change in policy preferences) as other policies that also attempt to improve the quality of care</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -915,9 +1035,30 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-10" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-10">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Fit a regression to fake data</p>
+<ul>
+<li>Write R code to simulate 100 data points from a linear model with intercept 1, slope 2, and residual standard deviation 3, where the predictors are sampled at random uniformly from the range (0, 4). Fit and print a linear regression to these data, and report whether the true values of the intercept and slope fall within 1 standard error of the true parameter values.</li>
+</ul></li>
+<li><p>Make a plot with the simulated data and the fitted regression line, including the formula for the fitted line as in Figure 6.1 of Regression and Other Stories.</p></li>
+</ol>
 </section>
 <section id="homework-questions-12" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-12">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Binomial distribution</strong> (Exercise 5.3 of <em>Regression and Other Stories</em>). A player takes 10 basketball shots, with a 40% probability of making each shot. Assume the outcomes of the shots are independent.</p>
+<ul>
+<li>Write a line of R code to compute the probability that the player makes exactly 3 of the 10 shots.</li>
+<li>Write an R function to simulate the 10 shots. Loop this function 10 000 times and check that your simulated probability of making exactly 3 shots is close to the exact probability computed above.</li>
+</ul></li>
+<li><p><strong>Data and fitted regression line</strong> (Exercise 6.1 of <em>Regression and Other Stories</em>). A teacher in a class of 50 students gives a midterm exam with possible scores ranging from 0 to 50 and a final exam with possible scores ranging from 0 to 100. A linear regression is fit, yielding the estimate <span class="math inline">y = 30 + 1.2 \times x</span> with residual standard deviation 10. Sketch (by hand, not using the computer) the regression line, along with hypothetical data that could yield this fit.</p></li>
+<li><p><strong>Programming fake-data simulation</strong> (Exercise 6.2 of <em>Regression and Other Stories</em>). Write an R function to:</p>
+<ul>
+<li>simulate <span class="math inline">n</span> data points from the model, <span class="math inline">y = a + bx + \text{error}</span>, with data points <span class="math inline">x</span> uniformly sampled from the range (0, 100) and with errors drawn independently from the normal distribution with mean 0 and standard deviation <span class="math inline">\sigma</span>;</li>
+<li>fit a linear regression to the simulated data; and</li>
+<li>make a scatterplot of the data and fitted regression line. Your function should take as arguments, <span class="math inline">a</span>, <span class="math inline">b</span>, <span class="math inline">n</span>, <span class="math inline">\sigma</span>, and it should return the data, print out the fitted regression, and make the plot. Check your function by trying it out on some values of <span class="math inline">a</span>, <span class="math inline">b</span>, <span class="math inline">n</span>, <span class="math inline">\sigma</span>.</li>
+</ul></li>
+</ol>
 </section>
 </section>
 <section id="class-2-10262026" class="level2">
@@ -930,14 +1071,64 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-11" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-11">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Which of the following describes a causal path where all the arrows point away from the treatment?</p>
+<ul>
+<li>Open Path</li>
+<li>Closed Path</li>
+<li>Front Door Path</li>
+<li>Back Door Path</li>
+</ul></li>
+<li><p>Which of the following describes when randomization of treatment occurs without a researcher controlling the randomization?</p>
+<ul>
+<li>Exogenous variation</li>
+<li>Natural experiment</li>
+<li>Instrumental variable</li>
+<li>Randomized experiment</li>
+</ul></li>
+<li><p>Provide an example of a research question that is causal in nature but cannot be feasibly answered by a randomized experiment. Explain your reasoning.</p></li>
+<li><p>Define the concept of exogenous variation.</p></li>
+</ol>
 </section>
 <section id="homework-questions-13" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-13">Homework Questions:</h3>
+<ol type="1">
+<li><p>Consider the below generic causal diagram.</p>
+<ul>
+<li>List every path from X to Y.</li>
+<li>Which of the paths are front-door paths?</li>
+<li>Which of the paths are open back-door paths?</li>
+<li>What variables must be controlled for in order to identify the effect of X on Y? (only list what must be controlled for, not anything that additionally could be controlled for).</li>
+</ul></li>
+</ol>
+<p><img src="files/img/assignments/m7_d2_diagram1.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p>Consider the research question: Does having higher income cause better health?</p>
+<ul>
+<li>Draw a causal diagram depicting the data generating process for this relationship with 5-10 variables on it.</li>
+<li>Identify the Front Door paths.</li>
+<li>Identify the Back Door paths.</li>
+<li>Identify the paths that represent direct effects.</li>
+<li>Identify the Good Paths and the Bad Paths.</li>
+</ul></li>
+<li><p>Consider the figure below, which depicts the relationship between a pandemic-related lockdown and an economic recession. The research question of interest is: Does a pandemic-related lockdown cause recession?</p>
+<ul>
+<li>Write down all the paths in the diagram from Lockdown to Recession. To make our lives simpler (there are a lot of paths in this diagram), ignore any path that goes through Stimulus.</li>
+<li>List all of the paths that are Front Door Paths.</li>
+<li>What would happen if we controlled for unemployment?</li>
+<li>Is it possible to measure each of the variables adequately?</li>
+<li>Can you think of any variables and paths not depicted in the diagram that may be relevant to identify the answer to the research question? List at least one and no more than three.</li>
+</ul></li>
+</ol>
+<p><img src="files/img/assignments/m7_d2_diagram2.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Describe the four major differences between randomized experiments and natural experiments discussed in the chapter. As a bonus, there’s a fifth difference described in the chapter having to do with sample size and representativeness.</li>
+</ol>
 </section>
 </section>
 </section>
 <section id="module-8-y-mx-b-regression-with-a-single-predictor-and-causal-treatment-effects" class="level1">
-<h1><strong>Module 8</strong> — y = mx + b: regression with a single predictor and causal treatment effects</h1>
+<h1><strong>Module 8</strong> — <span class="math inline">y = mx + b</span>: regression with a single predictor and causal treatment effects</h1>
 <section id="class-1-10282026" class="level2">
 <h2 class="anchored" data-anchor-id="class-1-10282026">Class 1 (10/28/2026)</h2>
 <section id="readings-14" class="level3">
@@ -948,9 +1139,20 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-12" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-12">Warmup Questions:</h3>
+<p>Suppose you have a vector test_scores of exam grades for a class of students, and a vector level taking on the values 1 for undergraduate and 2 for graduate students.</p>
+<ol type="1">
+<li><p>Explain why the estimated coefficient in the linear regression test_scores ~ 1 gives the average grade in the class. Give R code to perform this regression and extract the coefficient estimate.</p></li>
+<li><p>Write the code for the linear regression that gives the difference between the average grades for graduate and undergraduates in the class.</p></li>
+</ol>
 </section>
 <section id="homework-questions-14" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-14">Homework Questions:</h3>
+<ol type="1">
+<li><p>Simulate 100 data points with measurements 𝑥 and y as follows. Let 𝑥 be uniformly distributed between 0 and 10, and simulate y from the model, <span class="math inline">y = a + bx + \text{error}</span>, where <span class="math inline">a = 2</span>, <span class="math inline">b = 0.5</span>, and the error is normally distributed with mean 0 and standard deviation <span class="math inline">\sigma = 2</span>. Give your code.</p></li>
+<li><p>Use <code>lm()</code> to fit a linear regression of <span class="math inline">y</span> on <span class="math inline">x</span>. Display the result. Discuss the discrepancies between your estimates of <span class="math inline">a</span>, <span class="math inline">b</span>, <span class="math inline">\sigma</span> and the true values, in comparison to the standard errors from the regression. Give your code as well as your R output.</p></li>
+<li><p>Plot the data and the fitted regression line. Give your code as well as your graph.</p></li>
+<li><p>Now suppose <span class="math inline">x</span> is measured with error: Create a new variable <code>x_obs</code> by taking <span class="math inline">x</span> and adding normally distributed errors with mean 0 and standard deviation 5. Now fit the linear regression predicting <span class="math inline">y</span> from <code>x_obs</code>. How do the coefficient estimates compare to the result from regressing <span class="math inline">y</span> on <span class="math inline">x</span> as you did earlier?</p></li>
+</ol>
 </section>
 </section>
 <section id="class-2-11022026" class="level2">
@@ -963,14 +1165,105 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-13" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-13">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Define in your own words (i.e., don’t just copy down what’s written in the glossary) each of the following terms:</p>
+<ul>
+<li>Conditional average treatment effect</li>
+<li>Average treatment on the treated</li>
+<li>Average treatment on the untreated</li>
+</ul></li>
+<li><p>Provide an example of a treatment effect that you would expect to be highly heterogeneous, and explain why you think it is likely to be heterogeneous</p></li>
+<li><p>Which of the following describes the average treatment effect of assigning treatment, whether or not treatment is actually received?</p>
+<ul>
+<li>Local average treatment effect</li>
+<li>Average treatment on the treated</li>
+<li>Intent-to-treat</li>
+<li>Variance-weighted average treatment effect</li>
+</ul></li>
+</ol>
 </section>
 <section id="homework-questions-15" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-15">Homework Questions:</h3>
+<ol type="1">
+<li><p>Consider the data in the table below that shows the hypothetical treatment effect of cognitive behavioral therapy on depression for six participants. For the sake of this example, the six participants represent the population of interest.</p>
+<ul>
+<li>What is the overall average treatment effect for the population?</li>
+<li>What is the average treatment effect for Women?</li>
+<li>If nearly all Non-binary people get treated, and about half of all Women get treated, and we control for the differences between Women and Non-binary people, what kind of treatment effect average will we get, and what can we say about the numerical estimate we’ll get?</li>
+<li>If we assume that, in the absence of treatment, everyone would have had the same outcome, and also only teenagers (19 or younger) ever receive treatment, and we compare treated people to control people, what kind of treatment effect average will we get, and what can we say about the numerical estimate we’ll get?</li>
+</ul></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Case</th>
+<th style="text-align: left;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Man</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">B</td>
+<td style="text-align: left;">40</td>
+<td style="text-align: left;">Woman</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C</td>
+<td style="text-align: left;">30</td>
+<td style="text-align: left;">Woman</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">20</td>
+<td style="text-align: left;">Non-binary</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: left;">Man</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: left;">Woman</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li><p>On weighted treatment effects:</p>
+<ul>
+<li>Describe what a variance-weighted treatment effect is</li>
+<li>Describe what a distribution-weighted treatment effect is</li>
+<li>Under what conditions/research designs would we get each of these?</li>
+</ul></li>
+<li><p>Suppose you are conducting an experiment to see whether pricing cookies at $1.99 versus $2 affects the decision to purchase the cookies. The population of interest is all adults in the United States. You recruit people from your university to participate and randomize them to either see cookies priced as $1.99 or $2, then write down whether they purchased cookies. What kind of average treatment effect can you identify from this experiment?</p></li>
+<li><p>For each of the following identification strategies, what kind of treatment effect(s) is most likely to be identified?</p>
+<ul>
+<li>A randomized experiment using a representative sample</li>
+<li>True randomization within only a certain demographic group</li>
+<li>Closing back door paths connected to variation in treatment</li>
+<li>Isolating the part of the variation in treatment variable that is driven by an exogenous variable</li>
+<li>The control group is comparable to the treatment group, but treatment effects may be different across these groups</li>
+</ul></li>
+<li><p>Give an example where the average treatment effect on the treated would be more useful to consider than the overall average treatment effect, and explain why.</p></li>
+</ol>
 </section>
 </section>
 </section>
-<section id="module-9-y-b1x1-b2x2-b3x3-linear-regression-with-multiple-predictors" class="level1">
-<h1><strong>Module 9</strong> — y = b1x1 + b2x2 + b3x3…: linear regression with multiple predictors</h1>
+<section id="module-9-y-beta_1x_1-beta_2x_2-beta_2x_3-linear-regression-with-multiple-predictors" class="level1">
+<h1><strong>Module 9</strong> — <span class="math inline">y = \beta_1x_1 + \beta_2x_2 + \beta_2x_3</span>…: linear regression with multiple predictors</h1>
 <section id="class-1-11042026" class="level2">
 <h2 class="anchored" data-anchor-id="class-1-11042026">Class 1 (11/04/2026)</h2>
 <section id="readings-16" class="level3">
@@ -981,9 +1274,101 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-14" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-14">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Without using the computer, figure out the slope, 𝑏, of the least-squares line, <span class="math inline">y= a + bx</span>, for the three points <span class="math inline">(x, y) = (0, 0),~(1, 2),~(2, 2)</span>.</p></li>
+<li><p>Without using the computer, figure out the intercept, <span class="math inline">a</span>, of this fitted line.</p></li>
+<li><p>Suppose you fit a linear regression to world population during the twentieth century, using the following data points: 1.5 billion in 1900, 2.5 billion in 1950, 6 billion in 2000. Without using the computer, figure out the least-squares line, <span class="math inline">y = a + bx</span>, for these three data points.</p></li>
+</ol>
 </section>
 <section id="homework-questions-16" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-16">Homework Questions:</h3>
+<ol type="1">
+<li><p>You’ve generated some random data <span class="math inline">X</span>, <span class="math inline">Y</span>, and <span class="math inline">\epsilon</span> where you randomly generated <span class="math inline">X</span> and <span class="math inline">\epsilon</span> as normally distributed data, and then created <span class="math inline">Y</span> using the formula <span class="math inline">Y = 2 + 3X + \epsilon</span>. You look at some of the random data you generated, and see an observation with <span class="math inline">X = 2</span> and <span class="math inline">Y = 9</span>. Let’s call that Observation A.</p>
+<ul>
+<li>What is the <em>error</em> for Observation A?</li>
+<li>You estimate the regression <span class="math inline">Y = \beta_0 + \beta_1X + \epsilon</span> using the data you generated and get the estimates <span class="math inline">\hat{\beta}_0 = 1.9</span>, <span class="math inline">\hat{\beta}_1 = 3.1</span>. What is the <em>residual</em> for Observation A?</li>
+</ul></li>
+<li><p>You use regression to estimate the equation <span class="math inline">Y = \beta_0 + \beta_1X + \epsilon</span> and get an estimate of <span class="math inline">\hat{\beta}_1 = 3</span> and the standard error <span class="math inline">s.e.(\hat{\beta}_1) = 1.3</span>.</p>
+<ul>
+<li>Interpret, in a sentence, the coefficient <span class="math inline">\hat{\beta}_1</span>.</li>
+<li>Calculate whether <span class="math inline">\hat{\beta}_1</span> is statistically significantly different from 0 at the 95% level. (more technical detail you may not need: do a two-sided test, and assume the sample size is effectively infinite)</li>
+<li>Whatever your answer to part b, what does it mean to say that this coefficient is statistically significantly different from 0?</li>
+</ul></li>
+<li><p>Consider the below conventional OLS regression table, which uses data from 1987 on how many hours women work in paid jobs. In the table, hours worked is predicted using the number of children under the age of 5 in the household and the number of years of education the woman has.</p>
+<ul>
+<li>How many additional hours worked is associated with a one-unit increase of years of education when controlling for number of children?</li>
+<li>What is the standard error on the “children under 5” coefficient when not controlling for years of education?</li>
+<li>In the third model, what is the predicted number of hours worked for a woman with zero children and zero years of education?</li>
+<li>How many observations are used in each of the three regressions?</li>
+<li>Is the coefficient on “children under 5” statistically significantly different from 0 at the 95% level?</li>
+</ul></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Annual Hours Worked (1)</th>
+<th style="text-align: left;">Annual Hours Worked (2)</th>
+<th style="text-align: left;">Annual Hours Worked (3)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">(Intercept)</td>
+<td style="text-align: left;">230.018***</td>
+<td style="text-align: left;">1256.671***</td>
+<td style="text-align: left;">306.553***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(79.671)</td>
+<td style="text-align: left;">(18.046)</td>
+<td style="text-align: left;">(77.975)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Years of Education</td>
+<td style="text-align: left;">72.130***</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">76.185***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(6.232)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(6.09)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Children under 5</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">-238.853***</td>
+<td style="text-align: left;">-251.181***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(19.693)</td>
+<td style="text-align: left;">(19.28)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Num. Obs.</td>
+<td style="text-align: left;">3382</td>
+<td style="text-align: left;">3382</td>
+<td style="text-align: left;">3382</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">R2</td>
+<td style="text-align: left;">0.038</td>
+<td style="text-align: left;">0.042</td>
+<td style="text-align: left;">0.084</td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="class-2-11092026" class="level2">
@@ -996,9 +1381,38 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-15" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-15">Warmup Questions:</h3>
+<ol type="1">
+<li><p>What does it mean to say that the effect of financial deregulation on the rate at which firms go bankrupt is “bounded from above” at 2 percentage points?</p>
+<ul>
+<li>The effect is 2 percentage points, and it’s a positive effect</li>
+<li>The effect is 2 percentage points, and it’s a negative effect</li>
+<li>The effect is at least as large as 2 percentage points</li>
+<li>The effect is no larger than 2 percentage points</li>
+<li>If we’re willing to make an additional, stronger set of assumptions, the effect would be larger than 2 percentage points, but without those assumptions it’s bounded to be lower.</li>
+</ul></li>
+<li><p>Suppose that you are analyzing the effect of universities and colleges opening during a pandemic on increase in the number of positive cases. Name one strategy that you can use to avoid having to collect data on all types of campus characteristic variables that are constant over time that you may have to control for in your analysis.</p></li>
+<li><p>Describe partial identification in your own words.</p></li>
+</ol>
 </section>
 <section id="homework-questions-17" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-17">Homework Questions:</h3>
+<ol type="1">
+<li><p>Intuitively, why would a method that isolates front doors allow you to ignore back doors related to unmeasured variables?</p></li>
+<li><p>On robustness tests:</p>
+<ul>
+<li>What are robustness tests?</li>
+<li>What is the purpose of conducting a robustness test?</li>
+<li>What are placebo tests?</li>
+</ul></li>
+<li><p>Suppose you want to study the effect of attending tutoring sessions on grade point averages (GPA). List at least five variables that impact both attendance of tutoring sessions and students’ GPA. Is it feasible to measure and control for all of the variables?</p></li>
+<li><p>Pick any causal diagram from the book (<em>The Effect</em>) other than Figure 11.2.</p>
+<ul>
+<li>Reproduce that diagram here.</li>
+<li>Select two variables on the diagram without a direct link between them (i.e.&nbsp;no single arrow straight from one of them to the other).</li>
+<li>What variables would you need to control for that will eliminate any relationship between the two variables (you might not need any).</li>
+<li>If you looked at the relationship between your two variables from part b, while controlling for the variables from part c, and you got a nonzero result, what would you conclude?</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -1014,9 +1428,111 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-16" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-16">Warmup Questions:</h3>
+<ol type="1">
+<li><p>Consider the following hypothetical table of pre-treatment predictor, treatment, and potential outcomes (<span class="math inline">y_{0i}</span>, <span class="math inline">y_{1i}</span>).</p>
+<ul>
+<li>What is the treatment effect for Audrey?</li>
+<li>What is the sample average treatment effect?</li>
+<li>What is the estimated average treatment effect, if it is estimated by a simple regression of the observed outcome, <span class="math inline">y</span>, on the treatment indicator, <span class="math inline">z</span>?</li>
+</ul></li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Unit (i)</th>
+<th style="text-align: right;">Age, (x_i)</th>
+<th style="text-align: right;">Treatment, (z_i)</th>
+<th style="text-align: right;">(y_{0i})</th>
+<th style="text-align: right;">(y_{1i})</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Audrey</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">135</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Anna</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">135</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Bob</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">140</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bill</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">140</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Caitlin</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cara</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Dave</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">170</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Doug</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">170</td>
+<td style="text-align: right;">160</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="homework-questions-18" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-18">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Designing an experiment</strong> (Exercise 18.1 of <em>Regression and Other Stories</em>). Suppose you are interested in the effect of the presence of vending machines in schools on childhood obesity. What controlled experiment would you want to do (in a world without ethical, logistical, or financial constraints) to evaluate this question? Go through the entire design process and justify each decision in detail</p>
+<ul>
+<li>Research Question</li>
+<li>Sample</li>
+<li>Experimental Design</li>
+<li>Analysis</li>
+<li>Generalization</li>
+</ul></li>
+<li><p><strong>Designing an experiment with ethical constraints</strong> (Exercise 18.2 of <em>Regression and Other Stories</em>). Suppose you are interested in the effect of smoking on lung cancer. What controlled experiment could you plausibly perform (in the real world) to evaluate this effect? Go through the entire design process and justify each decision in detail</p>
+<ul>
+<li>Research Question</li>
+<li>Sample</li>
+<li>Experimental Design</li>
+<li>Analysis</li>
+<li>Generalization</li>
+</ul></li>
+</ol>
 </section>
 </section>
 <section id="class-2-11162026" class="level2">
@@ -1030,9 +1546,32 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-17" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-17">Warmup Questions:</h3>
+<p>Suppose you are conducting an observational study comparing two different approaches to counseling of caregivers of family members. The outcome is a mental health survey of caregivers and the study also includes three pre-treatment predictors on the caregivers: age, sex, and a measure of life satisfaction.</p>
+<ol type="1">
+<li><p>How could you obtain estimates of the effect among all the caregivers in the study, the effect among caregivers with pre-treatment life satisfaction that was lower than average, and among caregivers with pre-treatment life satisfaction that was higher than average?</p></li>
+<li><p>You are concerned that your study is not representative of the general population of caregivers. How can you estimate the population average treatment effect using the data from your study?</p></li>
+</ol>
 </section>
 <section id="homework-questions-19" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-19">Homework Questions:</h3>
+<ol type="1">
+<li><strong>Messy randomization</strong> (Exercise 19.8 of <em>Regression and Other Stories</em>). Download this data called <a href="https://github.com/avehtari/ROS-Examples/tree/master/Cows/"><code>cows.dat</code></a>. from an agricultural experiment that was conducted on 50 cows to estimate the effect of a feed additive on six outcomes related to the amount of milk fat produced by each cow.</li>
+</ol>
+<p>Four diets (treatments) were considered, corresponding to different levels of the additive, and three variables were recorded before treatment assignment: lactation number (seasons of lactation), age, and initial weight of the cow.</p>
+<p>Cows were initially assigned to treatments completely at random, and then the distributions of the three pre-treatment predictors were checked for balance across the treatment groups; several randomizations were tried, and the one that produced the “best” balance with respect to the three covariates was chosen. The treatment depends only on fully observed covariates and not on unrecorded variables such as the physical appearances of the cows or the times at which the cows entered the study, because the decisions of whether to re-randomize are not explained.</p>
+<p>We shall consider different estimates of the effect of the additive on the mean daily milk fat produced.</p>
+<ul>
+<li><p>Consider the simple regression of mean daily milk fat on the level of additive. Compute the estimated treatment effect and standard error, and explain why this is not a completely appropriate analysis given the randomization used.</p></li>
+<li><p>Add more predictors to the model. Explain your choice of which variables to include. Compare your estimated treatment effect to the result from above.</p></li>
+<li><p>Repeat step 2, this time considering additive level as a categorical predictor with four levels. Make a plot showing the estimate (and standard error) of the treatment effect at each level, and also showing the inference from the model fit in step 2.</p></li>
+</ul>
+<ol start="2" type="1">
+<li><p><strong>Causal inference based on data from individual choices</strong> (Exercise 19.9 of <em>Regression and Other Stories</em>). Our lives involve tradeoffs between monetary cost and physical risk, in decisions ranging from how large a car to drive, to choices of health care, to purchases of safety equipment. Economists have estimated how people implicitly trade off dollars and danger by comparing choices of jobs that are similar in many ways but have different risks and salaries. This can be approximated by fitting regression models predicting salary given the probability of death on the job (and other characteristics of the job). The idea is that a riskier job should be compensated with a higher salary, with the slope of the regression line corresponding to the “value of a statistical life.”</p>
+<ul>
+<li>Set up this problem as an individual choice model, as in Section 15.7 of Regression and Other Stories. What are an individual’s options, value function, and parameters?</li>
+<li>Discuss the assumptions involved in assigning a causal interpretation to these regression models.</li>
+</ul></li>
+</ol>
 </section>
 </section>
 </section>
@@ -1048,9 +1587,248 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-18" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-18">Warmup Questions:</h3>
+<p>Consider the following hypothetical scenario of pre-treatment measurements and potential outcomes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Unit</th>
+<th style="text-align: right;">(x)</th>
+<th style="text-align: center;">(z)</th>
+<th style="text-align: right;">(y_0)</th>
+<th style="text-align: right;">(y_1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Aurelia</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bora</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Chen</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D’Angelo</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Eddie</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Farah</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Goldie</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Harpreet</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">19</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><p>Use R to randomly assign treatment to four out of the eight people.</p></li>
+<li><p>Given your treatment assignment, calculate the gain score <span class="math inline">g_1 = y_i - x_i</span> for each person <span class="math inline">i</span>.</p></li>
+<li><p>Given the data you would see after your treatment assignment, estimate the treatment effect in two ways, first by regressing <span class="math inline">y</span> on <span class="math inline">z</span>, then by regressing <span class="math inline">y</span> on <span class="math inline">z</span> and <span class="math inline">x</span>.</p></li>
+</ol>
 </section>
 <section id="homework-questions-20" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-20">Homework Questions:</h3>
+<ol type="1">
+<li><p><strong>Average treatment effects</strong> (Exercise 18.4 of <em>Regression and Other Stories</em>). The following table displays a hypothetical experiment on 8 people. Each row of the table gives a participant and her pre-treatment predictor <span class="math inline">x</span>, treatment indicator <span class="math inline">z</span>, and potential outcomes <span class="math inline">y_0</span> and <span class="math inline">y_1</span>.</p>
+<ul>
+<li><p>Give the average treatment effect in the population, the average treatment effect among the treated, and the estimated treatment effect based on a simple comparison of treatment and control.</p></li>
+<li><p>Simulate a new completely randomized experiment on these 8 people; that is, resample <span class="math inline">z</span> at random with the constraint that equal numbers get the treatment and the control. Report your new randomization and give the corresponding answers for step 1.</p></li>
+</ul></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Unit</th>
+<th style="text-align: right;">(x)</th>
+<th style="text-align: right;">(z)</th>
+<th style="text-align: right;">(y_0)</th>
+<th style="text-align: right;">(y_1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Anna</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beth</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cari</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dora</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Edna</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fala</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Geri</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hana</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">13</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li><strong>Potential outcomes</strong> (Exercise 18.5 of <em>Regression and Other Stories</em>) The following tables displays a hypothetical experiment on 2400 people. Each row specifies a category of person, as defined by a pre-treatment predictor <span class="math inline">x</span>, treatment indicator <span class="math inline">z</span>, and potential outcomes <span class="math inline">y_0</span>, <span class="math inline">y_1</span>. For simplicity, we assume unrealistically that all the people in this experiment fit into these eight categories.</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Category</th>
+<th style="text-align: right;"># people in category</th>
+<th style="text-align: right;">(x)</th>
+<th style="text-align: right;">(z)</th>
+<th style="text-align: right;">(y_0)</th>
+<th style="text-align: right;">(y_1)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+<p>In making the table, we are assuming omniscience, so that both y0 and y1 are known for all observations. But the (non-omniscient) investigator would only observe <span class="math inline">x</span>, <span class="math inline">z</span>, and <span class="math inline">y_z</span> for each unit. For example, a person in category 1 would have <span class="math inline">x</span> = 0, <span class="math inline">z</span> = 0, <span class="math inline">y</span> = 4, and a person in category 3 would have <span class="math inline">x</span> = 0, <span class="math inline">z</span> = 1, <span class="math inline">y</span> = 6.</p>
+<ul>
+<li>What is the average treatment effect in this population of 2400 people?</li>
+<li>Another summary is the mean of y for those who received the treatment minus the mean of y for those who did not. What is the relation between this summary and the average treatment effect (ATE)?</li>
+<li>Is it plausible to believe that these data came from a completely randomized experiment? Defend your answer.</li>
+<li>For these data, is it plausible to believe that treatments were assigned using randomized blocks conditional on given 𝑥? Defend your answer.</li>
+</ul>
 </section>
 </section>
 <section id="class-2-11232026" class="level2">
@@ -1064,9 +1842,17 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-19" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-19">Warmup Questions:</h3>
+<p>For each of the following descriptions of matching on the variable <span class="math inline">X</span>, determine whether this is describing: <em>one-to-one distance matching, k-nearest-neighbor distance matching, kernel matching, or propensity score matching</em> (hint: it’s one of each).</p>
+<ol type="1">
+<li><p>The treated observation has <span class="math inline">X = 5</span>. For each control observation, <span class="math inline">X-5</span> is calculated, with the result run through a weighting function. The resulting weight is applied to that observation.</p></li>
+<li><p>The treated observation has <span class="math inline">X = 5</span>. Among the control observations, the nearest values are <span class="math inline">X = 4</span>, <span class="math inline">X = 5.2</span> and <span class="math inline">X = 5.9</span>. The observations with and are chosen as a control, since they’re the two closest.</p></li>
+<li><p>The treated observation has <span class="math inline">X = 5</span>. You estimate a model that suggests that observations with <span class="math inline">X = 5</span> have a .6 chance of being treated. You similarly calculate the chance of treatment for each control observation, and use those calculated probabilities to create a weight for each observation.</p></li>
+<li><p>The treated observation has <span class="math inline">X = 5</span>. Among the control observations, the observation with <span class="math inline">X = 5.1</span> is closest to that, and so is selected as a control.</p></li>
+</ol>
 </section>
 <section id="homework-questions-21" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-21">Homework Questions:</h3>
+<p>[TBD]</p>
 </section>
 </section>
 </section>
@@ -1083,9 +1869,11 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-20" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-20">Warmup Questions:</h3>
+<p>[TBD]</p>
 </section>
 <section id="homework-questions-22" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-22">Homework Questions:</h3>
+<p>[TBD]</p>
 </section>
 </section>
 <section id="class-2-11022026-1" class="level2">
@@ -1099,9 +1887,11 @@ window.Quarto = {
 </section>
 <section id="warmup-questions-21" class="level3">
 <h3 class="anchored" data-anchor-id="warmup-questions-21">Warmup Questions:</h3>
+<p>[TBD]</p>
 </section>
 <section id="homework-questions-23" class="level3">
 <h3 class="anchored" data-anchor-id="homework-questions-23">Homework Questions:</h3>
+<p>[TBD]</p>
 
 
 </section>
