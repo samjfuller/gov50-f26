@@ -233,7 +233,7 @@ For each question below, give R code.
 | \$125,000 |         3 |
 | \$130,000 |         2 |
 
-- Calculate the average salary earned by professors in the Economics department.
+- Calculate the average salary earned by professors in the Political Science department.
     - Calculate the median.
     - Calculate the minimum and maximum.
     - Calculate the interquartile range.
