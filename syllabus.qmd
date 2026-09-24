@@ -106,12 +106,12 @@ In this course, you will be expected to:
 - take one in-person, closed-book exam, and
 - contribute to a section-wide final research project.
 
-The course is designed to require 10 hours of work per week, roughly divided as:
+The course is designed to require about 10 hours of work per week, roughly divided as:
 
 - 2 hours reading
 - 0.5 hours on pre-class warmup questions
 - 2.5 hours in the classroom
-- 1 hour in section
+- 1.25 hours in section
 - 4 hours on homework.
 
 For reading week before your exam you are expected to study for another 10 hours.
@@ -203,6 +203,25 @@ Additionally, *TFs will not solve the problem sets for you.* During section we r
 
 :::
 
+The planned schedule for sections is below:
+
+| Topic                                                         | Meeting [^2]       |
+|:--------------------------------------------------------------|:-------------------|
+| **R Lab:** Intro to R                                         | 1  |
+| **Replication:** Paper for replication selected               | 2  |
+| **R Lab:** Basics of R                                        | 3  |
+| **Replication:** Paper outlined, replication plan drafted     | 4  |
+| **R Lab:** Data wrangling and basic summaries                 | 5  |
+| **Replication:** Data cleaned, first summaries of data        | 6  |
+| **R Lab/Replication:** Data visualization, the logic of ggplot | 7  |
+| **R Lab/Replication:** Regressions, tables and related plots       | 8  |
+| **Replication:** Continue work on main analyses, select extension | 9  |
+| **Replication:** Work on extension (main analyses if need be)     | 10  |
+| **Replication:** Work on presentation, finalizing extension       | 11 |
+| **Replication:** Presentation to other TF (or Dr. Fuller)         | 12 |
+
+[^2]: These meetings correspond (roughly) to the modules of the course. So Section Meeting 2 will correspond to Module 2, Meeting 3 module 3, and so on. Check out the [schedule](/schedule.html) for more info.
+
 
 
 ## Study Halls
@@ -256,6 +275,13 @@ For this project, your section will divide into 3-4 research groups, headed by y
 
 50% of your grade will depend on your section participation and contribution to the project and the other 50% will be determined by the presentation.
 
+::: callout-tip
+#### This process will be highly structured (and fun!)
+
+While this may all sound like a lot, you will be collaborating with members of your section and both your TF and CA will guide you through this process. This will be fun! You're going to start producing knowledge rather than just consuming it (that's really cool!).
+
+:::
+
 Your section will be divided into three groups, each tasked with a different part of the overall research question. Each group will be responsible for, for both the replication and extension:
 
 1. Data collection and cleanup
@@ -266,28 +292,6 @@ Your section will be divided into three groups, each tasked with a different par
 6. Clearly defining the scope of your results (limitations, how your analyses could be improved)
 
 Project presentations should be ~45 minutes long, with the first ten minutes outlining the combined replication results from the different groups, and the following thirty-five minutes divided between the different extensions conducted by each research group. After the presentations, students will field questions from the attending TF (and/or myself).
-
-::: callout-tip
-#### This process will be highly structured (and fun!)
-
-While this may all sound like a lot, you will be collaborating with members of your section and both your TF and CA will guide you through this process. This will be fun! You're going to start producing knowledge rather than just consuming it (that's really cool!).
-
-:::
-
-
-| Milestone                                                     | Due Date[^2]       |
-|:--------------------------------------------------------------|:-------------------|
-| Paper for replication selected                                | Section Meeting 2  |
-| Paper outlined, replication plan drafted                      | Section Meeting 4  |
-| Data cleaned, first summaries of data                         | Section Meeting 6  |
-| Main analyses completed, draft of visualizations              | Section Meeting 8  |
-| Replication draft and extension proposal due for peer review  | Section Meeting 9  |
-| Peer review of other groups                                   | Section Meeting 10 |
-| Incorporate feedback, finalize presentation                   | Section Meeting 11 |
-| Presentation to other TF (or Dr. Fuller)                      | Section Meeting 12 |
-
-[^2]: These meetings correspond (roughly) to the modules of the course. So Section Meeting 2 will correspond to Module 2, Meeting 3 module 3, and so on. Check out the [schedule](/schedule.html) for more info.
-
 
 ::: callout-important
 #### A reminder about AI and academic honesty
