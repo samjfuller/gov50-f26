@@ -271,16 +271,25 @@ Describe the distribution.
 
 **Weighted averages**
 
-In R, create three vectors each of length 10: the number 1 repeated 10 times; the numbers 1 to 10; and the sequence 1, 4, 9, $\ldots$, 100. Compute the following weighted averages of these three vectors. In each case, your output should be a vector of length 10.
+In R, create three vectors each of length 10: the number 1 repeated 10 times; the numbers 1 to 10; and the sequence $1^2=2$, $2^2=4$, $3^2=9$, $\ldots$, $10^2=100$. Compute the following weighted averages of these three vectors. In each case, your output should be a vector of length 10. The 'a)' weight is applied to the vector `c(1,1,1,1,1,1,1,1,1,1)`, the 'b)' to `c(1,2,3,4,5,6,7,8,9,10)`, the 'c)' to the third vector...
 
-1.  Weights 1/3, 1/3, 1/3
-2.  Weights 1, 1, 1
-3.  Weights 1, 2, 3
-4.  Weights 0, 1, 2
+1.  Weights a) $\frac{1}{3}$, b) $\frac{1}{3}$, c) $\frac{1}{3}$
+2.  Weights a) 1, b) 1, c) 1
+3.  Weights a) 1, b) 2, c) 3
+4.  Weights a) 0, b) 1, c) 2
 
 ### Homework Questions:
 
-1.  **Data visualization** (Exercise 2.6 of *Regression and Other Stories*). Take data from some problem of interest to you and make several plots to highlight different aspects of the data, as was done in the baby-names example in Figures 2.6–2.8.
+1.  **Data visualization** (Exercise 2.6 of *Regression and Other Stories*). Take data from some problem of interest to you and make several plots to highlight different aspects of the data, as was done in the baby-names example in Figures 2.6–2.8 (or how we summarized data in class, including the handedness survey).
+
+::: callout-note
+#### Hint:
+
+For some useful code for plotting densities, check out my post on Ed that includes the code for making (overlapping) density plots.
+
+Also remember that you do not need to replicate these figures, you just need to display the data to highlight interesting aspects of the data (e.g., skew, differences between groups).
+
+:::
 
 2.  **Reliability and validity** (Exercise 2.7 of *Regression and Other Stories*).
 
@@ -331,7 +340,7 @@ rbinom(2, c(30, 20), c(0.3, 0.4))
 
 ### Warmup Questions:
 
-A sample of 𝑛 people are selected at random from a large population and are asked a question, to which $y$ reply Yes and $n - y$ reply No. For each example below, give a 95% interval for the proportion in the population who would answer Yes if asked.
+A sample of $n$ people are selected at random from a large population and are asked a question, to which $y$ reply 'Yes' and $n - y$ reply 'No'. For each example below, give a 95% interval for the proportion in the population who would answer 'Yes' if asked.
 
 1.  $n = 1500$, $y = 750$
 
