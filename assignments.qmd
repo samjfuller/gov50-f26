@@ -271,12 +271,25 @@ Describe the distribution.
 
 **Weighted averages**
 
-In R, create three vectors each of length 10: the number 1 repeated 10 times; the numbers 1 to 10; and the sequence $1^2=2$, $2^2=4$, $3^2=9$, $\ldots$, $10^2=100$. Compute the following weighted averages of these three vectors. In each case, your output should be a vector of length 10. The 'a)' weight is applied to the vector `c(1,1,1,1,1,1,1,1,1,1)`, the 'b)' to `c(1,2,3,4,5,6,7,8,9,10)`, the 'c)' to the third vector...
+In R, create three vectors each of length 10: `v1` equals the number 1 repeated 10 times; `v2` equals the numbers 1 to 10; and `v3` equals the sequence $1^2=2$, $2^2=4$, $3^2=9$, $\ldots$, $10^2=100$. Think of each of these vectors as respondents in a survey (or an observation of, say, a country) *not* as variables in a dataset (`v1`,`v2`,`v3` are not columns/variables). So in the context of a dataset/dataframe our data would look like:
 
-1.  Weights a) $\frac{1}{3}$, b) $\frac{1}{3}$, c) $\frac{1}{3}$
-2.  Weights a) 1, b) 1, c) 1
-3.  Weights a) 1, b) 2, c) 3
-4.  Weights a) 0, b) 1, c) 2
+
+| obs| x1  | x2  | x3  | x4  | x5  | x6  | x7  | x8  | x9  | x10 |
+|:---|----:|----:|----:|----:|----:|----:|----:|----:|----:|----:|
+| v1 |  1  |  1  |  1  |  1  |  1  |  1  |  1  |  1  |  1  |   1 |
+| v2 |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10 |
+| v3 |  1  |  4  |  9  |  16 |  25 |  36 |  49 |  64 |  81 |  100|
+
+You can think of the weights as being applied to each observation (like survey weights). So for example, for part 3) below, the weight vector would look like `w1 = c(1,2,3)` where `v1` (observation 1/respondent 1/country 1) has a weight of 1, `v2` (observation 2/respondent 2/country 2) has a weight of 2, `v3` (observation 3/respondent 3/country 3) has a weight of 3. This means that all of the values for each `x1` to `x10` for each vector is weighted by these values.
+
+Compute the following weighted averages of these three vectors. In each case, your output should be a vector of length 10 where each value corresponds to weighted averages for all of the variables/covariates/columns of the dataframe above.
+
+``` r
+w1 = c(1/3,1/3,1/3)
+w2 = c(1,1,1)
+w3 = c(1,2,3)
+w4 = c(0,1,2)
+```
 
 ### Homework Questions:
 
