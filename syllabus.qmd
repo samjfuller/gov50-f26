@@ -296,7 +296,9 @@ Project presentations should be ~45 minutes long, with the first ten minutes out
 ::: callout-important
 #### A reminder about AI and academic honesty
 
-Remember, AI is expressly prohibited for any writing or slide generation. Anything written for this project should only be written by you and/or in collaboration with other students, your TF, or your CA. Again, coding can be done by AI, but we highly recommend against doing this for your own sake.
+Remember, AI is expressly prohibited for any writing or slide generation. Anything written for this project should only be written by you and/or in collaboration with other students, your TF, or your CA. Additionally, no AI should be used for coding either. One of our goals in this course is for you to learn how to code in R and understand code when presented with it. 
+
+A large chunk of the final exam will cover R, so if you do not build these skills you will do poorly.
 
 :::
 
@@ -316,9 +318,25 @@ Neither lectures nor TF sections will be explicitly focused on the exam (though 
 
 #### The exam will only be on class material
 
- You will only be tested on material explicitly covered in the course. If we didn't read about it or cover it in class then you will not be expected to know it.
+ You will only be tested on material explicitly covered in the course. If we didn't read about it or cover it in class then you will not be expected to know it. This applies to coding problems in section, if you did not cover it explicitly in section then you will not be tested on it.[^3]
 
 :::
+
+[^3]: Any of the coding that I do in class you will not be explicitly tested on. What we do in class may overlap with what you do in section, but the coding in class is focused on conceptual understanding rather than teaching you how to code explicitly.
+
+### Structure
+
+The exam will be broken into three parts:
+
+1. Multiple choice on the topics covered in class
+2. Short answer covering R, tables, and figures
+
+    - Interpret R code and explain what the code is doing
+    - Interpret regression tables and both descriptive and regression-based figures (e.g., coefficient plots)
+
+3. Long answer covering research design and implementation
+
+    - Given a broad research question, explain how you would go about implementing a research design to answer the question
 
 ## Grades
 
@@ -326,9 +344,9 @@ Neither lectures nor TF sections will be explicitly focused on the exam (though 
 
 #### The dreaded grade capping
 
-According to directives from the University, instructors have been advised to operate this academic year *as if* the new grading policy were in effect.[^3] That being said, the goal of this course is for as many of you as possible to learn as much as possible and to earn a, correspondingly, high grade.
+According to directives from the University, instructors have been advised to operate this academic year *as if* the new grading policy were in effect.[^4] That being said, the goal of this course is for as many of you as possible to learn as much as possible and to earn a, correspondingly, high grade.
 
-[^3]: I, and others, actually think that capping grades is *not* the most effective strategy to address grade inflation (in fact, it may lead to myriad unintended, negative consequences). In fact, to fully address this issue we need a major reappraisal of the purpose (and societal-level goals) of higher education (and corresponding national-level policies aimed at both enabling and pushing universities to accomplish said purpose/goals). But I digress...
+[^4]: I, and others, actually think that capping grades is *not* the most effective strategy to address grade inflation (in fact, it may lead to myriad unintended, negative consequences). In fact, to fully address this issue we need a major reappraisal of the purpose (and societal-level goals) of higher education (and corresponding national-level policies aimed at both enabling and pushing universities to accomplish said purpose/goals). But I digress...
 
 :::
 
