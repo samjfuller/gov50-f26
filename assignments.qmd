@@ -338,7 +338,7 @@ rbinom(2, c(30, 20), c(0.3, 0.4))
 
 3.  **Probability distributions** (Exercise 3.3 of *Regression and Other Stories*). Using R, graph probability densities for the normal distribution, plotting several curves corresponding to different choices of mean and standard deviation parameters.
 
-4.  **Working through your own example** (Exercise 2.10 of *Regression and Other Stories*). Continuing the example from Exercise 1.10 (HW Q3, Module 1, Day 2): 
+4.  **Working through your own example** (Exercise 2.10 of *Regression and Other Stories*). Continuing the example from Exercise 1.10 (HW Q3, Module 2, Class 1): 
 
     - Graph your data and discuss issues of validity and reliability. 
     - How could you gather additional data, at least in theory, to address these issues?
