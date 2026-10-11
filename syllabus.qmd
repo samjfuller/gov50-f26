@@ -140,21 +140,27 @@ You will be expected to have completed the assigned readings by the time you att
 
 You will be required to answer a small set of questions for every class meeting (due 1 hour before class). These will be graded on completion not on accuracy. That being said, if you provide answers that fail to signal that you're engaging with the material (e.g., a response unrelated to the material) you will not be given credit. 
 
-## In-Person participation
+## Homework
 
-Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs. 
+To quote Matt Blackwell, a previous instructor of this course, "Only reading about data science is about as instructive as reading a lot about hammers or watching someone else wield a hammer. You need to get your hands on a hammer or two." In that vein, you will have homework assignments due at the start of each class period on **Gradescope** (which is accessible through Canvas).
 
-Missing class/section or failing to participate will hurt your grade in the class, each unexcused absence will reduce your overall grade by 0.5pts and failing to participate significantly will decrease your grade by 0.25pts. 
+::: callout-important
+#### Homework is due on-time, no exceptions
 
-1. In-class participation will be monitored by TFs and CAs
-2. In-section participation will be monitored by TFs
-3. Study hall participation will be monitored by CAs
-    - *Note: Attendance is not mandatory for Study Halls, but can be used to supplement other participation grades.*
+Homework must be turned in on Gradescope by the start of class. There will be no exceptions made to this policy, except for excused absences with prior notice or emergencies.
+
+:::
+
+Some will be focused on concepts, while others will focus on coding, and others still will be a mix of both. Homework will be posted no later than a week before it's do (but may be posted earlier).
+
+We encourage you to join peer study groups (we will attempt to facilitate this within section with TFs and CAs) and use them to work on homework and study for the exam. However, the work that you submit should be your own.
 
 ::: callout-note
-#### Example grade with participation policy
+#### Grading policy
 
-So, for example, if you have earned a 92 in the class, but you miss 2 classes and 2 sections (4 unexcused absences) and fail to participate significantly 4 times, then your final grade would actually be an **89** ($92 - ((4\times0.5)+(4\times0.25))=92 - (2+1)=89$).
+Each homework question will be graded as either a 0 (not attempted), 0.5 (attempted but incorrect or incomplete), or 1 (correct); no additional partial credit will be given.
+
+We will drop the two lowest homework grades automatically.
 
 :::
 
@@ -195,7 +201,7 @@ For material and project weeks, sections will be focused on helping you understa
 
 ::: callout-note
 
-#### In-section coding problems
+#### In-section R labs
 
 For in-person coding problem set weeks, sections will be focused on increasing your skills at using R and interpreting related code. You will be encouraged to work with other students in section and the TF will be helping the class move through the assignment, checking in throughout and answering questions. These assignments will be graded similar to the homework rubric (for each question: 0 not attempted, 0.5 attempted but not thoroughly, 1 thoroughly attempted).
 
@@ -222,52 +228,7 @@ The planned schedule for sections is below:
 
 [^2]: These meetings correspond (roughly) to the modules of the course. So Section Meeting 2 will correspond to Module 2, Meeting 3 module 3, and so on. Check out the [schedule](/schedule.html) for more info.
 
-
-
-## Study Halls
-
-Study Halls are a mix of office hours and drop-in tutoring sessions. CAs will hold a table---usually at one of the house dining halls or common rooms---and will answer questions relating to assignments and course material. We highly recommend regularly attending a Study Hall to complete assignments along with your peer study group, attempting to answer questions on your own and looking to a CA when you are stuck.
-
-You can find a list of the Study Hall times on the [Study Hall Schedule](office-hours_study-halls.html) page.
-
-::: callout-important
-
-#### CAs will not do the homework for you
-
-CAs are instructed to help guide you through homework assignments, not to show you how to answer a question from start to finish. You must actually do the work to complete the assignments.
-
-:::
-
-
-
-## Homework
-
-To quote Matt Blackwell, a previous instructor of this course, "Only reading about data science is about as instructive as reading a lot about hammers or watching someone else wield a hammer. You need to get your hands on a hammer or two." In that vein, you will have homework assignments due at the start of each class period **(printed and handed in to your TFs and CAs).**
-
-::: callout-important
-#### Homework is due in-person, no exceptions
-
-Homework must be turned in in-person by the start of class, there will not be a way to turn in homework online. There will be no exceptions made to this policy, except for excused absences with prior notice.
-
-:::
-
-Some will be focused on concepts, while others will focus on coding, and others still will be a mix of both. Homework will be posted no later than a week before it's do (but may be posted earlier).
-
-We encourage you to join peer study groups (we will attempt to facilitate this within section with TFs and CAs) and use them to work on homework and study for the exam. However, the work that you submit should be your own.
-
-
-
-::: callout-note
-#### Grading policy
-
-Each homework question will be graded as either a 0 (not attempted), 0.5 (attempted but incorrect or incomplete), or 1 (correct); no additional partial credit will be given.
-
-We will drop the two lowest homework grades automatically.
-
-:::
-
-
-## Section replication project
+### Section replication project
 
 Unlike previous iterations of this course, there will not be an individual final project, but rather a section-level replication (research) project.
 
@@ -302,6 +263,31 @@ A large chunk of the final exam will cover R, so if you do not build these skill
 
 :::
 
+## In-person participation
+
+Your participation in class, section, and study-halls is not only a requirement for the course itself (your grade depends on it) but also for you to learn the material. In-person participation will be evaluated by your TF and CAs. 
+
+Missing class/section or failing to participate will hurt your grade in the class, each unexcused absence will reduce your overall grade by 0.5pts and failing to participate significantly will decrease your grade by 0.25pts. 
+
+1. In-class participation will be monitored by TFs and CAs
+2. In-section participation will be monitored by TFs
+3. Study hall participation will be monitored by CAs
+    - *Note: Attendance is not mandatory for Study Halls, but can be used to supplement other participation grades.*
+
+::: callout-note
+#### Example grade with participation policy
+
+So, for example, if you have earned a 92 in the class, but you miss 2 classes and 2 sections (4 unexcused absences) and fail to participate significantly 4 times, then your final grade would actually be an **89** ($92 - ((4\times0.5)+(4\times0.25))=92 - (2+1)=89$).
+
+:::
+
+
+
+
+
+
+
+
 
 ## Final exam
 
@@ -324,7 +310,7 @@ Neither lectures nor TF sections will be explicitly focused on the exam (though 
 
 [^3]: Any of the coding that I do in class you will not be explicitly tested on. What we do in class may overlap with what you do in section, but the coding in class is focused on conceptual understanding rather than teaching you how to code explicitly.
 
-### Structure
+#### Structure
 
 The exam will be broken into three parts:
 
@@ -337,6 +323,20 @@ The exam will be broken into three parts:
 3. Long answer covering research design and implementation
 
     - Given a broad research question, explain how you would go about implementing a research design to answer the question
+
+## Study Halls
+
+Study Halls are a mix of office hours and drop-in tutoring sessions. CAs will hold a table---usually at one of the house dining halls or common rooms---and will answer questions relating to assignments and course material. We highly recommend regularly attending a Study Hall to complete assignments along with your peer study group, attempting to answer questions on your own and looking to a CA when you are stuck.
+
+You can find a list of the Study Hall times on the [Study Hall Schedule](office-hours_study-halls.html) page.
+
+::: callout-important
+
+#### CAs will not do the homework for you
+
+CAs are instructed to help guide you through homework assignments, not to show you how to answer a question from start to finish. You must actually do the work to complete the assignments.
+
+:::
 
 ## Grades
 
@@ -382,17 +382,17 @@ Given that this course heavily focuses on data analysis we will be using compute
 
 Don't cheat! Like really, just don't do it. We also take plagiarism (including the use of AI to generate text) very seriously and expect you to write all of your own text. If you are found to have cheated on any of your assignments (or plagiarized someone else's work) you will be reported directly to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/). 
 
-## Coding and AI
+## AI policy
 
-While the use of AI for coding/programming has proliferated both in industry and academia, the use of AI *when learning* has significant deleterious effects. You will not be able to use AI on in-section coding problem sets, though we will be discussing how to use AI in research in section.
+While the use of AI for coding/programming has proliferated both in industry and (to some degree) academia, the use of AI *when learning* can have significant deleterious effects.
 
-Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI.
+Simply put, using AI in this course *will actively hurt you* in a) understanding the course material and b) preparing for assessments where you will have no access to said AI. Additionally, you will not be able to use AI on in-section coding problem sets.
 
 ::: callout-important
 
 #### AI for warmup questions, homework, or any writing is **expressly prohibited** 
 
-As mentioned above, you are explicitly prohibited from using AI to respond to any part any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
+As mentioned above, you are explicitly prohibited from using AI to respond to any part any warmup or homework assignments (AI is also obviously not allowed for the exam). If you are found to be using AI for the purposes of text generation for the homework or warmup questions you will automatically receive a zero. If we find evidence of AI text-generation or plagiarism is detected within the section project you will immediately be reported to the [Office of Academic Integrity and Student Conduct](https://oaisc.fas.harvard.edu/).
 
 :::
 
