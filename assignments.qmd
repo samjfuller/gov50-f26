@@ -542,7 +542,7 @@ Write R code to do the following:
 
 1.  Fit a regression to fake data
 
-    - Write R code to simulate 100 data points from a linear model with intercept 1, slope 2, and residual standard deviation 3, where the predictors are sampled at random uniformly from the range (0, 4). Fit and print a linear regression to these data, and report whether the true values of the intercept and slope fall within 1 standard error of the true parameter values.
+    - Write R code to simulate 100 data points from a linear model with intercept 1, slope 2, and residual standard deviation 3, where the predictors are sampled at random uniformly from the range (0, 4). Fit and print a linear regression to these data, and report whether the estimated values of the intercept and slope fall within 1 standard error of the true parameter values.
 
 2.  Make a plot with the simulated data and the fitted regression line, including the formula for the fitted line as in Figure 6.1 of Regression and Other Stories.
 
