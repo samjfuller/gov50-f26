@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a889bdf97b4be19d7c69560cad27faf3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-52c614c877535337570fa8308ab21fe0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-42c4e6282e77ff957b5e89df15f58370.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -1223,7 +1223,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="homework-questions-14">Homework Questions:</h3>
 <ol type="1">
 <li><p>Simulate 100 data points with measurements 𝑥 and y as follows. Let 𝑥 be uniformly distributed between 0 and 10, and simulate y from the model, <span class="math inline">y = a + bx + \text{error}</span>, where <span class="math inline">a = 2</span>, <span class="math inline">b = 0.5</span>, and the error is normally distributed with mean 0 and standard deviation <span class="math inline">\sigma = 2</span>. Give your code.</p></li>
-<li><p>Use <code>lm()</code> to fit a linear regression of <span class="math inline">y</span> on <span class="math inline">x</span>. Display the result. Discuss the discrepancies between your estimates of <span class="math inline">a</span>, <span class="math inline">b</span>, <span class="math inline">\sigma</span> and the true values, in comparison to the standard errors from the regression. Give your code as well as your R output.</p></li>
+<li><p>Use <code>lm()</code> or <code>stan_glm()</code> to fit a linear regression of <span class="math inline">y</span> on <span class="math inline">x</span>. Display the result. Discuss the discrepancies between your estimates of <span class="math inline">a</span>, <span class="math inline">b</span>, <span class="math inline">\sigma</span> and the true values, in comparison to the standard errors from the regression. Give your code as well as your R output. <em>Note:</em> You want to use the function <code>summary()</code> with your fitted <code>lm()</code> model to get more information about the model. When using <code>summary()</code> the ‘residual standard error’ is the sample estimate of the standard deviation of the true population error (data generating process for the error).</p></li>
 <li><p>Plot the data and the fitted regression line. Give your code as well as your graph.</p></li>
 <li><p>Now suppose <span class="math inline">x</span> is measured with error: Create a new variable <code>x_obs</code> by taking <span class="math inline">x</span> and adding normally distributed errors with mean 0 and standard deviation 5. Now fit the linear regression predicting <span class="math inline">y</span> from <code>x_obs</code>. How do the coefficient estimates compare to the result from regressing <span class="math inline">y</span> on <span class="math inline">x</span> as you did earlier?</p></li>
 </ol>
