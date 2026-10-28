@@ -648,7 +648,7 @@ Suppose you have a vector test_scores of exam grades for a class of students, an
 
 1.  Simulate 100 data points with measurements 𝑥 and y as follows. Let 𝑥 be uniformly distributed between 0 and 10, and simulate y from the model, $y = a + bx + \text{error}$, where $a = 2$, $b = 0.5$, and the error is normally distributed with mean 0 and standard deviation $\sigma = 2$. Give your code.
 
-2.  Use `lm()` to fit a linear regression of $y$ on $x$. Display the result. Discuss the discrepancies between your estimates of $a$, $b$, $\sigma$ and the true values, in comparison to the standard errors from the regression. Give your code as well as your R output.
+2.  Use `lm()` or `stan_glm()` to fit a linear regression of $y$ on $x$. Display the result. Discuss the discrepancies between your estimates of $a$, $b$, $\sigma$ and the true values, in comparison to the standard errors from the regression. Give your code as well as your R output. *Note:* You want to use the function `summary()` with your fitted `lm()` model to get more information about the model. When using `summary()` the 'residual standard error' is the sample estimate of the standard deviation of the true population error (data generating process for the error).
 
 3.  Plot the data and the fitted regression line. Give your code as well as your graph.
 
