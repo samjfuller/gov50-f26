@@ -729,6 +729,8 @@ Suppose you have a vector test_scores of exam grades for a class of students, an
 
 ### Useful Equations from Ch.8:
 
+*Note*: You will see $a$ referred to as $\beta_0$ and $b$ as $\beta_1$ (or for multiple predictors you will see multiple $\beta$s, each corresponding to an $x$; e.g., $\hat{y} = \hat{\beta_0} + \hat{\beta_1}x_1 + \hat{\beta_2}x_2 \cdots$).
+
 Residuals (from our estimated model, notice the "hats" above $a$ and $b$):
 
 $r_i = y_i - (\hat{a} + \hat{b}x_i)$
