@@ -724,9 +724,34 @@ Suppose you have a vector test_scores of exam grades for a class of students, an
 
 - Chapter 10: Linear regression with multiple predictors from *Regression and Other Stories*
 
+    - Sections 8.1 (up until the "Bayesian inference" subsection), 8.2, 8.3, and subsection "Confidence intervals, uncertainty intervals, compatibility intervals" from *Regression and Other Stories*
+    
+
+### Useful Equations from Ch.8:
+
+Residuals (from our estimated model, notice the "hats" above $a$ and $b$):
+
+$r_i = y_i - (\hat{a} + \hat{b}x_i)$
+
+Error (from the true model, no "hats"; also known as the "data generating process"):
+
+$\epsilon_i = y_i - (a + bx_i)$
+
+Solutions/equations for finding $\hat{b}$ and $\hat{a}$ using ordinary least squares:
+\begin{align*}
+  \hat{b} &= \frac{\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n}(x_i - \bar{x})^2} \\
+  \hat{a} &= \bar{y} - \hat{b}\bar{x}
+\end{align*}
+
+The least squares line is thus:
+
+$y_i = \bar{y} + \hat{b}(x_i - \bar{x}) + r_i$
+
+Which goes through the mean of the data $(\bar{x},\bar{y})$.
+
 ### Warmup Questions:
 
-1.  Without using the computer, figure out the slope, 𝑏, of the least-squares line, $y= a + bx$, for the three points $(x, y) = (0, 0),~(1, 2),~(2, 2)$.
+1.  Without using the computer, figure out the slope, $b$, of the least-squares line, $y= a + bx$, for the three points $(x, y) = (0, 0),~(1, 2),~(2, 2)$.
 
 2.  Without using the computer, figure out the intercept, $a$, of this fitted line.
 
@@ -764,8 +789,8 @@ Suppose you have a vector test_scores of exam grades for a class of students, an
 | Children under 5   |                         | -238.853\*\*\*          | -251.181\*\*\*          |
 |                    |                         | (19.693)                | (19.28)                 |
 | Num. Obs.          | 3382                    | 3382                    | 3382                    |
-| R2                 | 0.038                   | 0.042                   | 0.084                   |
-
+| $R^2$              | 0.038                   | 0.042                   | 0.084                   |
+*Note:* SEs in parentheses, \* = $p \leq 0.05$, \*\* = $p \leq 0.01$, \*\*\* = $p \leq 0.001$
 
 ## Class 2 (11/09/2026)
 
@@ -1007,7 +1032,7 @@ For each of the following descriptions of matching on the variable $X$, determin
 
 [TBD]
 
-## Class 2 (11/02/2026)
+## Class 2 (12/02/2026)
 
 ### Readings:
 
