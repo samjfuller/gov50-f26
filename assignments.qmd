@@ -852,7 +852,7 @@ Which goes through the mean of the data $(\bar{x},\bar{y})$.
     - What is the estimated average treatment effect, if it is estimated by a simple regression of the observed outcome, $y$, on the treatment indicator, $z$?
 
 
-| Unit \(i\) | Age, \(x_i\) | Treatment, \(z_i\) |   \(y_{0i}\)       | \(y_{1i}\)         |
+| Unit $(i)$ | Age, $(x_i)$ | Treatment, $(z_i)$ |   $(y_{0i})$       | $(y_{1i})$         |
 | :--------- | -----------: | -----------------: | -----------------: | ---------------:   |
 | Audrey     | 40           | 0                  | 140                | 135                |
 | Anna       | 45           | 1                  | 140                | 135                |
@@ -932,7 +932,7 @@ Suppose you are conducting an observational study comparing two different approa
 
 Consider the following hypothetical scenario of pre-treatment measurements and potential outcomes:
 
-| Unit      | \(x\) | \(z\) | \(y_0\) | \(y_1\) |
+| Unit      | $(x)$ | $(z)$ | $(y_0)$ | $(y_1)$ |
 | :-------- | ----: | :---: | ------: | ------: |
 | Aurelia   | 11    | ?     | 13      | 17      |
 | Bora      | 14    | ?     | 14      | 16      |
@@ -959,7 +959,7 @@ outcomes $y_0$ and $y_1$.
     - Simulate a new completely randomized experiment on these 8 people; that is, resample $z$ at random with the constraint that equal numbers get the treatment and the control. Report your new randomization and give the corresponding answers for step 1.
 
 
-| Unit | \(x\) | \(z\) | \(y_0\) | \(y_1\) |
+| Unit | $(x)$ | $(z)$ | $(y_0)$ | $(y_1)$ |
 | :--- | ----: | ----: | ------: | ------: |
 | Anna | 3     | 0     | 5       | 5       |
 | Beth | 5     | 0     | 8       | 10      |
@@ -972,7 +972,7 @@ outcomes $y_0$ and $y_1$.
 
 2.  **Potential outcomes** (Exercise 18.5 of *Regression and Other Stories*) The following tables displays a hypothetical experiment on 2400 people. Each row specifies a category of person, as defined by a pre-treatment predictor $x$, treatment indicator $z$, and potential outcomes $y_0$, $y_1$. For simplicity, we assume unrealistically that all the people in this experiment fit into these eight categories.
 
-| Category | # people in category | \(x\) | \(z\) | \(y_0\) | \(y_1\) |
+| Category | # people in category | $(x)$ | $(z)$ | $(y_0)$ | $(y_1)$ |
 | -------: | -------------------: | ----: | ----: | ------: | ------: |
 | 1        | 300                  | 0     | 0     | 4       | 6       |
 | 2        | 300                  | 1     | 0     | 4       | 6       |
@@ -983,12 +983,12 @@ outcomes $y_0$ and $y_1$.
 | 7        | 200                  | 0     | 1     | 10      | 12      |
 | 8        | 200                  | 1     | 1     | 10      | 12      |
 
-In making the table, we are assuming omniscience, so that both y0 and y1 are known for all observations. But the (non-omniscient) investigator would only observe $x$, $z$, and $y_z$ for each unit. For example, a person in category 1 would have $x$ = 0, $z$ = 0, $y$ = 4, and a person in category 3 would have $x$ = 0, $z$ = 1, $y$ = 6.
+In making the table, we are assuming omniscience, so that both $y_0$ and $y_1$ are known for all observations. But the (non-omniscient) investigator would only observe $x$, $z$, and $y_z$ for each unit. For example, a person in category 1 would have $x$ = 0, $z$ = 0, $y$ = 4, and a person in category 3 would have $x$ = 0, $z$ = 1, $y$ = 6.
 
 - What is the average treatment effect in this population of 2400 people?
-- Another summary is the mean of y for those who received the treatment minus the mean of y for those who did not. What is the relation between this summary and the average treatment effect (ATE)?
+- Another summary is the mean of $y$ for those who received the treatment minus the mean of $y$ for those who did not. What is the relation between this summary and the average treatment effect (ATE)?
 - Is it plausible to believe that these data came from a completely randomized experiment? Defend your answer.
-- For these data, is it plausible to believe that treatments were assigned using randomized blocks conditional on given 𝑥? Defend your answer.
+- For these data, is it plausible to believe that treatments were assigned using randomized blocks conditional on given $x$? Defend your answer.
 
 
 
