@@ -32,13 +32,11 @@ staff <- read_csv("class_data/staff.csv", show_col_types = FALSE)
 :::
 
 ::: {.g-col-9}
-
-    
   
-- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
-- {{< fa university >}} &nbsp; {{< var instructor.office >}}
-- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
-- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var instructor.appointment_url >}})
+- {{< fa user >}}  [Sam Fuller](https://samjfuller.com)
+- {{< fa university >}}  CGIS Knafel 428 (4th floor, turn right out of the elevators, straight ahead)
+- {{< fa envelope >}}  [sfuller@fas.harvard.edu](mailto:sfuller@fas.harvard.edu)
+- {{< fa calendar-check >}}  [Schedule an appointment](https://calendly.com/sfuller-fas)
 
 ::: 
 

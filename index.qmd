@@ -20,10 +20,10 @@ course-logo: /files/img/gov50-icon-512.png
 
 ### Instructor
 
-- {{< fa user >}}  [{{< var instructor.name >}}]({{< var instructor.url >}})
-- {{< fa university >}}  {{< var instructor.office >}}
-- {{< fa envelope >}}  [{{< var instructor.email >}}](mailto:{{< var instructor.email >}})
-- {{< fa calendar-check >}}  [Schedule an appointment]({{< var instructor.appointment_url >}})
+- {{< fa user >}}  [Sam Fuller](https://samjfuller.com)
+- {{< fa university >}}  {CGIS Knafel 428}
+- {{< fa envelope >}}  [sfuller@fas.harvard.edu](mailto:sfuller@fas.harvard.edu)
+- {{< fa calendar-check >}}  [Schedule an appointment](https://calendly.com/sfuller-fas)
 
 ::: 
 
