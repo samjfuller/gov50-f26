@@ -896,7 +896,7 @@ This perspective is not incompatible (nor is it *technically* different) with th
     - Generalization
 
 
-## Class 2 (11/16/2026)
+## Class 2 (11/16/2026 & 11/18/2026)
 
 ### Readings:
 
@@ -935,7 +935,7 @@ Suppose you are conducting an observational study comparing two different approa
 
 # **Module 11** --- Rubber meets the road: using regression for experiments and matching
 
-## Class 1 (11/18/2026)
+## Class 1 (11/23/2026)
 
 ### Readings:
 
@@ -1005,7 +1005,7 @@ In making the table, we are assuming omniscience, so that both $y_0$ and $y_1$ a
 
 
 
-## Class 2 (11/23/2026)
+## Class 2 (11/30/2026)
 
 ### Readings:
 
@@ -1024,40 +1024,92 @@ For each of the following descriptions of matching on the variable $X$, determin
 
 4.  The treated observation has $X = 5$. Among the control observations, the observation with $X = 5.1$ is closest to that, and so is selected as a control.
 
+Which of the following is a downside of propensity score matching compared to other methods of matching?
+
+a.	It can’t be combined with exact matching in cases where one variable must be exactly matched
+b.	It focuses the matching adjustment on differences that close back doors, rather than all differences
+c.	It requires the selection of matches instead of the use of weights, which increases variance.
+d.	It requires that the model used to estimate the propensity score is properly specified.
+
+
 
 ### Homework Questions:
 
-[TBD]
+1.	You want to know whether practicing cursive improves your penmanship (on a 1-10 scale). You find that, among people who don’t practice cursive, average penmanship is 5, 10 people are left-handed, 2 are ambidextrous, and 88 are right-handed. Among people who do practice cursive, 6 are left-handed with average penmanship 7, 4 are ambidextrous with average penmanship 4, and 90 are right-handed with average penmanship 6.
+
+    - You want to create a set of weights that will make the treated group match the control group on handedness. Follow the process in section 4.2, paying attention to why certain numbers are going in certain positions. What weights will be given to the left, ambidextrous, and right-handed people in the control group?
+    - What weights will be given to the left, ambidextrous, and right-handed people in the treated group? 
+    - Use the weights from part b to calculate the proportion of left-handed people in the treated group, as well as the proportion of ambidextrous people and the proportion of right-handed people. If you don’t get 10%, 2%, and 88% (or very close with some rounding error), your weights are wrong, try again.
+    - What is the weighted average penmanship score in the treated group?
+    - What is the effect of practicing cursive that we would estimate using this data?
+
+7.	You are planning to evaluate the effect of a tax-rebate plan for small businesses. Some businesses were eligible based on their tax returns and others weren’t. You would like to match on industry and number of employees. A table showing the number of businesses for each combination of industry and number of employees for the treated and untreated groups are in the following table:
+
+Number of small businesses by industry, number of employees, and treatment status:
+
+|	    --       |**Treated**  |   |**Untreated**|      |	
+| --------:  | ------: | ------: | -------: | ------: |
+|N. Employees|	Retail | Service |	Retail  |	Service |
+|1-5	       | 3	     |   4		 |    0	    |    4    |
+|6-10	       | 3	     |   2		 |    4	    |    3    |
+|11-20	     | 0	     |   5		 |    5	    |    1    |
+
+
+  - For what group of treated businesses would we say that the common-support assumption definitely fails?
+  - There are no treated retail businesses with 11-20 employees. Is this a concern for the common support assumption if we are trying to estimate an average treatment on the treated?
+  - What concern might we have about there only being one untreated Service business with 11-20 employees?
+  - If we resolved the common support problem for the group from problem (a) by dropping members of that group from the data, what problem would that create for our analysis?
+
 
 
 # **Module 12** --- All by design: design-based causal inference
 
-## Class 1 (11/30/2026)
+## Class 1 (12/02/2026)
 
 ### Readings:
 
 - Section 18.1 from Chapter 18: Difference-in-Differences from *The Effect*
-- [Card & Krueger (1994)](jstor.org/stable/2118030)
-
-### Warmup Questions:
-
-[TBD]
-
-### Homework Questions:
-
-[TBD]
-
-## Class 2 (12/02/2026)
-
-### Readings:
-
 - Section 20.1 from Chapter 20: Regression Discontinuity from *The Effect*
-- [Hoekstra (2009)](https://hollis.harvard.edu/permalink/01HVD_INST/726dgh/cdi_mit_journals_restv91i4_304162_2021_11_09_zip_rest_91_4_717)
+
+### EXTRA (NOT REQUIRED) Readings:
+- [Card & Krueger (1994)](https://jstor.org/stable/2118030) using Difference-in-Differences
+- [Hoekstra (2009)](https://hollis.harvard.edu/permalink/01HVD_INST/726dgh/cdi_mit_journals_restv91i4_304162_2021_11_09_zip_rest_91_4_717) using a Regression Discontinuity Design
 
 ### Warmup Questions:
 
-[TBD]
+*Diff-in-diff*: Which of the following potential back doors is controlled for by comparing the treated group to a control group?
+
+a.	The treated group may be following a trend, unique to the group, that would make the outcome change from before-treatment to after-treatment anyway
+b.	There may be events affecting everyone that would change the outcome from before-treatment to after-treatment anyway
+c.	There may be differences in typical outcome levels between the treated group and the untreated group
+d.	The decision to treat the treated group, rather than some other group, may be based on factors that are related to the outcome
+
+*RDD*: Which of the following is the most accurate intuitive explanation of why a sharp regression discontinuity design can identify of a causal effect of treatment?
+
+a.	Because when treatment is assigned with a cutoff, there are naturally no back doors between treatment and outcome.
+b.	Because in a sharp regression discontinuity design, treatment is assigned by only one variable.
+c.	Because it is reasonable to assume that falling just barely to one side of a cutoff or another is basically random.
+
 
 ### Homework Questions:
 
-[TBD]
+1.  Consider a treatment and control group. Looking only at the pre-treatment period, they have exactly the same outcomes (zero gap between them in each period).
+
+    - Despite having exactly the same outcomes pre-treatment, it happens to be the case that parallel trends is violated for these two groups. How is this possible? Explain what it means for parallel trends to be violated in this case, or give an example of how it could be violated.
+    - If we estimate the causal effect in this case using difference-in-differences, even though parallel trends is violated, how much would our effect be off by? (note you won’t be able to give a specific number)
+    
+    
+2.  Consider the below table of mean outcomes, and calculate the difference-in-difference effect of treatment. Write out the equation you used to calculate it (i.e. show how the four numbers in the table are combined to get the estimate)
+
+
+|           | BEFORE | AFTER |
+| --------: | -----: | ----: |
+| TREATED   | 5      | 9     |
+| UNTREATED | 6      | 7.5   |
+
+
+3.  The goal of estimating a regression discontinuity design estimate is to predict the average outcome just to either side of the cutoff. Why do we need to predict this? Why not just measure the outcomes for the observations that are closest to the cutoffs?
+
+4.  You are interested in the effect of a factory being inspected on whether it reduces its pollution output. There’s a variable "number of reported violations" that you have. When the number of reported violations goes from 9 to 10, the probability of being inspected jumps from 20% to 60%. Average pollution levels decrease from 600k metric tons of CO2 to 500k metric tons going from 9 to 10 as well. What is the fuzzy regression discontinuity estimate of the effect of inspections on air pollution levels?
+
+*Hint:* Look at how Battistin et al. (2009) 'scale' their estimate when TE talks about fuzzy RDDs.
